@@ -107,7 +107,7 @@ export default function Footer() {
           Made with{' '}
           <span className="text-red-400">♥</span>
           {' '}by{' '}
-          <a href="https://inmotion.com.co" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white/70 transition-colors">
+          <a href="https://www.inmotionteam.com/en" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white/70 transition-colors">
             Inmotion
           </a>
           {' '}
