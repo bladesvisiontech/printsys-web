@@ -102,6 +102,18 @@ export default function Footer() {
           )}
         </div>
       </div>
+      <div className="border-t border-white/5 py-3 text-center">
+        <p className="text-[11px] text-white/25">
+          Made with{' '}
+          <span className="text-red-400">♥</span>
+          {' '}by{' '}
+          <a href="https://inmotion.com.co" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white/70 transition-colors">
+            Inmotion
+          </a>
+          {' '}
+          <span className="text-white/20">⚡</span>
+        </p>
+      </div>
     </footer>
   )
 }
