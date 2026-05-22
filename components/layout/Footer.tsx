@@ -101,17 +101,13 @@ export default function Footer() {
           )}
         </div>
       </div>
-      <div className="border-t border-white/5 py-3 text-center">
-        <p className="text-[11px] text-white/25">
-          Made with{' '}
-          <span className="text-red-400">♥</span>
-          {' '}by{' '}
-          <a href="https://www.inmotionteam.com/en" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white/70 transition-colors">
-            Inmotion
-          </a>
-          {' '}
-          <span className="text-white/20">⚡</span>
-        </p>
+      <div className="border-t border-white/5 py-3 flex items-center justify-center gap-2">
+        <span className="text-[11px] text-white/25">Made with</span>
+        <span className="text-red-400 text-[11px]">♥</span>
+        <span className="text-[11px] text-white/25">by</span>
+        <a href="https://www.inmotionteam.com/en" target="_blank" rel="noopener noreferrer" className="opacity-30 hover:opacity-60 transition-opacity">
+          <Image src="/inmotion-logo.svg" alt="Inmotion" width={80} height={21} />
+        </a>
       </div>
     </footer>
   )
