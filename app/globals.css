@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Brand colors from logo SVG */
+  /* Brand colors — unchanged */
   --color-brand-dark:     #04003c;
   --color-purple-dark:    #400095;
   --color-purple-mid:     #82319c;
@@ -10,15 +10,16 @@
   --color-green-mid:      #56c62d;
   --color-green-light:    #d2f620;
 
-  /* UI tokens */
+  /* UI tokens — cleaner neutrals */
   --color-background:     #ffffff;
   --color-foreground:     #04003c;
-  --color-muted:          #6b7280;
-  --color-bg-card:        #f6f4fc;
+  --color-muted:          #71717a;
+  --color-bg-card:        #fafafa;
   --color-bg-dark:        #04003c;
   --color-cta:            #56c62d;
   --color-cta-hover:      #3da81e;
-  --color-border:         #e5e7eb;
+  --color-border:         #e4e4e7;
+  --color-border-hover:   #a1a1aa;
 
   /* Typography */
   --font-sans: var(--font-geist-sans);
@@ -42,7 +43,45 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Gradient utilities */
+/* ── Animations ─────────────────────────────────────────────────────────── */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50%       { transform: translateY(-20px) scale(1.04); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease both;
+}
+.animate-fade-in {
+  animation: fade-in 0.4s ease both;
+}
+
+/* Staggered children */
+.stagger > *:nth-child(1) { animation-delay: 0ms; }
+.stagger > *:nth-child(2) { animation-delay: 60ms; }
+.stagger > *:nth-child(3) { animation-delay: 120ms; }
+.stagger > *:nth-child(4) { animation-delay: 180ms; }
+.stagger > *:nth-child(5) { animation-delay: 240ms; }
+.stagger > *:nth-child(6) { animation-delay: 300ms; }
+
+/* ── Gradient utilities ─────────────────────────────────────────────────── */
+
 .gradient-brand {
   background: linear-gradient(135deg, #c92eff 0%, #400095 50%, #007708 100%);
 }
@@ -52,4 +91,24 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* ── Hero grid pattern ──────────────────────────────────────────────────── */
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ── Card glow on hover ─────────────────────────────────────────────────── */
+
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(4, 0, 60, 0.08), 0 1px 3px rgba(4, 0, 60, 0.06);
+  border-color: var(--color-border-hover);
 }

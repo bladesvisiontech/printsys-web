@@ -20,28 +20,18 @@ export default function ProductGrid({ category, brands }: Props) {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Brand tabs */}
       {brands.length > 1 && (
-        <div className="flex items-center gap-2 overflow-x-auto pb-2 mb-8 scrollbar-none">
-          <button
-            onClick={() => setActiveBrand('all')}
-            className={`shrink-0 px-5 py-2 rounded-full text-sm font-semibold transition-colors border ${
-              activeBrand === 'all'
-                ? 'bg-[var(--color-brand-dark)] text-white border-[var(--color-brand-dark)]'
-                : 'bg-white text-[var(--color-brand-dark)] border-[var(--color-border)] hover:border-[var(--color-purple-mid)]'
-            }`}
-          >
-            Todos
-          </button>
-          {brands.map(brand => (
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-2 mb-8 scrollbar-none">
+          {[{ id: 'all', name: 'Todos' }, ...brands.map(b => ({ id: b.id, name: b.name }))].map(tab => (
             <button
-              key={brand.id}
-              onClick={() => setActiveBrand(brand.id)}
-              className={`shrink-0 px-5 py-2 rounded-full text-sm font-semibold transition-colors border ${
-                activeBrand === brand.id
-                  ? 'bg-[var(--color-brand-dark)] text-white border-[var(--color-brand-dark)]'
-                  : 'bg-white text-[var(--color-brand-dark)] border-[var(--color-border)] hover:border-[var(--color-purple-mid)]'
+              key={tab.id}
+              onClick={() => setActiveBrand(tab.id)}
+              className={`relative shrink-0 px-4 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 ${
+                activeBrand === tab.id
+                  ? 'bg-[var(--color-brand-dark)] text-white shadow-sm'
+                  : 'text-[var(--color-muted)] hover:text-[var(--color-brand-dark)] hover:bg-zinc-100'
               }`}
             >
-              {brand.name}
+              {tab.name}
             </button>
           ))}
         </div>
@@ -49,11 +39,13 @@ export default function ProductGrid({ category, brands }: Props) {
 
       {/* Grid */}
       {filtered.length === 0 ? (
-        <div className="py-20 text-center text-[var(--color-muted)]">No hay productos disponibles.</div>
+        <div className="py-20 text-center text-[var(--color-muted)] text-sm">No hay productos disponibles.</div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div key={activeBrand} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 stagger animate-fade-in">
           {filtered.map(product => (
-            <ProductCard key={product.id} product={product} />
+            <div key={product.id} className="animate-fade-up">
+              <ProductCard product={product} />
+            </div>
           ))}
         </div>
       )}
