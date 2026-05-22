@@ -1,9 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight, Zap, Wrench, Package, GraduationCap, Printer, Tag, Cylinder, ScanLine, Droplets } from 'lucide-react'
-import { categories, siteConfig } from '@/data/catalog'
-import { categoryIconMap } from '@/lib/categoryIcons'
-import ProductCard from '@/components/ui/ProductCard'
+import { ArrowRight, Zap, Wrench, Package, GraduationCap } from 'lucide-react'
+import { siteConfig } from '@/data/catalog'
+import HomeCatalog from '@/components/sections/HomeCatalog'
 
 const logos = [
   { id: 'gew',      name: 'GEW',      src: '/logos/gew.svg'      },
@@ -75,46 +74,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Category sections ────────────────────────────────────────── */}
-      {categories.map((cat, idx) => {
-        const previewProducts = cat.products.filter(p => p.featured).slice(0, 4)
-        const displayProducts = previewProducts.length >= 2 ? previewProducts : cat.products.slice(0, 4)
-
-        return (
-          <section key={cat.id} className={`py-18 ${idx % 2 === 0 ? 'bg-[var(--color-bg-card)]' : 'bg-white'}`}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
-                <div>
-                  {/* Category pill */}
-                  <div className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-widest text-[var(--color-purple-mid)] bg-[var(--color-purple-mid)]/8 px-3 py-1 rounded-full mb-3">
-                    {categoryIconMap[cat.slug] ?? <Zap className="w-3.5 h-3.5" />}
-                    {cat.name}
-                  </div>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-brand-dark)] tracking-tight">{cat.name}</h2>
-                  <p className="text-sm text-[var(--color-muted)] mt-1.5 max-w-lg leading-relaxed">{cat.description}</p>
-                </div>
-                <Link
-                  href={`/productos/${cat.slug}`}
-                  className="group shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-[var(--color-border)] text-[var(--color-brand-dark)] text-sm font-semibold hover:border-[var(--color-brand-dark)] hover:bg-[var(--color-brand-dark)] hover:text-white transition-all duration-200 active:scale-[0.98]"
-                >
-                  Ver todos
-                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
-                </Link>
-              </div>
-
-              {displayProducts.length > 0 && (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 stagger">
-                  {displayProducts.map(product => (
-                    <div key={product.id} className="animate-fade-up">
-                      <ProductCard product={product} />
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </section>
-        )
-      })}
+      {/* ── Catalog with tabs ────────────────────────────────────────── */}
+      <HomeCatalog />
 
       {/* ── Por qué Printsys ─────────────────────────────────────────── */}
       <section className="bg-[var(--color-brand-dark)] py-24">
