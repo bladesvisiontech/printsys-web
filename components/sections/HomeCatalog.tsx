@@ -23,8 +23,8 @@ export default function HomeCatalog() {
           <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-brand-dark)] tracking-tight">Nuestros productos</h2>
         </div>
 
-        {/* Tabs */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 mb-8 scrollbar-none">
+        {/* Tabs — desktop: horizontal pills / mobile: 2-col grid */}
+        <div className="hidden sm:flex items-center gap-1.5 overflow-x-auto pb-1 mb-8 scrollbar-none">
           {categories.map(c => (
             <button
               key={c.slug}
@@ -39,6 +39,26 @@ export default function HomeCatalog() {
                 {categoryIconMap[c.slug]}
               </span>
               {c.name}
+            </button>
+          ))}
+        </div>
+
+        {/* Mobile: 2-col grid */}
+        <div className="grid grid-cols-2 gap-2 mb-6 sm:hidden">
+          {categories.map(c => (
+            <button
+              key={c.slug}
+              onClick={() => setActive(c.slug)}
+              className={`flex items-center gap-2.5 px-3.5 py-3 rounded-xl text-left text-[13px] font-medium transition-all duration-200 border ${
+                active === c.slug
+                  ? 'bg-[var(--color-brand-dark)] text-white border-[var(--color-brand-dark)]'
+                  : 'bg-[var(--color-bg-card)] text-[var(--color-brand-dark)] border-[var(--color-border)] hover:border-zinc-400'
+              }`}
+            >
+              <span className={`shrink-0 ${active === c.slug ? 'text-white' : 'text-[var(--color-muted)]'}`}>
+                {categoryIconMap[c.slug]}
+              </span>
+              <span className="leading-tight">{c.name}</span>
             </button>
           ))}
         </div>
