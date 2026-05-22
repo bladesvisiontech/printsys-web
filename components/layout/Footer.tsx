@@ -19,11 +19,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Image
-              src="/logo-printsys.svg"
+              src="/logo-printsys-dark.png"
               alt="Printsys"
-              width={140}
-              height={40}
-              className="brightness-0 invert"
+              width={160}
+              height={48}
             />
             <p className="text-sm text-white/60 leading-relaxed max-w-xs">
               {siteConfig.tagline}
