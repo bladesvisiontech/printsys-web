@@ -58,7 +58,8 @@ export default function Header() {
                   {item.label}
                 </Link>
                 {'children' in item && item.children && dropdown === item.label && (
-                  <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-[var(--color-border)] py-1.5 z-50">
+                  <div className="absolute top-full left-0 w-56 z-50 pt-2">
+                  <div className="bg-white rounded-xl shadow-xl border border-[var(--color-border)] py-1.5">
                     {item.children.map(child => (
                       <Link
                         key={child.href}
@@ -69,6 +70,7 @@ export default function Header() {
                         {child.label}
                       </Link>
                     ))}
+                  </div>
                   </div>
                 )}
               </div>
