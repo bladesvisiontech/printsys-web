@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'cdn.shortpixel.ai' },
+      { protocol: 'https', hostname: 'www.gewuv.es' },
+      { protocol: 'https', hostname: 'etirama.com.br' },
+      { protocol: 'https', hostname: 'www.cartes.it' },
+      { protocol: 'https', hostname: 'rotometal.pl' },
+    ],
+  },
+}
 
-export default nextConfig;
+export default nextConfig

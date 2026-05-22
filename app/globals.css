@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* Brand colors from logo SVG */
+  --color-brand-dark:     #04003c;
+  --color-purple-dark:    #400095;
+  --color-purple-mid:     #82319c;
+  --color-purple-light:   #c92eff;
+  --color-green-dark:     #007708;
+  --color-green-mid:      #56c62d;
+  --color-green-light:    #d2f620;
+
+  /* UI tokens */
+  --color-background:     #ffffff;
+  --color-foreground:     #04003c;
+  --color-muted:          #6b7280;
+  --color-bg-card:        #f6f4fc;
+  --color-bg-dark:        #04003c;
+  --color-cta:            #56c62d;
+  --color-cta-hover:      #3da81e;
+  --color-border:         #e5e7eb;
+
+  /* Typography */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Radius */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-full: 9999px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Gradient utilities */
+.gradient-brand {
+  background: linear-gradient(135deg, #c92eff 0%, #400095 50%, #007708 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #82319c 0%, #56c62d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
