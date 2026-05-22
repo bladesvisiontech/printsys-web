@@ -105,7 +105,7 @@ export default function Footer() {
         <span className="text-[11px] text-white/25">Made with</span>
         <span className="text-red-400 text-[11px]">♥</span>
         <span className="text-[11px] text-white/25">by</span>
-        <a href="https://www.inmotionteam.com/en" target="_blank" rel="noopener noreferrer" className="opacity-30 hover:opacity-60 transition-opacity">
+        <a href="https://www.inmotionteam.com/en" target="_blank" rel="noopener noreferrer">
           <Image src="/inmotion-logo.svg" alt="Inmotion" width={80} height={21} />
         </a>
       </div>
