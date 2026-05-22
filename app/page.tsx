@@ -45,14 +45,21 @@ export default function HomePage() {
       <section className="border-b border-[var(--color-border)] bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-muted)] text-center mb-6">Nuestros aliados estratégicos</p>
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
-            {featuredBrands.map(brand => (
-              <Link
-                key={brand.id}
-                href={`/aliados`}
-                className="text-lg font-bold text-[var(--color-brand-dark)] opacity-50 hover:opacity-100 transition-opacity"
-              >
-                {brand.name}
+          <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-14">
+            {[
+              { id: 'gew', name: 'GEW', src: '/logos/gew.svg' },
+              { id: 'etirama', name: 'Etirama', src: '/logos/etirama.jpg' },
+              { id: 'cartes', name: 'Cartes', src: '/logos/cartes.png' },
+              { id: 'rotometal', name: 'Rotometal', src: '/logos/rotometal.jpg' },
+            ].map(brand => (
+              <Link key={brand.id} href="/aliados" className="opacity-60 hover:opacity-100 transition-opacity">
+                <Image
+                  src={brand.src}
+                  alt={brand.name}
+                  width={120}
+                  height={48}
+                  className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                />
               </Link>
             ))}
           </div>
