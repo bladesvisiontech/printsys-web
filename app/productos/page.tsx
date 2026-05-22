@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { categories } from '@/data/catalog'
+import { categoryIconLg } from '@/lib/categoryIcons'
 import PageHero from '@/components/ui/PageHero'
 import type { Metadata } from 'next'
 
@@ -26,7 +27,9 @@ export default function ProductosPage() {
               href={`/productos/${cat.slug}`}
               className="card-hover animate-fade-up group bg-white rounded-2xl border border-[var(--color-border)] p-7 flex flex-col"
             >
-              <div className="text-3xl mb-4">{cat.icon}</div>
+              <div className="w-11 h-11 rounded-xl bg-[var(--color-brand-dark)]/6 flex items-center justify-center text-[var(--color-brand-dark)] mb-4">
+                {categoryIconLg[cat.slug]}
+              </div>
               <h2 className="text-[17px] font-semibold text-[var(--color-brand-dark)] tracking-tight group-hover:text-[var(--color-purple-mid)] transition-colors">{cat.name}</h2>
               <p className="text-[13px] text-[var(--color-muted)] mt-2 leading-relaxed flex-1">{cat.description}</p>
               <div className="mt-5 flex items-center gap-1.5 text-[13px] font-semibold text-[var(--color-cta)]">

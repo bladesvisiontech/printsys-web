@@ -1,17 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight, Zap, Wrench, Package, GraduationCap } from 'lucide-react'
+import { ArrowRight, Zap, Wrench, Package, GraduationCap, Printer, Tag, Cylinder, ScanLine, Droplets } from 'lucide-react'
 import { categories, siteConfig } from '@/data/catalog'
+import { categoryIconMap } from '@/lib/categoryIcons'
 import ProductCard from '@/components/ui/ProductCard'
-
-const categoryIcons: Record<string, React.ReactNode> = {
-  'curado-uv':         <Zap className="w-5 h-5" />,
-  'prensas-flexo':     <Package className="w-5 h-5" />,
-  'maquinas-etiquetas':<GraduationCap className="w-5 h-5" />,
-  'cilindros':         <Wrench className="w-5 h-5" />,
-  'instrumentos':      <Wrench className="w-5 h-5" />,
-  'consumibles':       <Package className="w-5 h-5" />,
-}
 
 const logos = [
   { id: 'gew',      name: 'GEW',      src: '/logos/gew.svg'      },
@@ -95,7 +87,7 @@ export default function HomePage() {
                 <div>
                   {/* Category pill */}
                   <div className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-widest text-[var(--color-purple-mid)] bg-[var(--color-purple-mid)]/8 px-3 py-1 rounded-full mb-3">
-                    {categoryIcons[cat.slug] ?? <Zap className="w-3.5 h-3.5" />}
+                    {categoryIconMap[cat.slug] ?? <Zap className="w-3.5 h-3.5" />}
                     {cat.name}
                   </div>
                   <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-brand-dark)] tracking-tight">{cat.name}</h2>
