@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
+import { ArrowLeft, ArrowRight, FileText } from 'lucide-react'
 import { categories, getCategoryBySlug, getProductBySlug, getBrandById } from '@/data/catalog'
 import type { Metadata } from 'next'
 
@@ -27,23 +28,25 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
 
   return (
     <div className="min-h-screen bg-[var(--color-bg-card)]">
-      {/* Breadcrumb */}
-      <div className="bg-[var(--color-brand-dark)] py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2 text-white/40 text-sm">
-            <Link href="/productos" className="hover:text-white transition-colors">Productos</Link>
+      {/* Slim breadcrumb header */}
+      <div className="relative bg-[var(--color-brand-dark)] overflow-hidden">
+        <div className="absolute inset-0 hero-grid" />
+        <div className="absolute -top-16 -right-16 w-64 h-64 rounded-full bg-[var(--color-purple-dark)] opacity-20 blur-[60px]" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-10">
+          <div className="flex items-center gap-2 text-[11px] text-white/30">
+            <Link href="/productos" className="hover:text-white/60 transition-colors">Productos</Link>
             <span>/</span>
-            <Link href={`/productos/${cat.slug}`} className="hover:text-white transition-colors">{cat.name}</Link>
+            <Link href={`/productos/${cat.slug}`} className="hover:text-white/60 transition-colors">{cat.name}</Link>
             <span>/</span>
-            <span className="text-white/70">{product.name}</span>
+            <span className="text-white/60">{product.name}</span>
           </div>
         </div>
       </div>
 
       {/* Main content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          {/* Image panel */}
           <div className="bg-white rounded-2xl border border-[var(--color-border)] aspect-square flex items-center justify-center p-10 overflow-hidden">
             {product.images[0] ? (
               <Image
@@ -51,43 +54,46 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                 alt={product.name}
                 width={600}
                 height={600}
-                className="object-contain max-h-full"
+                className="object-contain max-h-full transition-transform duration-500 hover:scale-[1.03]"
               />
             ) : (
-              <div className="flex flex-col items-center gap-3 text-[var(--color-border)]">
+              <div className="flex flex-col items-center gap-3 text-zinc-200">
                 <svg className="w-20 h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                <span className="text-sm font-medium">{product.name}</span>
+                <span className="text-sm font-medium text-zinc-400">{product.name}</span>
               </div>
             )}
           </div>
 
-          {/* Info */}
+          {/* Info panel */}
           <div className="flex flex-col gap-6">
             {brand && (
-              <div className="inline-flex items-center gap-2">
-                <span className="text-xs font-semibold bg-white border border-[var(--color-border)] px-3 py-1 rounded-full text-[var(--color-brand-dark)]">
+              <div className="flex items-center gap-2.5">
+                <span className="text-[11px] font-semibold bg-white border border-[var(--color-border)] px-3 py-1 rounded-full text-[var(--color-brand-dark)] tracking-wide">
                   {brand.name}
                 </span>
-                <span className="text-xs text-[var(--color-muted)]">{brand.relationship}</span>
+                <span className="text-[11px] text-[var(--color-muted)]">{brand.relationship}</span>
+                {product.featured && (
+                  <span className="text-[11px] font-semibold bg-[var(--color-green-mid)] text-white px-2.5 py-1 rounded-full">Destacado</span>
+                )}
               </div>
             )}
 
             <div>
-              <h1 className="text-3xl sm:text-4xl font-bold text-[var(--color-brand-dark)]">{product.name}</h1>
-              <p className="text-[var(--color-muted)] mt-3 leading-relaxed">{product.description}</p>
+              <h1 className="text-3xl sm:text-4xl font-bold text-[var(--color-brand-dark)] tracking-tight">{product.name}</h1>
+              <p className="text-[var(--color-muted)] mt-3 leading-relaxed text-[15px]">{product.description}</p>
             </div>
 
             {/* Specs table */}
             {product.specs.length > 0 && (
               <div className="bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden">
                 <div className="px-5 py-3 border-b border-[var(--color-border)] bg-[var(--color-bg-card)]">
-                  <h2 className="text-sm font-bold text-[var(--color-brand-dark)] uppercase tracking-wide">Especificaciones técnicas</h2>
+                  <h2 className="text-[11px] font-bold text-[var(--color-brand-dark)] uppercase tracking-widest">Especificaciones técnicas</h2>
                 </div>
                 <div className="divide-y divide-[var(--color-border)]">
                   {product.specs.map(spec => (
-                    <div key={spec.label} className="flex justify-between px-5 py-3 text-sm">
+                    <div key={spec.label} className="flex justify-between px-5 py-3 text-[13px] hover:bg-zinc-50 transition-colors">
                       <span className="text-[var(--color-muted)]">{spec.label}</span>
                       <span className="font-semibold text-[var(--color-brand-dark)] text-right max-w-[60%]">{spec.value}</span>
                     </div>
@@ -97,31 +103,33 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
             )}
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-3 pt-2">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href={`/contacto?producto=${encodeURIComponent(product.name)}`}
-                className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[var(--color-cta)] text-white font-semibold hover:bg-[var(--color-cta-hover)] transition-colors"
+                className="group flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[var(--color-cta)] text-white text-sm font-semibold hover:bg-[var(--color-cta-hover)] transition-all duration-200 shadow-[0_0_16px_rgba(86,198,45,0.3)] hover:shadow-[0_0_24px_rgba(86,198,45,0.45)] active:scale-[0.98]"
               >
                 Solicitar cotización
+                <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
               </Link>
               {product.datasheet_url && (
                 <a
                   href={product.datasheet_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-[var(--color-border)] text-[var(--color-brand-dark)] font-semibold hover:border-[var(--color-purple-mid)] transition-colors"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-[var(--color-border)] text-[var(--color-brand-dark)] text-sm font-semibold hover:border-zinc-400 transition-all duration-200 active:scale-[0.98]"
                 >
-                  Ver ficha técnica
+                  <FileText className="w-3.5 h-3.5" />
+                  Ficha técnica
                 </a>
               )}
             </div>
 
             {/* Thumbnail strip */}
             {product.images.length > 1 && (
-              <div className="flex gap-3 overflow-x-auto">
+              <div className="flex gap-2.5 overflow-x-auto">
                 {product.images.map((img, i) => (
-                  <div key={i} className="shrink-0 w-20 h-20 rounded-xl border border-[var(--color-border)] bg-white overflow-hidden flex items-center justify-center p-2">
-                    <Image src={img} alt={`${product.name} ${i + 1}`} width={80} height={80} className="object-contain" />
+                  <div key={i} className="shrink-0 w-[72px] h-[72px] rounded-xl border border-[var(--color-border)] bg-white overflow-hidden flex items-center justify-center p-2 hover:border-zinc-400 transition-colors cursor-pointer">
+                    <Image src={img} alt={`${product.name} ${i + 1}`} width={72} height={72} className="object-contain" />
                   </div>
                 ))}
               </div>
@@ -130,17 +138,22 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
         </div>
       </div>
 
-      {/* Back link */}
+      {/* Bottom bar */}
       <div className="border-t border-[var(--color-border)] bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <Link href={`/productos/${cat.slug}`} className="text-sm text-[var(--color-muted)] hover:text-[var(--color-brand-dark)] transition-colors flex items-center gap-1">
-            ← Ver todos los productos de {cat.name}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <Link
+            href={`/productos/${cat.slug}`}
+            className="group inline-flex items-center gap-1.5 text-[13px] text-[var(--color-muted)] hover:text-[var(--color-brand-dark)] transition-colors"
+          >
+            <ArrowLeft className="w-3.5 h-3.5 transition-transform duration-200 group-hover:-translate-x-0.5" />
+            Ver todos en {cat.name}
           </Link>
           <Link
             href="/contacto"
-            className="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--color-cta)] text-white text-sm font-semibold hover:bg-[var(--color-cta-hover)] transition-colors"
+            className="group shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[var(--color-brand-dark)] text-white text-[13px] font-semibold hover:bg-[var(--color-purple-dark)] transition-all duration-200 active:scale-[0.98]"
           >
-            ¿Necesitas asesoría técnica?
+            ¿Necesitas asesoría?
+            <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
           </Link>
         </div>
       </div>
