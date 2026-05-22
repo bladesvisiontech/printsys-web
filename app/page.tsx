@@ -58,7 +58,7 @@ export default function HomePage() {
                   alt={brand.name}
                   width={120}
                   height={48}
-                  className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  className="h-10 w-auto object-contain transition-opacity"
                 />
               </Link>
             ))}
