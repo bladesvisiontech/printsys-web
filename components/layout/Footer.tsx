@@ -5,8 +5,8 @@ import { siteConfig } from '@/data/catalog'
 const footerNav = {
   menu: [
     { label: 'Quiénes somos', href: '/nosotros' },
-    { label: 'Productos', href: '/marcas' },
-    { label: 'Aliados', href: '/marcas' },
+    { label: 'Productos', href: '/productos' },
+    { label: 'Aliados', href: '/aliados' },
     { label: 'Servicios', href: '/servicios' },
     { label: 'Contacto', href: '/contacto' },
   ],
@@ -27,7 +27,7 @@ export default function Footer() {
               className="brightness-0 invert"
             />
             <p className="text-sm text-white/60 leading-relaxed max-w-xs">
-              {siteConfig.tagline.es}
+              {siteConfig.tagline}
             </p>
             <div className="flex gap-3">
               {siteConfig.social.linkedin && (

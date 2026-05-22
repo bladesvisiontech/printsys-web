@@ -3,17 +3,17 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-import { brands } from '@/data/catalog'
+import { categories } from '@/data/catalog'
 
 const navItems = [
   { label: 'Quiénes somos', href: '/nosotros' },
   {
     label: 'Productos',
-    href: '/marcas',
-    children: brands.map(b => ({ label: b.name, href: `/marcas/${b.slug}` })),
+    href: '/productos',
+    children: categories.map(c => ({ label: `${c.icon} ${c.name}`, href: `/productos/${c.slug}` })),
   },
-  { label: 'Servicios', href: '/servicios' },
-  { label: 'Aliados', href: '/marcas' },
+  { label: 'Aliados', href: '/aliados' },
+  { label: 'Contacto', href: '/contacto' },
 ]
 
 export default function Header() {
@@ -72,7 +72,7 @@ export default function Header() {
             href="/contacto"
             className="inline-flex items-center px-5 py-2 rounded-full bg-[var(--color-cta)] text-white text-sm font-semibold hover:bg-[var(--color-cta-hover)] transition-colors"
           >
-            Contacto
+            Cotizar
           </Link>
         </div>
 
@@ -124,7 +124,7 @@ export default function Header() {
             className="block w-full text-center px-5 py-2.5 rounded-full bg-[var(--color-cta)] text-white text-sm font-semibold mt-2"
             onClick={() => setOpen(false)}
           >
-            Contacto
+            Cotizar
           </Link>
         </div>
       )}

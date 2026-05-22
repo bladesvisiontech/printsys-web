@@ -1,8 +1,3 @@
-export interface LocalizedString {
-  es: string
-  en: string
-}
-
 export interface ProductSpec {
   label: string
   value: string
@@ -12,21 +7,25 @@ export interface Product {
   id: string
   name: string
   slug: string
+  brandId: string
+  brandName: string
+  categoryId: string
   type: 'equipment' | 'consumable' | 'spare_part' | 'instrument' | 'accessory'
-  description: LocalizedString
-  shortDescription: LocalizedString
+  shortDescription: string
+  description: string
   specs: ProductSpec[]
   images: string[]
   datasheet_url?: string
   featured?: boolean
-  tags?: string[]
 }
 
-export interface Category {
+export interface ProductCategory {
   id: string
-  name: LocalizedString
   slug: string
-  description?: LocalizedString
+  name: string
+  description: string
+  icon: string
+  brands: string[]          // brand IDs that appear in this category
   products: Product[]
 }
 
@@ -34,14 +33,12 @@ export interface Brand {
   id: string
   name: string
   slug: string
-  logo: string
-  tagline: LocalizedString
-  description: LocalizedString
+  tagline: string
+  relationship: string
+  description: string
   website?: string
-  relationship: LocalizedString
+  accentColor: string
   featured?: boolean
-  accentColor?: string
-  categories: Category[]
 }
 
 export interface SiteContact {
@@ -53,11 +50,10 @@ export interface SiteContact {
 
 export interface SiteConfig {
   name: string
-  tagline: LocalizedString
-  description: LocalizedString
+  tagline: string
+  description: string
   address: string
   city: string
-  country: string
   phone: string
   email: string
   contacts: SiteContact[]
