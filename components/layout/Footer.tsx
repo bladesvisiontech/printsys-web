@@ -4,8 +4,7 @@ import { siteConfig } from '@/data/catalog'
 
 const footerNav = {
   menu: [
-    { label: 'Quiénes somos', href: '/nosotros' },
-    { label: 'Productos', href: '/productos' },
+{ label: 'Productos', href: '/productos' },
     { label: 'Aliados', href: '/aliados' },
     { label: 'Servicios', href: '/servicios' },
     { label: 'Contacto', href: '/contacto' },

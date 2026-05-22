@@ -6,7 +6,6 @@ import { useState } from 'react'
 import { categories } from '@/data/catalog'
 
 const navItems = [
-  { label: 'Quiénes somos', href: '/nosotros' },
   {
     label: 'Productos',
     href: '/productos',
