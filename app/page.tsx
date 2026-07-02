@@ -26,7 +26,8 @@ export default function HomePage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36 relative z-10">
           <div className="max-w-3xl stagger">
-            <div className="animate-fade-up inline-flex items-center gap-2 text-[11px] font-semibold bg-white/8 border border-white/10 text-white/70 px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
+            <div className="animate-fade-up inline-flex items-center gap-2 text-[11px] font-semibold bg-white/8 border border-white/10 text-white/70 pl-2 pr-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
+              <Image src="/logos/gew.svg" alt="GEW" width={18} height={18} className="h-[18px] w-auto rounded-sm bg-white/90 p-0.5" />
               Distribuidor oficial GEW · Colombia
             </div>
             <h1 className="animate-fade-up text-4xl sm:text-6xl font-bold text-white leading-[1.15] tracking-tight">
