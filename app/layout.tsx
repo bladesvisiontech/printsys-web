@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: 'Printsys — Impresión · Acabado · Etiquetado',
     template: '%s | Printsys',
   },
-  description: 'Principal proveedor de suministros, repuestos y servicio técnico especializado en tecnología de curado UV/LED e impresión flexográfica en Colombia.',
+  description: 'Principal proveedor de sistemas de curado UV/LED, instalación, soporte técnico autorizado, consumibles y repuestos. Atendemos prensas flexo, offset y otras aplicaciones especiales.',
   keywords: ['GEW', 'curado UV', 'UV LED', 'impresión flexo', 'Etirama', 'Cartes', 'Rotometal', 'Colombia', 'etiquetas'],
   openGraph: {
     siteName: 'Printsys',

@@ -27,10 +27,9 @@ export default function HomePage() {
             <div className="animate-fade-up inline-flex items-center gap-2 text-[11px] font-semibold bg-white/8 border border-white/10 text-white/70 px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
               Distribuidor oficial GEW · Colombia
             </div>
-            <h1 className="animate-fade-up text-5xl sm:text-7xl font-bold text-white leading-[1.05] tracking-tight">
-              Tecnología de<br />
-              impresión{' '}
-              <span className="gradient-text">de vanguardia</span>
+            <h1 className="animate-fade-up text-4xl sm:text-6xl font-bold text-white leading-[1.15] tracking-tight">
+              Soluciones tecnológicas de impresión, acabado y etiquetado{' '}
+              <span className="gradient-text">con un enfoque sostenible</span>
             </h1>
             <p className="animate-fade-up text-white/50 mt-6 text-lg max-w-xl leading-relaxed">
               {siteConfig.description}

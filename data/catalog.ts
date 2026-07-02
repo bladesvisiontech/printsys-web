@@ -3,7 +3,7 @@ import type { Brand, ProductCategory, SiteConfig } from '@/types/catalog'
 export const siteConfig: SiteConfig = {
   name: 'Printsys',
   tagline: 'Impresión · Acabado · Etiquetado',
-  description: 'Principal proveedor de suministros, repuestos y servicio técnico especializado en tecnología de curado UV/LED e impresión flexográfica en Colombia.',
+  description: 'Principal proveedor de sistemas de curado UV/LED, instalación, soporte técnico autorizado, consumibles y repuestos. Atendemos prensas flexo, offset y otras aplicaciones especiales.',
   address: 'Calle 116 # 75 a - 20 lc 13 Oficina 406',
   city: 'Bogotá, Colombia',
   phone: '+57 320 8658982',
