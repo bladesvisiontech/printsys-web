@@ -63,15 +63,15 @@ export default function HomePage() {
               <Link
                 key={brand.id}
                 href="/aliados"
-                className="opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105 flex items-center justify-center h-14"
+                className="opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105 flex items-center justify-center h-14 w-32"
               >
                 <Image
                   src={brand.src}
                   alt={brand.name}
                   width={160}
                   height={64}
-                  className="w-auto object-contain"
-                  style={{ height: `${3.5 * (brand.scale ?? 1)}rem` }}
+                  className="w-auto max-w-full object-contain"
+                  style={{ height: `${3.5 * (brand.scale ?? 1)}rem`, maxHeight: '100%' }}
                 />
               </Link>
             ))}
