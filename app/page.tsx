@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRight, Zap, Wrench, Package, GraduationCap } from 'lucide-react'
-import { siteConfig } from '@/data/catalog'
+import { siteConfig, getBrandBySlug } from '@/data/catalog'
 import HomeCatalog from '@/components/sections/HomeCatalog'
 
 const logos = [
@@ -63,7 +63,7 @@ export default function HomePage() {
             {logos.map(brand => (
               <Link
                 key={brand.id}
-                href="/aliados"
+                href={getBrandBySlug(brand.id) ? `/aliados/${brand.id}` : '/aliados'}
                 className="opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105 flex items-center justify-center h-14 w-32"
               >
                 <Image

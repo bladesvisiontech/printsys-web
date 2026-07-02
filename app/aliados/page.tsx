@@ -25,10 +25,10 @@ export default function AliadosPage() {
             return (
               <div key={brand.id} className="card-hover animate-fade-up bg-white rounded-2xl border border-[var(--color-border)] p-7 flex flex-col gap-4">
                 <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <h2 className="text-[17px] font-semibold text-[var(--color-brand-dark)] tracking-tight">{brand.name}</h2>
+                  <Link href={`/aliados/${brand.slug}`} className="group">
+                    <h2 className="text-[17px] font-semibold text-[var(--color-brand-dark)] tracking-tight group-hover:text-[var(--color-purple-mid)] transition-colors">{brand.name}</h2>
                     <p className="text-[11px] font-semibold text-[var(--color-cta)] mt-0.5 uppercase tracking-wide">{brand.relationship}</p>
-                  </div>
+                  </Link>
                   {brand.featured && (
                     <span className="shrink-0 text-[11px] font-semibold bg-[var(--color-purple-mid)]/10 text-[var(--color-purple-mid)] border border-[var(--color-purple-mid)]/20 px-2.5 py-1 rounded-full">
                       Principal
@@ -36,7 +36,7 @@ export default function AliadosPage() {
                   )}
                 </div>
 
-                <p className="text-[13px] text-[var(--color-muted)] leading-relaxed flex-1">{brand.description}</p>
+                <p className="text-[13px] text-[var(--color-muted)] leading-relaxed flex-1 line-clamp-4">{brand.description}</p>
 
                 {brandCategories.length > 0 && (
                   <div className="flex flex-wrap gap-1.5">
@@ -53,8 +53,15 @@ export default function AliadosPage() {
                   </div>
                 )}
 
-                {brand.website && (
-                  <div className="pt-3 border-t border-[var(--color-border)]">
+                <div className="pt-3 border-t border-[var(--color-border)] flex items-center justify-between gap-3">
+                  <Link
+                    href={`/aliados/${brand.slug}`}
+                    className="inline-flex items-center gap-1.5 text-[12px] font-semibold text-[var(--color-brand-dark)] hover:text-[var(--color-purple-mid)] transition-colors"
+                  >
+                    Ver más
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
+                  {brand.website && (
                     <a
                       href={brand.website}
                       target="_blank"
@@ -64,8 +71,8 @@ export default function AliadosPage() {
                       <ExternalLink className="w-3 h-3" />
                       Sitio oficial
                     </a>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             )
           })}
