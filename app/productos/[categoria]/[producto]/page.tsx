@@ -88,7 +88,7 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
 
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold text-[var(--color-brand-dark)] tracking-tight">{product.name}</h1>
-              <p className="text-[var(--color-muted)] mt-3 leading-relaxed text-[15px]">{product.description}</p>
+              <p className="text-[var(--color-muted)] mt-3 leading-relaxed text-[15px] whitespace-pre-line">{product.description}</p>
             </div>
 
             {/* Specs table */}

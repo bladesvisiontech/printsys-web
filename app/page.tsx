@@ -10,6 +10,7 @@ const logos = [
   { id: 'cartes',    name: 'Cartes',    src: '/logos/cartes.png'    },
   { id: 'rotometal', name: 'Rotometal', src: '/logos/rotometal.jpg', scale: 0.7 },
   { id: 'alfaflexo', name: 'Alfaflexo', src: '/logos/alfaflexo.jpg' },
+  { id: 'kingsun',   name: 'Kingsun',   src: '/logos/kingsun.webp'  },
 ]
 
 export default function HomePage() {

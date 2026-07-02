@@ -275,13 +275,29 @@ export const categories: ProductCategory[] = [
         type: 'equipment',
         featured: true,
         shortDescription: 'Sistemas UV/LED con opciones de personalización — diseño adaptado a la prensa',
-        description: 'Sistemas de curado UV/LED diseñados a medida para aplicaciones especiales, con longitud de hasta 2.5 metros y diseño completamente adaptado a la prensa del cliente. Disponemos de equipos para realizar pruebas de curado directamente en su prensa antes de la implementación.',
+        description: `Sistemas de curado UV/LED diseñados a medida para aplicaciones especiales, con longitud de hasta 2.5 metros y diseño completamente adaptado a la prensa del cliente. Disponemos de equipos para realizar pruebas de curado directamente en su prensa antes de la implementación.
+
+ArcLED® permite utilizar una lámpara de arco UV convencional o una secuencia LED en la misma unidad de impresión. Tanto los casetes de arco como los LED son compatibles con la misma fuente de alimentación y encajan en la misma carcasa, por lo que se pueden cambiar fácilmente. El sistema de mando RHINO permite combinar cualquier tecnología de secado que se vaya a utilizar en la máquina.
+
+A prueba del futuro: puede cambiar entre secado por arco o por LED según le convenga, para adaptarse a los requisitos de su proceso y su formulación de tinta. Los sistemas de arco o LED de GEW pueden actualizarse in situ a la solución híbrida, o entregarse en esta configuración desde cero. Los casetes ArcLED se intercambian de forma rápida y fácil — solo se necesita una llave Allen.
+
+DOS tecnologías de secado UV, UNA fuente de alimentación RHINO: todas las fuentes de alimentación RHINO o RLT son compatibles con las lámparas de arco y las secuencias LED de GEW. Actualizar sistemas UV existentes a LED es tan sencillo como añadir un casete LED y refrigeración por agua — la forma más económica de disponer de impresión UV LED en cualquier sitio. RHINO convierte el LED en la siguiente fase de forma sencilla.
+
+Huella mínima de la estantería RHINO: un armario compacto alberga hasta 6 fuentes de alimentación RHINO, con refrigeración perfecta, protección atmosférica y distribución de alimentación de red. Los armarios son apilables en dos alturas, permitiendo 12 fuentes de alimentación en una superficie de 115 x 65 cm. Las fuentes se deslizan a la estantería y se conectan rápidamente, facilitando ampliar el sistema en el futuro.
+
+Beneficios de la fuente de alimentación — Interfaz común para arco y LED: la detección automática del tipo de casete (arco o LED) garantiza que la fuente RHINO se adapte de inmediato y suministre la potencia adecuada. Medición del rendimiento de energía: el sistema de mando RHINO registra automáticamente el uso de energía y lo muestra en pantalla, permitiendo consultar el consumo de kWh en funcionamiento, en estado inactivo y el % de funcionamiento productivo.
+
+Beneficios del sistema de mando — Evita los tiempos de inactividad de forma proactiva: el paquete de asistencia integrado envía datos de rendimiento del sistema a GEW de forma habitual para supervisión remota, generando un informe del estado del sistema con los parámetros fuera de rango que deben subsanarse. Funcionamiento a máximo rendimiento: el registro de incidencias guarda de forma continua el uso del sistema y sus parámetros, permitiendo comprobar si funciona a máxima capacidad y evitar desperdicio de energía y paradas inesperadas. Ayuda instantánea: acceso fácil a instrucciones en varios idiomas desde cualquier pantalla, además de tutoriales de mantenimiento del sistema.`,
         specs: [
           { label: 'Longitud máx.', value: '2.5 m' },
           { label: 'Diseño', value: 'Adaptado a la prensa' },
           { label: 'Ahorro energético', value: 'Alto — vs. sistemas convencionales' },
-          { label: 'Tecnologías', value: 'UV / LED' },
+          { label: 'Tecnologías', value: 'UV / LED (ArcLED®)' },
           { label: 'Personalización', value: 'Diseño y potencia a la medida' },
+          { label: 'Cambio de casete', value: 'Rápido — solo llave Allen' },
+          { label: 'Fuentes compatibles', value: 'RHINO / RLT' },
+          { label: 'Capacidad estantería RHINO', value: 'Hasta 6 (12 apiladas en 2 alturas)' },
+          { label: 'Dimensión estantería', value: '115 x 65 cm' },
         ],
         images: ['/products/curado-uv/aplicaciones-especiales-1.jpg', '/products/curado-uv/aplicaciones-especiales-2.jpg'],
       },
