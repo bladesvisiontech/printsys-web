@@ -5,10 +5,11 @@ import { siteConfig } from '@/data/catalog'
 import HomeCatalog from '@/components/sections/HomeCatalog'
 
 const logos = [
-  { id: 'gew',      name: 'GEW',      src: '/logos/gew.svg'      },
-  { id: 'etirama',  name: 'Etirama',  src: '/logos/etirama.jpg'  },
-  { id: 'cartes',   name: 'Cartes',   src: '/logos/cartes.png'   },
-  { id: 'rotometal',name: 'Rotometal',src: '/logos/rotometal.jpg'},
+  { id: 'gew',       name: 'GEW',       src: '/logos/gew.svg'       },
+  { id: 'etirama',   name: 'Etirama',   src: '/logos/etirama.jpg'   },
+  { id: 'cartes',    name: 'Cartes',    src: '/logos/cartes.png'    },
+  { id: 'rotometal', name: 'Rotometal', src: '/logos/rotometal.jpg', scale: 0.7 },
+  { id: 'alfaflexo', name: 'Alfaflexo', src: '/logos/alfaflexo.jpg' },
 ]
 
 export default function HomePage() {
@@ -59,13 +60,18 @@ export default function HomePage() {
           <p className="text-[11px] font-semibold uppercase tracking-widest text-zinc-400 text-center mb-7">Nuestros aliados estratégicos</p>
           <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-16">
             {logos.map(brand => (
-              <Link key={brand.id} href="/aliados" className="opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105">
+              <Link
+                key={brand.id}
+                href="/aliados"
+                className="opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105 flex items-center justify-center h-14"
+              >
                 <Image
                   src={brand.src}
                   alt={brand.name}
-                  width={120}
-                  height={48}
-                  className="h-9 w-auto object-contain"
+                  width={160}
+                  height={64}
+                  className="w-auto object-contain"
+                  style={{ height: `${3.5 * (brand.scale ?? 1)}rem` }}
                 />
               </Link>
             ))}
