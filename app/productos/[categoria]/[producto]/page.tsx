@@ -5,6 +5,11 @@ import { ArrowLeft, ArrowRight, FileText } from 'lucide-react'
 import { categories, getCategoryBySlug, getProductBySlug, getBrandById } from '@/data/catalog'
 import type { Metadata } from 'next'
 
+function toYouTubeEmbed(url: string) {
+  const id = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([\w-]+)/)?.[1]
+  return id ? `https://www.youtube.com/embed/${id}` : url
+}
+
 export async function generateStaticParams() {
   return categories.flatMap(cat =>
     cat.products.map(p => ({ categoria: cat.slug, producto: p.slug }))
@@ -104,6 +109,21 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                       <span className="font-semibold text-[var(--color-brand-dark)] text-right max-w-[60%]">{spec.value}</span>
                     </div>
                   ))}
+                </div>
+              </div>
+            )}
+
+            {/* Video */}
+            {product.video_url && (
+              <div className="bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden">
+                <div className="aspect-video">
+                  <iframe
+                    src={toYouTubeEmbed(product.video_url)}
+                    title={`Video — ${product.name}`}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               </div>
             )}

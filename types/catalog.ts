@@ -16,6 +16,7 @@ export interface Product {
   specs: ProductSpec[]
   images: string[]
   datasheet_url?: string
+  video_url?: string
   featured?: boolean
 }
 

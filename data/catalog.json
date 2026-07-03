@@ -382,6 +382,75 @@
           "images": []
         },
         {
+          "id": "doseguard",
+          "name": "DoseGuard",
+          "slug": "doseguard",
+          "brandId": "gew",
+          "brandName": "GEW",
+          "categoryId": "curado-uv",
+          "type": "instrument",
+          "featured": true,
+          "shortDescription": "Control de dosis UV en lazo cerrado — escaneo de ancho completo",
+          "description": "DoseGuard es un radiómetro de escaneo montado debajo de la lámpara que proporciona control de dosis UV en lazo cerrado sobre el sustrato, midiendo la emisión a lo largo de todo el ancho de la lámpara. Incorpora óptica de escaneo ICAD® que monitorea continuamente la luz UV que llega al sustrato y ajusta automáticamente la potencia de la lámpara para mantener el nivel de dosis deseado.\n\nCompatible con cualquier lámpara de mercurio o LED GEW, escanea y reporta cada unidad de lámpara/LED de forma individual, con conectividad Wi-Fi y ModBus.\n\nBeneficios: control perfecto de la salida UV monitoreando los cambios de emisión durante la producción; aseguramiento de calidad y reducción de desperdicio, garantizando que el producto se cure exactamente al nivel correcto; reducción de costos de energía y mantenimiento al optimizar el consumo y extender la vida de la lámpara; y documentación de cumplimiento mediante datos operativos exportables vía software o ModBus.",
+          "specs": [
+            { "label": "Resolución", "value": "1 mW/cm²" },
+            { "label": "Frecuencia de muestreo", "value": "128 muestras/seg" },
+            { "label": "Sección mínima", "value": "320 mm alto × 142 mm ancho" },
+            { "label": "Longitud máx.", "value": "2400 mm" },
+            { "label": "Compatibilidad", "value": "Lámparas GEW mercurio o LED" },
+            { "label": "Calibración", "value": "Cada 12 meses" }
+          ],
+          "images": [
+            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/DSC05268_edit-2000px.jpg",
+            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/DoseGuard_Render01a-COMP-2-2000px.jpg",
+            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/IMG_E1838_Close-Crop-2000px-1024x682.jpg",
+            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/Comexi-S25112-E4Cx3-with-DoseGuard-DSC_5507-2000px-1024x702.jpg"
+          ],
+          "video_url": "https://youtu.be/htPjyWt6FIQ"
+        },
+        {
+          "id": "air-blast-cooler",
+          "name": "Air Blast Cooler",
+          "slug": "air-blast-cooler",
+          "brandId": "gew",
+          "brandName": "GEW",
+          "categoryId": "curado-uv",
+          "type": "equipment",
+          "featured": false,
+          "shortDescription": "Enfriador de aire de circuito cerrado — bajo consumo, sin agua ni gases regulados",
+          "description": "El enfriador de aire GEW Air Blast Cooler es un sistema sencillo, de bajo consumo energético y circuito cerrado. Incorpora un intercambiador de calor refrigerado por aire que utiliza el aire ambiente para disipar el calor. Proporciona una refrigeración eficiente y de bajo mantenimiento, sin pérdidas de agua ni riesgo de contaminación, y evita el uso de refrigerantes regulados (gases fluorados), que estarán sujetos a nuevas restricciones en Europa a partir del 1 de enero de 2027.\n\nLos enfriadores de aire forzado están diseñados para el sistema UV GEW y pueden configurarse en tándem para proporcionar una capacidad de refrigeración de 20 kW, 38 kW o 56 kW. Son unidades de refrigeración independientes que el cliente puede conectar a la atmósfera mediante conductos, si así lo requiere. La unidad principal consta de un ventilador axial, un intercambiador de calor, un filtro, una bomba, un vaso de expansión, un depósito de llenado y un armario de control. Las unidades secundarias constan de un ventilador axial, un intercambiador de calor y un filtro.\n\nLos enfriadores de aire forzado suelen consumir alrededor de un 50% menos de energía que los enfriadores convencionales, ya que eliminan la necesidad de compresores.",
+          "specs": [
+            { "label": "Capacidad de refrigeración", "value": "20 / 38 / 56 kW (en tándem)" },
+            { "label": "Ahorro energético", "value": "~50% vs. enfriadores convencionales" },
+            { "label": "Circuito", "value": "Cerrado — sin pérdida de agua" },
+            { "label": "Refrigerantes regulados", "value": "No utiliza (sin gases fluorados)" },
+            { "label": "Unidad principal", "value": "Ventilador axial, intercambiador, filtro, bomba, vaso de expansión, depósito, armario de control" },
+            { "label": "Unidades secundarias", "value": "Ventilador axial, intercambiador, filtro" }
+          ],
+          "images": ["/products/curado-uv/air-blast-cooler-1.jpg"]
+        },
+        {
+          "id": "unidad-laboratorio-uv",
+          "name": "Unidad de Laboratorio de la Lámpara UV",
+          "slug": "unidad-laboratorio-uv",
+          "brandId": "gew",
+          "brandName": "GEW",
+          "categoryId": "curado-uv",
+          "type": "equipment",
+          "featured": false,
+          "shortDescription": "Unidad de mesa para pruebas de curado UV — hasta 70 m/min",
+          "description": "La unidad de laboratorio de la lámpara UV utiliza una cinta transportadora de acero inoxidable de 150 mm de ancho para llevar las muestras bajo la lámpara UV a velocidades variables de hasta 70 m/min.\n\nLa lámpara UV E2C contiene una bombilla sin ozono para evitar la necesidad de extracción del conducto, y un ventilador integrado controla la lámpara a una potencia constante de 80 W/cm.\n\nSe trata de una unidad de curado robusta, de mesa, que incorpora sencillas bandejas de alimentación/recogida, y que es una herramienta perfecta y rentable para el laboratorio, las pruebas de prensa e incluso la producción de bajo volumen.",
+          "specs": [
+            { "label": "Ancho cinta transportadora", "value": "150 mm (acero inoxidable)" },
+            { "label": "Velocidad", "value": "Variable, hasta 70 m/min" },
+            { "label": "Lámpara", "value": "E2C, bombilla sin ozono" },
+            { "label": "Potencia", "value": "Constante, 80 W/cm" },
+            { "label": "Formato", "value": "Unidad de mesa, bandejas de alimentación/recogida" },
+            { "label": "Uso", "value": "Laboratorio, pruebas de prensa, producción de bajo volumen" }
+          ],
+          "images": ["/products/curado-uv/unidad-laboratorio-1.jpg"]
+        },
+        {
           "id": "aplicaciones-especiales",
           "name": "Aplicaciones Especiales",
           "slug": "aplicaciones-especiales",
