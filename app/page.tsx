@@ -17,47 +17,54 @@ export default function HomePage() {
   return (
     <main>
       {/* ── Hero ─────────────────────────────────────────────────────── */}
-      <section className="relative bg-[var(--color-brand-dark)] overflow-hidden">
-        {/* Grid texture */}
-        <div className="absolute inset-0 hero-grid" />
-        {/* Glow blobs */}
-        <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-[var(--color-purple-dark)] opacity-20 blur-[100px]" style={{ animation: 'float 8s ease-in-out infinite' }} />
-        <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full bg-[var(--color-green-dark)] opacity-10 blur-[120px]" style={{ animation: 'float 10s ease-in-out infinite reverse' }} />
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36 relative z-10">
-          <div className="max-w-3xl stagger">
-            <div className="animate-fade-up inline-flex items-center gap-2 text-[11px] font-semibold bg-white/8 border border-white/10 text-white/70 pl-2 pr-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
-              <Image src="/logos/gew.svg" alt="GEW" width={18} height={18} className="h-[18px] w-auto rounded-sm bg-white/90 p-0.5" />
-              Distribuidor oficial GEW · Colombia
+      <section className="relative bg-white overflow-hidden border-b border-[var(--color-border)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="stagger">
+              <div className="animate-fade-up inline-flex items-center gap-2 text-[11px] font-semibold bg-[var(--color-bg-card)] border border-[var(--color-border)] text-[var(--color-muted)] pl-2 pr-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
+                <Image src="/logos/gew.svg" alt="GEW" width={18} height={18} className="h-[18px] w-auto rounded-sm bg-white p-0.5" />
+                Distribuidor oficial GEW · Colombia
+              </div>
+              <h1 className="animate-fade-up text-4xl sm:text-6xl font-bold text-[var(--color-brand-dark)] leading-[1.15] tracking-tight">
+                Soluciones tecnológicas de impresión, acabado y etiquetado{' '}
+                <span className="gradient-text">con un enfoque sostenible</span>
+              </h1>
+              <p className="animate-fade-up text-[var(--color-muted)] mt-6 text-lg max-w-xl leading-relaxed">
+                {siteConfig.description}
+              </p>
+              <div className="animate-fade-up flex flex-col sm:flex-row gap-3 mt-10">
+                <Link
+                  href="/productos"
+                  className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-[var(--color-cta)] text-white text-sm font-semibold hover:bg-[var(--color-cta-hover)] transition-all duration-200 shadow-[0_0_20px_rgba(86,198,45,0.25)] hover:shadow-[0_0_28px_rgba(86,198,45,0.4)] active:scale-[0.98]"
+                >
+                  Ver catálogo
+                  <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" />
+                </Link>
+                <Link
+                  href="/contacto"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl border border-[var(--color-border)] text-[var(--color-brand-dark)] text-sm font-semibold hover:border-zinc-400 transition-all duration-200 active:scale-[0.98]"
+                >
+                  Solicitar asesoría
+                </Link>
+              </div>
             </div>
-            <h1 className="animate-fade-up text-4xl sm:text-6xl font-bold text-white leading-[1.15] tracking-tight">
-              Soluciones tecnológicas de impresión, acabado y etiquetado{' '}
-              <span className="gradient-text">con un enfoque sostenible</span>
-            </h1>
-            <p className="animate-fade-up text-white/50 mt-6 text-lg max-w-xl leading-relaxed">
-              {siteConfig.description}
-            </p>
-            <div className="animate-fade-up flex flex-col sm:flex-row gap-3 mt-10">
-              <Link
-                href="/productos"
-                className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-[var(--color-cta)] text-white text-sm font-semibold hover:bg-[var(--color-cta-hover)] transition-all duration-200 shadow-[0_0_20px_rgba(86,198,45,0.35)] hover:shadow-[0_0_28px_rgba(86,198,45,0.5)] active:scale-[0.98]"
-              >
-                Ver catálogo
-                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" />
-              </Link>
-              <Link
-                href="/contacto"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl border border-white/15 text-white/80 text-sm font-semibold hover:border-white/35 hover:text-white transition-all duration-200 active:scale-[0.98]"
-              >
-                Solicitar asesoría
-              </Link>
+
+            <div className="animate-fade-up relative">
+              <Image
+                src="/hero-banner.jpg"
+                alt="Rodillo anilox compatible con las principales marcas de prensas de impresión"
+                width={1080}
+                height={1080}
+                priority
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* ── Brand logos strip ────────────────────────────────────────── */}
-      <section className="border-y border-[var(--color-border)] bg-white py-8">
+      <section className="border-b border-[var(--color-border)] bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-zinc-400 text-center mb-7">Nuestros aliados estratégicos</p>
           <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-16">
