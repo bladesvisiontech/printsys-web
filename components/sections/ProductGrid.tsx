@@ -7,9 +7,10 @@ import type { ProductCategory, Brand } from '@/types/catalog'
 interface Props {
   category: ProductCategory
   brands: Brand[]
+  brandSubtitles?: Record<string, string>
 }
 
-export default function ProductGrid({ category, brands }: Props) {
+export default function ProductGrid({ category, brands, brandSubtitles }: Props) {
   const [activeBrand, setActiveBrand] = useState<string>('all')
 
   const filtered = activeBrand === 'all'
@@ -21,7 +22,10 @@ export default function ProductGrid({ category, brands }: Props) {
       {/* Brand tabs */}
       {brands.length > 1 && (
         <div className="flex items-center gap-1.5 overflow-x-auto pb-2 mb-8 scrollbar-none">
-          {[{ id: 'all', name: 'Todos' }, ...brands.map(b => ({ id: b.id, name: b.name }))].map(tab => (
+          {[
+            { id: 'all', name: 'Todos' },
+            ...brands.map(b => ({ id: b.id, name: brandSubtitles?.[b.id] ? `${b.name} (${brandSubtitles[b.id]})` : b.name })),
+          ].map(tab => (
             <button
               key={tab.id}
               onClick={() => setActiveBrand(tab.id)}

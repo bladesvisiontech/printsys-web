@@ -22,7 +22,7 @@
       }
     ],
     "social": {
-      "linkedin": "https://linkedin.com/company/printsys",
+      "linkedin": "https://www.linkedin.com/company/print-sys/",
       "instagram": "https://instagram.com/printsys",
       "whatsapp": "https://wa.me/573208658982"
     },
@@ -142,6 +142,17 @@
       "relationship": "Representante autorizado",
       "description": "Tintas catiónicas de alta calidad para envases de alimentos, productos de higiene y farmacéuticos.",
       "accentColor": "#047857",
+      "featured": false
+    },
+    {
+      "id": "alfaflexo",
+      "name": "Alfaflexo",
+      "slug": "alfaflexo",
+      "tagline": "Tecnología, precisión y alta productividad",
+      "relationship": "Representante autorizado",
+      "description": "Fabricante brasileño de prensas flexográficas de cilindro central de banda ancha, con más de 15 años de experiencia en el segmento. Ofrece equipos personalizados con ancho de impresión de hasta 2000 mm y velocidades de hasta 400 m/min, para papel, film de polipropileno, plástico, aluminio, termoencogibles, nylon y coextruidos.",
+      "website": "https://alfaflexo.com",
+      "accentColor": "#0F172A",
       "featured": false
     }
   ],
@@ -591,7 +602,8 @@
       "description": "Impresoras flexográficas de banda estrecha para etiquetas y envases flexibles",
       "icon": "🖨",
       "brands": [
-        "etirama"
+        "etirama",
+        "alfaflexo"
       ],
       "products": [
         {
@@ -747,6 +759,116 @@
           "images": [
             "https://etirama.com.br/wp-content/uploads/2026/01/R4_final_-1.png"
           ]
+        },
+        {
+          "id": "prime-print",
+          "name": "Prime Print",
+          "slug": "prime-print",
+          "brandId": "alfaflexo",
+          "brandName": "Alfaflexo",
+          "categoryId": "prensas-flexo",
+          "type": "equipment",
+          "featured": true,
+          "shortDescription": "Prensa banda ancha de cilindro central — entrada, cambio rápido",
+          "description": "Prensa flexográfica de cilindro central para banda ancha, solución económica con robustez y capacidad de setup rápido. Cambio lateral de porta-clichés que facilita el cambio de trabajo manteniendo estabilidad de registro. Ideal para empresas que priorizan calidad de impresión minimizando la inversión inicial.",
+          "specs": [
+            {
+              "label": "Tipo",
+              "value": "Cilindro central"
+            },
+            {
+              "label": "Ancho de impresión",
+              "value": "Hasta 1200 mm"
+            },
+            {
+              "label": "Cambio de clichés",
+              "value": "Lateral, sistema rápido"
+            },
+            {
+              "label": "Control",
+              "value": "PLC"
+            },
+            {
+              "label": "Sustratos",
+              "value": "Papel, film PP, plástico, aluminio, termoencogible, nylon, coextruidos"
+            }
+          ],
+          "images": [
+            "https://alfaflexo.com/wp-content/uploads/2022/05/IMAGEM-7-1024x596.png"
+          ],
+          "datasheet_url": "https://alfaflexo.com/CATALOGOPRIMEPRINT2023.pdf"
+        },
+        {
+          "id": "up-print",
+          "name": "UP Print",
+          "slug": "up-print",
+          "brandId": "alfaflexo",
+          "brandName": "Alfaflexo",
+          "categoryId": "prensas-flexo",
+          "type": "equipment",
+          "featured": true,
+          "shortDescription": "Prensa banda ancha de alta precisión — registro simultáneo, rebobinador sin parada",
+          "description": "Equipo de precisión que combina avance de color simultáneo en todas las estaciones con un sistema de rebobinado sin parada incluido de serie. Diseñado para superar expectativas en calidad de impresión, facilidad operativa y rendimiento del equipo, combinando durabilidad con una economía competitiva.",
+          "specs": [
+            {
+              "label": "Tipo",
+              "value": "Cilindro central de alta precisión"
+            },
+            {
+              "label": "Ancho de impresión",
+              "value": "Hasta 1600 mm"
+            },
+            {
+              "label": "Registro",
+              "value": "Avance de color simultáneo"
+            },
+            {
+              "label": "Rebobinador",
+              "value": "Sin parada (estándar)"
+            },
+            {
+              "label": "Sustratos",
+              "value": "Papel, film PP, plástico, aluminio, termoencogible, nylon, coextruidos"
+            }
+          ],
+          "images": [
+            "https://alfaflexo.com/wp-content/uploads/2022/05/UP-PRINT-1024x596.png"
+          ],
+          "datasheet_url": "https://alfaflexo.com/CATALOGOUPPRINT2023.pdf"
+        },
+        {
+          "id": "gear-flex",
+          "name": "Gear Flex",
+          "slug": "gear-flex",
+          "brandId": "alfaflexo",
+          "brandName": "Alfaflexo",
+          "categoryId": "prensas-flexo",
+          "type": "equipment",
+          "shortDescription": "Prensa banda ancha sin engranajes — servo, hasta 2000 mm y 400 m/min",
+          "description": "Diseño monobloque lateral con tecnología gearless (sin engranajes) para los ajustes, con movimientos longitudinales de manga accionados por servomotor. La solución de mayor ancho y velocidad de la línea Alfaflexo, orientada a producción de alto volumen.",
+          "specs": [
+            {
+              "label": "Tipo",
+              "value": "Monobloque lateral, gearless"
+            },
+            {
+              "label": "Ancho de impresión",
+              "value": "Hasta 2000 mm"
+            },
+            {
+              "label": "Velocidad máx.",
+              "value": "Hasta 400 m/min"
+            },
+            {
+              "label": "Movimiento de manga",
+              "value": "Servomotor"
+            },
+            {
+              "label": "Sustratos",
+              "value": "Papel, film PP, plástico, aluminio, termoencogible, nylon, coextruidos"
+            }
+          ],
+          "images": []
         }
       ]
     },

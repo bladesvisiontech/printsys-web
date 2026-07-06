@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'etirama.com.br' },
       { protocol: 'https', hostname: 'www.cartes.it' },
       { protocol: 'https', hostname: 'rotometal.pl' },
+      { protocol: 'https', hostname: 'alfaflexo.com' },
     ],
   },
 }
