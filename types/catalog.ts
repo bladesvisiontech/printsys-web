@@ -38,6 +38,7 @@ export interface Brand {
   relationship: string
   description: string
   website?: string
+  video_url?: string
   accentColor: string
   featured?: boolean
 }

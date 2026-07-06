@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import { brands, categories, getBrandBySlug } from '@/data/catalog'
 import { categoryIconMap } from '@/lib/categoryIcons'
+import { toYouTubeEmbed } from '@/lib/youtube'
 import PageHero from '@/components/ui/PageHero'
 import type { Metadata } from 'next'
 
@@ -60,6 +61,20 @@ export default async function BrandPage({ params }: { params: Promise<{ marca: s
       </PageHero>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        {brand.video_url && (
+          <div className="bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden mb-14">
+            <div className="aspect-video">
+              <iframe
+                src={toYouTubeEmbed(brand.video_url)}
+                title={`Video — ${brand.name}`}
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        )}
+
         {brandCategories.length > 0 && (
           <>
             <h2 className="text-[13px] font-bold text-[var(--color-brand-dark)] uppercase tracking-widest mb-5">

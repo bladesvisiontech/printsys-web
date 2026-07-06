@@ -3,12 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft, ArrowRight, FileText } from 'lucide-react'
 import { categories, getCategoryBySlug, getProductBySlug, getBrandById } from '@/data/catalog'
+import { toYouTubeEmbed } from '@/lib/youtube'
 import type { Metadata } from 'next'
-
-function toYouTubeEmbed(url: string) {
-  const id = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([\w-]+)/)?.[1]
-  return id ? `https://www.youtube.com/embed/${id}` : url
-}
 
 export async function generateStaticParams() {
   return categories.flatMap(cat =>
