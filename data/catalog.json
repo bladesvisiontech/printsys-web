@@ -206,8 +206,8 @@
             }
           ],
           "images": [
-            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/E2C-B_1.2-2240x1863.jpg",
-            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/E2C_1.5-CLOSE-CROP-NEW.png"
+            "/products/curado-uv/e2c-1.jpg",
+            "/products/curado-uv/e2c-2.png"
           ]
         },
         {
@@ -243,8 +243,8 @@
             }
           ],
           "images": [
-            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/E2CHP-1.png",
-            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/E2C-HP-en-una-prensa-1-scaled-2240x991.jpg"
+            "/products/curado-uv/e2c-hp-1.png",
+            "/products/curado-uv/e2c-hp-2.jpg"
           ]
         },
         {
@@ -281,8 +281,8 @@
             }
           ],
           "images": [
-            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/E4C-2.png",
-            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/E4C-en-prensa-1.jpg"
+            "/products/curado-uv/e4c-1.png",
+            "/products/curado-uv/e4c-2.jpg"
           ]
         },
         {
@@ -323,7 +323,7 @@
             }
           ],
           "images": [
-            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/LeoLED2-STD-and-Cassette-DSC_4997-Simplified_2000px_transparent.png"
+            "/products/curado-uv/leo-led2-1.png"
           ]
         },
         {
@@ -356,7 +356,7 @@
             }
           ],
           "images": [
-            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/LeoLED2-STD-LeoLED2-Cassette-and-AeroLED2-DSC_4997-Simplified-2000px.jpg"
+            "/products/curado-uv/aero-led2-1.jpg"
           ]
         },
         {
@@ -435,10 +435,10 @@
             }
           ],
           "images": [
-            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/DSC05268_edit-2000px.jpg",
-            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/DoseGuard_Render01a-COMP-2-2000px.jpg",
-            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/IMG_E1838_Close-Crop-2000px-1024x682.jpg",
-            "https://cdn.shortpixel.ai/spai118/q_lossy+ret_img+to_auto/www.gewuv.es/wp-content/uploads/Comexi-S25112-E4Cx3-with-DoseGuard-DSC_5507-2000px-1024x702.jpg"
+            "/products/curado-uv/doseguard-1.jpg",
+            "/products/curado-uv/doseguard-2.jpg",
+            "/products/curado-uv/doseguard-3.jpg",
+            "/products/curado-uv/doseguard-4.jpg"
           ],
           "video_url": "https://youtu.be/htPjyWt6FIQ"
         },
@@ -680,7 +680,7 @@
             }
           ],
           "images": [
-            "https://etirama.com.br/wp-content/uploads/2026/01/E-Series_final_.png"
+            "/products/prensas-flexo/es-250-1.png"
           ]
         },
         {
@@ -708,7 +708,7 @@
             }
           ],
           "images": [
-            "https://etirama.com.br/wp-content/uploads/2026/01/E-Series_final_.png"
+            "/products/prensas-flexo/es-350-1.png"
           ]
         },
         {
@@ -741,7 +741,7 @@
             }
           ],
           "images": [
-            "https://etirama.com.br/wp-content/uploads/2026/01/SPS_final_.png"
+            "/products/prensas-flexo/sps-350-1.png"
           ]
         },
         {
@@ -774,7 +774,7 @@
             }
           ],
           "images": [
-            "https://etirama.com.br/wp-content/uploads/2026/01/SPS_final_.png"
+            "/products/prensas-flexo/sps-420-1.png"
           ]
         },
         {
@@ -802,7 +802,7 @@
             }
           ],
           "images": [
-            "https://etirama.com.br/wp-content/uploads/2026/01/R4_final_-1.png"
+            "/products/prensas-flexo/r4-1.png"
           ]
         },
         {
@@ -839,7 +839,7 @@
             }
           ],
           "images": [
-            "https://alfaflexo.com/wp-content/uploads/2022/05/IMAGEM-7-1024x596.png"
+            "/products/prensas-flexo/prime-print-1.png"
           ],
           "datasheet_url": "https://alfaflexo.com/CATALOGOPRIMEPRINT2023.pdf"
         },
@@ -959,7 +959,7 @@
             }
           ],
           "images": [
-            "https://www.cartes.it/wp-content/uploads/2023/02/gt360-small-copia.jpg"
+            "/products/maquinas-etiquetas/gt360-1.jpg"
           ]
         },
         {
@@ -992,7 +992,7 @@
             }
           ],
           "images": [
-            "https://www.cartes.it/wp-content/uploads/2025/09/CARTES-GE364VHWR_1004784_1_FIERA-scaled.jpg"
+            "/products/maquinas-etiquetas/gemini-eline-1.jpg"
           ]
         },
         {
@@ -1020,7 +1020,7 @@
             }
           ],
           "images": [
-            "https://www.cartes.it/wp-content/uploads/2023/09/GE361LSTAR-scaled.jpg"
+            "/products/maquinas-etiquetas/gemini-star-1.jpg"
           ]
         },
         {
@@ -1052,7 +1052,7 @@
             }
           ],
           "images": [
-            "https://www.cartes.it/wp-content/uploads/2026/01/GTJDS-WEB.jpg"
+            "/products/maquinas-etiquetas/jet-d-screen-1.jpg"
           ]
         },
         {
@@ -1076,7 +1076,7 @@
             }
           ],
           "images": [
-            "https://www.cartes.it/wp-content/uploads/2026/03/ATRCOBOT_32-scaled.jpg"
+            "/products/maquinas-etiquetas/atr-360-1.jpg"
           ]
         }
       ]
@@ -1126,7 +1126,7 @@
             }
           ],
           "images": [
-            "https://rotometal.pl/images/img/alulite_10.jpg"
+            "/products/cilindros/alulite-1.jpg"
           ]
         },
         {
@@ -1154,7 +1154,7 @@
             }
           ],
           "images": [
-            "https://rotometal.pl/images/img/IMAG-Magnetic-Cylinders-Rotometal-01.jpg"
+            "/products/cilindros/imag-1.jpg"
           ]
         },
         {
@@ -1175,7 +1175,7 @@
             }
           ],
           "images": [
-            "https://rotometal.pl/images/img/gap_12.jpg"
+            "/products/cilindros/rotogap-1.jpg"
           ]
         },
         {
@@ -1199,7 +1199,7 @@
             }
           ],
           "images": [
-            "https://rotometal.pl/images/img/anvil-cylinders-rotometal-5.jpg"
+            "/products/cilindros/contracilindro-1.jpg"
           ]
         },
         {
@@ -1219,7 +1219,7 @@
             }
           ],
           "images": [
-            "https://rotometal.pl/images/img/hbs.jpg"
+            "/products/cilindros/rotosleeve-hybrid-1.jpg"
           ]
         },
         {
@@ -1243,7 +1243,7 @@
             }
           ],
           "images": [
-            "https://rotometal.pl/images/img/cgf.jpg"
+            "/products/cilindros/rotosleeve-gf-1.jpg"
           ]
         },
         {

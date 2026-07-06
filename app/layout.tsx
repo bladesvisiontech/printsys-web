@@ -8,6 +8,7 @@ const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
 const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://printsys-web.vercel.app'),
   title: {
     default: 'Printsys — Impresión · Acabado · Etiquetado',
     template: '%s | Printsys',
@@ -18,6 +19,11 @@ export const metadata: Metadata = {
     siteName: 'Printsys',
     locale: 'es_CO',
     type: 'website',
+    images: [{ url: '/hero-banner.jpg', width: 1080, height: 1080, alt: 'Printsys — Impresión, acabado y etiquetado' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/hero-banner.jpg'],
   },
 }
 

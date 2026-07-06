@@ -1,6 +1,7 @@
-import { ArrowRight, MapPin, Phone, Mail } from 'lucide-react'
+import { MapPin, Phone, Mail } from 'lucide-react'
 import { siteConfig } from '@/data/catalog'
 import PageHero from '@/components/ui/PageHero'
+import ContactForm from '@/components/sections/ContactForm'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -66,56 +67,7 @@ export default function ContactoPage() {
           {/* Right — form */}
           <div className="bg-white rounded-2xl border border-[var(--color-border)] p-8">
             <h2 className="text-[20px] font-semibold text-[var(--color-brand-dark)] tracking-tight mb-6">Envíanos un mensaje</h2>
-            <form className="space-y-4" action="mailto:david.hdez@printsys.com.co" method="post">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-[11px] font-semibold text-[var(--color-brand-dark)] uppercase tracking-wider mb-1.5">Nombre *</label>
-                  <input type="text" name="nombre" required
-                    className="w-full px-4 py-2.5 rounded-xl border border-[var(--color-border)] text-[13px] bg-[var(--color-bg-card)] focus:bg-white focus:outline-none focus:border-[var(--color-purple-mid)] transition-all" />
-                </div>
-                <div>
-                  <label className="block text-[11px] font-semibold text-[var(--color-brand-dark)] uppercase tracking-wider mb-1.5">Empresa</label>
-                  <input type="text" name="empresa"
-                    className="w-full px-4 py-2.5 rounded-xl border border-[var(--color-border)] text-[13px] bg-[var(--color-bg-card)] focus:bg-white focus:outline-none focus:border-[var(--color-purple-mid)] transition-all" />
-                </div>
-              </div>
-              <div>
-                <label className="block text-[11px] font-semibold text-[var(--color-brand-dark)] uppercase tracking-wider mb-1.5">Email *</label>
-                <input type="email" name="email" required
-                  className="w-full px-4 py-2.5 rounded-xl border border-[var(--color-border)] text-[13px] bg-[var(--color-bg-card)] focus:bg-white focus:outline-none focus:border-[var(--color-purple-mid)] transition-all" />
-              </div>
-              <div>
-                <label className="block text-[11px] font-semibold text-[var(--color-brand-dark)] uppercase tracking-wider mb-1.5">Teléfono</label>
-                <input type="tel" name="telefono"
-                  className="w-full px-4 py-2.5 rounded-xl border border-[var(--color-border)] text-[13px] bg-[var(--color-bg-card)] focus:bg-white focus:outline-none focus:border-[var(--color-purple-mid)] transition-all" />
-              </div>
-              <div>
-                <label className="block text-[11px] font-semibold text-[var(--color-brand-dark)] uppercase tracking-wider mb-1.5">Asunto</label>
-                <select name="asunto"
-                  className="w-full px-4 py-2.5 rounded-xl border border-[var(--color-border)] text-[13px] bg-[var(--color-bg-card)] focus:bg-white focus:outline-none focus:border-[var(--color-purple-mid)] transition-all">
-                  <option value="">Selecciona un tema</option>
-                  <option>Cotización de equipo</option>
-                  <option>Soporte técnico GEW</option>
-                  <option>Consumibles y repuestos</option>
-                  <option>Prensas Etirama</option>
-                  <option>Máquinas Cartes</option>
-                  <option>Cilindros Rotometal</option>
-                  <option>Anilox JCTPRINT</option>
-                  <option>Otro</option>
-                </select>
-              </div>
-              <div>
-                <label className="block text-[11px] font-semibold text-[var(--color-brand-dark)] uppercase tracking-wider mb-1.5">Mensaje *</label>
-                <textarea name="mensaje" rows={4} required
-                  className="w-full px-4 py-2.5 rounded-xl border border-[var(--color-border)] text-[13px] bg-[var(--color-bg-card)] focus:bg-white focus:outline-none focus:border-[var(--color-purple-mid)] transition-all resize-none" />
-              </div>
-              <button type="submit"
-                className="group w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-xl bg-[var(--color-cta)] text-white text-sm font-semibold hover:bg-[var(--color-cta-hover)] transition-all duration-200 shadow-[0_0_16px_rgba(86,198,45,0.25)] hover:shadow-[0_0_24px_rgba(86,198,45,0.4)] active:scale-[0.98]">
-                Enviar mensaje
-                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" />
-              </button>
-              <p className="text-[11px] text-[var(--color-muted)] text-center">Respondemos en menos de 24 horas hábiles</p>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </div>

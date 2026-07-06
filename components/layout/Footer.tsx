@@ -6,7 +6,6 @@ const footerNav = {
   menu: [
 { label: 'Productos', href: '/productos' },
     { label: 'Aliados', href: '/aliados' },
-    { label: 'Servicios', href: '/servicios' },
     { label: 'Contacto', href: '/contacto' },
   ],
 }
