@@ -27,7 +27,7 @@ export default function HomePage() {
               </div>
               <h1 className="animate-fade-up text-4xl sm:text-6xl font-bold text-[var(--color-brand-dark)] leading-[1.15] tracking-tight">
                 Soluciones tecnológicas de impresión, acabado y etiquetado{' '}
-                <span className="gradient-text">con un enfoque sostenible</span>
+                <span className="text-[var(--color-green-mid)]">con un enfoque sostenible</span>
               </h1>
               <p className="animate-fade-up text-[var(--color-muted)] mt-6 text-lg max-w-xl leading-relaxed">
                 {siteConfig.description}
