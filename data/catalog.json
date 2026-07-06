@@ -525,6 +525,47 @@
           ]
         },
         {
+          "id": "arcled",
+          "name": "ArcLED",
+          "slug": "arcled",
+          "brandId": "gew",
+          "brandName": "GEW",
+          "categoryId": "curado-uv",
+          "type": "equipment",
+          "featured": true,
+          "shortDescription": "Tecnología híbrida — arco UV y LED en la misma unidad, una fuente RHINO",
+          "description": "Opciones de personalización: se pueden personalizar diversos sistemas de curado con lámparas UV para adaptarse a la aplicación de tu empresa.\n\nArcLED® permite utilizar una lámpara de arco UV convencional o una secuencia LED en la misma unidad de impresión. Tanto los casetes de arco como los LED son compatibles con la misma fuente de alimentación y encajan en la misma carcasa para poder cambiarlos fácilmente. El sistema de mando RHINO permite combinar cualquier tecnología de secado que se vaya a utilizar en la máquina.\n\nA prueba del futuro: puede cambiar entre el secado por arco o por LED según le convenga, para adaptarse a los requisitos de su proceso y a su formulación de tinta. Los sistemas de arco o LED de GEW pueden actualizarse in situ a la solución híbrida o entregarse esta configuración de cero. Los casetes ArcLED se pueden intercambiar de forma rápida y fácil; tan solo se necesita una llave Allen.\n\nDOS tecnologías de secado UV, UNA fuente de alimentación RHINO: todas las fuentes de alimentación RHINO o RLT son compatibles con las lámparas de arco y las secuencias LED de GEW. Actualizar los sistemas de lámparas UV existentes a LED es tan sencillo como añadir un casete LED y refrigeración con agua — la forma más económica de disponer de impresión UV LED en cualquier sitio. RHINO convierte el LED en la siguiente fase de forma sencilla.\n\nHuella mínima de la estantería RHINO: un armario compacto que alberga un máximo de 6 fuentes de alimentación RHINO y ofrece una refrigeración perfecta, protección atmosférica y distribución de alimentación de la red. Los armarios son apilables en dos alturas, lo cual permite disponer de 12 fuentes de alimentación en una superficie de 115cm x 65cm.\n\nBeneficios de la fuente de alimentación — Interfaz común para arco y LED: la detección automática del tipo de casete (lámpara de arco o LED) garantiza que la fuente de alimentación RHINO se adapte de inmediato y suministre la potencia de salida adecuada. Medición del rendimiento de la energía: el sistema de mando RHINO registra automáticamente el uso de energía y lo muestra en pantalla, permitiendo consultar el consumo de kWh en funcionamiento, en estado inactivo y el % de funcionamiento productivo.\n\nBeneficios del sistema de mando — evita los tiempos de inactividad de forma proactiva: el paquete de asistencia integrado envía los datos de rendimiento del sistema a GEW de forma habitual para llevar a cabo una supervisión remota, generando un informe del estado del sistema con los parámetros fuera de rango. Funcionamiento a máximo rendimiento: el registro de incidencias guarda de forma continua el uso del sistema, permitiendo evitar el desperdicio de energía y los tiempos de inactividad inesperados. Ayuda instantánea: acceso fácil a instrucciones en varios idiomas y tutoriales de mantenimiento del sistema.",
+          "specs": [
+            {
+              "label": "Tecnología",
+              "value": "Híbrida — arco UV y LED"
+            },
+            {
+              "label": "Fuente de alimentación",
+              "value": "RHINO / RLT (compatible con ambas)"
+            },
+            {
+              "label": "Cambio de casete",
+              "value": "Rápido — solo llave Allen"
+            },
+            {
+              "label": "Actualización",
+              "value": "In situ, de arco a híbrido"
+            },
+            {
+              "label": "Capacidad estantería RHINO",
+              "value": "Hasta 6 (12 apiladas en 2 alturas)"
+            },
+            {
+              "label": "Dimensión estantería",
+              "value": "115 x 65 cm"
+            }
+          ],
+          "images": [
+            "/products/curado-uv/arcled-1.jpg"
+          ]
+        },
+        {
           "id": "aplicaciones-especiales",
           "name": "Aplicaciones Especiales",
           "slug": "aplicaciones-especiales",
