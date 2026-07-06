@@ -853,7 +853,7 @@
           "type": "equipment",
           "featured": true,
           "shortDescription": "Prensa banda ancha de alta precisión — registro simultáneo, rebobinador sin parada",
-          "description": "Equipo de precisión que combina avance de color simultáneo en todas las estaciones con un sistema de rebobinado sin parada incluido de serie. Diseñado para superar expectativas en calidad de impresión, facilidad operativa y rendimiento del equipo, combinando durabilidad con una economía competitiva.",
+          "description": "Up Print de Alfaflexo: supera las expectativas del usuario final en cuanto a calidad de impresión, facilidad de operación y rendimiento del equipo. Este equipo combina calidad, rendimiento, productividad y reducción de costes, resultando en un excelente valor en la operación, aumentando la competitividad y el crecimiento continuo de la empresa.",
           "specs": [
             {
               "label": "Tipo",
@@ -877,7 +877,7 @@
             }
           ],
           "images": [
-            "https://alfaflexo.com/wp-content/uploads/2022/05/UP-PRINT-1024x596.png"
+            "/products/prensas-flexo/up-print-1.jpg"
           ],
           "datasheet_url": "https://alfaflexo.com/CATALOGOUPPRINT2023.pdf"
         },
@@ -890,7 +890,7 @@
           "categoryId": "prensas-flexo",
           "type": "equipment",
           "shortDescription": "Prensa banda ancha sin engranajes — servo, hasta 2000 mm y 400 m/min",
-          "description": "Diseño monobloque lateral con tecnología gearless (sin engranajes) para los ajustes, con movimientos longitudinales de manga accionados por servomotor. La solución de mayor ancho y velocidad de la línea Alfaflexo, orientada a producción de alto volumen.",
+          "description": "Gear Flex de Alfaflexo: impresoras flexográficas de banda ancha. Especialistas en impresoras de cilindro central con tecnología avanzada, con un alto nivel de calidad en impresión y montaje rápido.\n\nImpresora flexográfica con cilindro central, lados monobloque, con ventanas y grupo de impresión con cambio de manga anilox y soporte para placas. Con tecnología híbrida, esta impresora reúne lo mejor de la tecnología sin engranajes, con bajo consumo energético y alta precisión mecánica, la solución ideal para empresas que buscan cambios rápidos en la configuración, permitiendo que la máquina realice un gran número de cambios de servicio el mismo día, facilitando la impresión de trabajos con tiradas reducidas.",
           "specs": [
             {
               "label": "Tipo",
@@ -913,7 +913,9 @@
               "value": "Papel, film PP, plástico, aluminio, termoencogible, nylon, coextruidos"
             }
           ],
-          "images": []
+          "images": [
+            "/products/prensas-flexo/gear-flex-1.jpg"
+          ]
         }
       ]
     },
