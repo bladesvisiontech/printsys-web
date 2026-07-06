@@ -51,6 +51,8 @@ export interface SiteContact {
 
 export interface SiteConfig {
   name: string
+  legalName?: string
+  nit?: string
   tagline: string
   description: string
   address: string

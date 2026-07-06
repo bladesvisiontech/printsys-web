@@ -84,7 +84,8 @@ export default function Footer() {
 
         <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-white/40">
-            © {new Date().getFullYear()} Printsys SAS. Todos los derechos reservados.
+            © {new Date().getFullYear()} {siteConfig.legalName ?? 'Printsys SAS'}
+            {siteConfig.nit && ` · NIT ${siteConfig.nit}`}. Todos los derechos reservados.
           </p>
           {siteConfig.social.whatsapp && (
             <a
