@@ -147,7 +147,8 @@
       "relationship": "Representante autorizado",
       "description": "Tintas catiónicas de alta calidad para envases de alimentos, productos de higiene y farmacéuticos.",
       "accentColor": "#047857",
-      "featured": false
+      "featured": false,
+      "website": "https://resino-inks.com"
     },
     {
       "id": "alfaflexo",
@@ -1385,7 +1386,9 @@
           "shortDescription": "Medición de alineación y presión de rodillos",
           "description": "Instrumentos SPI para alineación y presión de rodillos en prensas offset y flexo. Optimiza el setup y reduce desperdicio de papel.",
           "specs": [],
-          "images": []
+          "images": [
+            "/products/instrumentos/spi-instrumentos-1.jpg"
+          ]
         },
         {
           "id": "imavision",
@@ -1410,7 +1413,7 @@
         },
         {
           "id": "martignoni-corona",
-          "name": "Martignoni — Tratadores Corona",
+          "name": "Tratador Corona",
           "slug": "martignoni-corona",
           "brandId": "martignoni",
           "brandName": "Martignoni",
@@ -1436,27 +1439,6 @@
         "gew"
       ],
       "products": [
-        {
-          "id": "resino-cationicas",
-          "name": "Tintas Catiónicas Resino",
-          "slug": "resino-cationicas",
-          "brandId": "resino",
-          "brandName": "Resino Inks",
-          "categoryId": "consumibles",
-          "type": "consumable",
-          "featured": true,
-          "shortDescription": "Alta calidad para alimentos, higiene y farmacéuticos",
-          "description": "Tintas de impresión de alta calidad, duraderas y personalizables para envases de alimentos, productos de higiene y farmacéuticos.",
-          "specs": [
-            {
-              "label": "Aplicaciones",
-              "value": "Alimentos, Higiene, Farmacéuticos"
-            }
-          ],
-          "images": [
-            "/products/consumibles/resino-cationicas-1.jpg"
-          ]
-        },
         {
           "id": "lamparas-consumibles",
           "name": "Lámparas UV GEW",
@@ -1491,6 +1473,110 @@
           "images": [
             "/products/consumibles/fernox-1.jpg"
           ]
+        },
+        {
+          "id": "resino-solvent-based",
+          "name": "Tintas Base Solvente",
+          "slug": "tintas-base-solvente",
+          "brandId": "resino",
+          "brandName": "Resino Inks",
+          "categoryId": "consumibles",
+          "type": "consumable",
+          "featured": true,
+          "shortDescription": "Para impresión de film y foil, tripas y no tejidos",
+          "description": "Tintas base solvente para impresión de film y foil, tripas para embutidos, no tejidos y aplicaciones de contacto indirecto con alimentos.",
+          "specs": [
+            {
+              "label": "Aplicaciones",
+              "value": "Film y foil, tripas para embutidos, no tejidos, contacto indirecto con alimentos"
+            }
+          ],
+          "images": []
+        },
+        {
+          "id": "resino-water-based",
+          "name": "Tintas Base Agua",
+          "slug": "tintas-base-agua",
+          "brandId": "resino",
+          "brandName": "Resino Inks",
+          "categoryId": "consumibles",
+          "type": "consumable",
+          "shortDescription": "Para papel, cartón, film y contacto directo con alimentos",
+          "description": "Tintas base agua para impresión en papel y cartón, contacto directo e indirecto con alimentos, film y foil, tripas para embutidos y no tejidos.",
+          "specs": [
+            {
+              "label": "Aplicaciones",
+              "value": "Papel y cartón, contacto directo e indirecto con alimentos, film y foil, tripas, no tejidos"
+            }
+          ],
+          "images": []
+        },
+        {
+          "id": "resino-uv-curing",
+          "name": "Tintas de Curado UV",
+          "slug": "tintas-curado-uv",
+          "brandId": "resino",
+          "brandName": "Resino Inks",
+          "categoryId": "consumibles",
+          "type": "consumable",
+          "featured": true,
+          "shortDescription": "Resistentes a ebullición y esterilización — empaques de alimentos",
+          "description": "Tintas de curado UV diseñadas para tripas de embutidos y empaques de alimentos, con resistencia a procesos de ebullición y esterilización.",
+          "specs": [
+            {
+              "label": "Aplicaciones",
+              "value": "Tripas para embutidos, empaques de alimentos"
+            },
+            {
+              "label": "Resistencia",
+              "value": "Ebullición y esterilización"
+            }
+          ],
+          "images": []
+        },
+        {
+          "id": "resino-additives",
+          "name": "Aditivos",
+          "slug": "aditivos",
+          "brandId": "resino",
+          "brandName": "Resino Inks",
+          "categoryId": "consumibles",
+          "type": "consumable",
+          "shortDescription": "Endurecedores, promotores de adhesión, antiespumantes y fotoiniciadores",
+          "description": "Productos para ajustar el rendimiento de la tinta: endurecedores y promotores de adhesión, antiespumante y fotoiniciador para tintas UV.",
+          "specs": [
+            {
+              "label": "Tipos",
+              "value": "Endurecedor, promotor de adhesión, antiespumante, fotoiniciador UV"
+            }
+          ],
+          "images": []
+        },
+        {
+          "id": "resino-thinners",
+          "name": "Diluyentes",
+          "slug": "diluyentes",
+          "brandId": "resino",
+          "brandName": "Resino Inks",
+          "categoryId": "consumibles",
+          "type": "consumable",
+          "shortDescription": "Ajuste de viscosidad y velocidad de secado",
+          "description": "Diluyentes para ajustar la viscosidad de la tinta y mejorar la velocidad de secado.",
+          "specs": [],
+          "images": []
+        },
+        {
+          "id": "resino-cleaning",
+          "name": "Limpieza",
+          "slug": "limpieza-resino",
+          "brandId": "resino",
+          "brandName": "Resino Inks",
+          "categoryId": "consumibles",
+          "type": "consumable",
+          "shortDescription": "Materiales de limpieza de planchas y anilox",
+          "description": "Materiales de limpieza para planchas y para rodillos anilox.",
+          "specs": [],
+          "images": []
         }
       ]
     }
