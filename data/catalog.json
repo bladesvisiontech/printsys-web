@@ -1281,10 +1281,10 @@
         },
         {
           "id": "manga-anilox",
-          "name": "Manga Anilox",
+          "name": "Mangas Anilox",
           "slug": "manga-anilox",
-          "brandId": "jctprint",
-          "brandName": "JCTPRINT",
+          "brandId": "",
+          "brandName": "",
           "categoryId": "cilindros",
           "type": "equipment",
           "shortDescription": "Cambio rápido — alta concentricidad",
@@ -1332,18 +1332,22 @@
         },
         {
           "id": "gmi-drc5000",
-          "name": "GMI DRC-5000",
+          "name": "Visionary II",
           "slug": "gmi-drc5000",
           "brandId": "gmi",
           "brandName": "GMI",
           "categoryId": "instrumentos",
           "type": "instrument",
-          "shortDescription": "Control de registro automático offset y flexo",
-          "description": "Cámaras inteligentes reconocen marcas de registro y ordenan ajustes automáticamente. Microdots de solo 0.5mm. Mantiene registro perfecto durante toda la tirada.",
+          "shortDescription": "Inspección en tiempo real — hasta 600 m/min (2.000 pies/min)",
+          "description": "Consulta los puntos de proceso a 2.000 pies/min (600 m/min). Visionary te permite ver cualquier parte de la impresión en cualquier momento, para asegurarte de que la calidad esté a la altura de tus estándares. Utiliza la sencilla interfaz para programar los puntos de interés en una rutina de inspección automatizada.",
           "specs": [
             {
-              "label": "Compatible",
-              "value": "Offset, Flexo"
+              "label": "Velocidad de inspección",
+              "value": "600 m/min (2.000 pies/min)"
+            },
+            {
+              "label": "Interfaz",
+              "value": "Programación de puntos de interés para rutina automatizada"
             }
           ],
           "images": [
