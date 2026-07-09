@@ -32,9 +32,11 @@ export default function ProductCard({ product }: Props) {
         )}
 
         {/* Brand tag */}
-        <span className="absolute top-3 left-3 text-[11px] font-semibold bg-white/90 backdrop-blur-sm border border-[var(--color-border)] px-2.5 py-1 rounded-full text-[var(--color-brand-dark)] tracking-wide">
-          {product.brandName}
-        </span>
+        {product.brandName && (
+          <span className="absolute top-3 left-3 text-[11px] font-semibold bg-white/90 backdrop-blur-sm border border-[var(--color-border)] px-2.5 py-1 rounded-full text-[var(--color-brand-dark)] tracking-wide">
+            {product.brandName}
+          </span>
+        )}
         {product.featured && (
           <span className="absolute top-3 right-3 text-[11px] font-semibold bg-[var(--color-green-mid)] text-white px-2.5 py-1 rounded-full">
             Destacado

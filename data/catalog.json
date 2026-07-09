@@ -1256,10 +1256,10 @@
         },
         {
           "id": "anilox-ceramico",
-          "name": "Anilox Cerámico",
+          "name": "Anilox",
           "slug": "anilox-ceramico",
-          "brandId": "jctprint",
-          "brandName": "JCTPRINT",
+          "brandId": "",
+          "brandName": "",
           "categoryId": "cilindros",
           "type": "equipment",
           "featured": true,
