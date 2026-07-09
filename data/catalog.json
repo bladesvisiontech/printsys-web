@@ -1361,9 +1361,9 @@
           ]
         },
         {
-          "id": "gmi-drc5000",
+          "id": "visionary-ii",
           "name": "Visionary II",
-          "slug": "gmi-drc5000",
+          "slug": "visionary-ii",
           "brandId": "gmi",
           "brandName": "GMI",
           "categoryId": "instrumentos",
@@ -1381,7 +1381,7 @@
             }
           ],
           "images": [
-            "/products/instrumentos/gmi-drc5000-1.jpg"
+            "/products/instrumentos/visionary-ii-1.jpg"
           ]
         },
         {
@@ -1453,6 +1453,26 @@
           "specs": [],
           "images": [
             "/products/instrumentos/martignoni-corona-1.jpg"
+          ]
+        },
+        {
+          "id": "gmi-drc5000",
+          "name": "GMI DRC-5000",
+          "slug": "gmi-drc5000",
+          "brandId": "gmi",
+          "brandName": "GMI",
+          "categoryId": "instrumentos",
+          "type": "instrument",
+          "shortDescription": "Control de registro automático offset y flexo",
+          "description": "Cámaras inteligentes reconocen marcas de registro y ordenan ajustes automáticamente. Microdots de solo 0.5mm. Mantiene registro perfecto durante toda la tirada.",
+          "specs": [
+            {
+              "label": "Compatible",
+              "value": "Offset, Flexo"
+            }
+          ],
+          "images": [
+            "/products/instrumentos/gmi-drc5000-1.jpg"
           ]
         }
       ]
