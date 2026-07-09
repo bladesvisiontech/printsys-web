@@ -65,7 +65,15 @@
       "website": "https://www.cartes.it/es",
       "accentColor": "#004A99",
       "featured": true,
-      "logo": "/logos/cartes.png"
+      "logo": "/logos/cartes.png",
+      "gallery": [
+        "/brands/cartes/01.jpg",
+        "/brands/cartes/02.jpg",
+        "/brands/cartes/03.jpg",
+        "/brands/cartes/04.jpg",
+        "/brands/cartes/05.jpg",
+        "/brands/cartes/06.jpg"
+      ]
     },
     {
       "id": "rotometal",

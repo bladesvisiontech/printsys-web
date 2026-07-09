@@ -40,6 +40,7 @@ export interface Brand {
   website?: string
   video_url?: string
   logo?: string
+  gallery?: string[]
   accentColor: string
   featured?: boolean
 }

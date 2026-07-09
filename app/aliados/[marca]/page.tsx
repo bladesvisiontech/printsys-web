@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import { brands, categories, getBrandBySlug } from '@/data/catalog'
 import { categoryIconMap } from '@/lib/categoryIcons'
@@ -77,6 +78,27 @@ export default async function BrandPage({ params }: { params: Promise<{ marca: s
               />
             </div>
           </div>
+        )}
+
+        {brand.gallery && brand.gallery.length > 0 && (
+          <>
+            <h2 className="text-[13px] font-bold text-[var(--color-brand-dark)] uppercase tracking-widest mb-5">
+              Galería {brand.name}
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-14">
+              {brand.gallery.map((img, i) => (
+                <div key={img} className="relative aspect-square rounded-2xl border border-[var(--color-border)] overflow-hidden bg-white">
+                  <Image
+                    src={img}
+                    alt={`${brand.name} ${i + 1}`}
+                    fill
+                    sizes="(max-width: 640px) 50vw, 33vw"
+                    className="object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              ))}
+            </div>
+          </>
         )}
 
         {brandCategories.length > 0 && (
