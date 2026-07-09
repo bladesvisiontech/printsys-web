@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import Image from 'next/image'
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import { brands, categories, getBrandBySlug } from '@/data/catalog'
 import { categoryIconMap } from '@/lib/categoryIcons'
@@ -32,9 +31,7 @@ export default async function BrandPage({ params }: { params: Promise<{ marca: s
       <PageHero
         title={brand.name}
         description={brand.description}
-        icon={brand.logo && (
-          <Image src={brand.logo} alt={brand.name} width={32} height={32} className="w-full h-full object-contain p-1 bg-white rounded-lg" />
-        )}
+        titleImage={brand.logo}
       >
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-[11px] text-white/30 mt-4">

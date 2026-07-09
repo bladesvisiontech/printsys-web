@@ -60,6 +60,9 @@ export default function ContactoPage() {
                 <p className="font-semibold text-[var(--color-brand-dark)] text-[14px] tracking-tight mb-1">Oficina</p>
                 <p className="text-[13px] text-[var(--color-muted)]">{siteConfig.address}</p>
                 <p className="text-[13px] text-[var(--color-muted)]">{siteConfig.city}</p>
+                <span className="inline-block mt-2 text-[11px] font-semibold text-[var(--color-purple-mid)] bg-[var(--color-purple-mid)]/10 px-2.5 py-1 rounded-full">
+                  Visitas con cita previa
+                </span>
               </div>
             </div>
           </div>

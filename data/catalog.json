@@ -23,7 +23,7 @@
     ],
     "social": {
       "linkedin": "https://www.linkedin.com/company/print-sys/",
-      "instagram": "https://instagram.com/printsys",
+      "instagram": "https://www.instagram.com/print_sys/",
       "whatsapp": "https://wa.me/573208658982"
     },
     "legalName": "Print Sys SAS",
@@ -40,7 +40,8 @@
       "website": "https://www.gewuv.es",
       "accentColor": "#82319c",
       "featured": true,
-      "video_url": "https://www.youtube.com/watch?v=xhTk2n8FDQg"
+      "video_url": "https://www.youtube.com/watch?v=xhTk2n8FDQg",
+      "logo": "/logos/gew.svg"
     },
     {
       "id": "etirama",
@@ -51,7 +52,8 @@
       "description": "Fabricante de prensas flexográficas de banda estrecha para etiquetas autoadhesivas, envases flexibles y fundas termoencogibles. +2.500 máquinas instaladas.",
       "website": "https://etirama.com.br/es",
       "accentColor": "#FF6B00",
-      "featured": true
+      "featured": true,
+      "logo": "/logos/etirama.jpg"
     },
     {
       "id": "cartes",
@@ -62,7 +64,8 @@
       "description": "Especialista en máquinas para etiquetas de alto valor agregado. 50 años de experiencia en acabado y conversión de materiales autoadhesivos.",
       "website": "https://www.cartes.it/es",
       "accentColor": "#004A99",
-      "featured": true
+      "featured": true,
+      "logo": "/logos/cartes.png"
     },
     {
       "id": "rotometal",
@@ -73,7 +76,8 @@
       "description": "Especialista europeo premier en herramientas de troquelado rotativo de precisión y cilindros de impresión. 65+ países, 20+ años de experiencia.",
       "website": "https://rotometal.pl/es",
       "accentColor": "#D4000A",
-      "featured": true
+      "featured": true,
+      "logo": "/logos/rotometal.jpg"
     },
     {
       "id": "jctprint",
@@ -137,7 +141,8 @@
       "relationship": "Representante autorizado",
       "description": "Kingsun Machinery es uno de los fabricantes y exportadores más experimentados de equipos de impresión y embalaje en China. Su gama de productos abarca máquinas de corte, laminadoras de papel, máquinas de troquelado, laminadoras térmicas, estampadoras de papel caliente, recubridoras UV, pegadoras plegadoras, máquinas de parchear ventanas, líneas de conversión de etiquetas, máquinas de bolsas de plástico y más. Conocida por su calidad estable, precios competitivos y un servicio posventa fiable, Kingsun ayuda a los clientes a reducir el riesgo de inversión y aumentar el valor de producción.",
       "accentColor": "#B91C1C",
-      "featured": false
+      "featured": false,
+      "logo": "/logos/kingsun.webp"
     },
     {
       "id": "resino",
@@ -159,7 +164,8 @@
       "description": "Fabricante brasileño de prensas flexográficas de cilindro central de banda ancha, con más de 15 años de experiencia en el segmento. Ofrece equipos personalizados con ancho de impresión de hasta 2000 mm y velocidades de hasta 400 m/min, para papel, film de polipropileno, plástico, aluminio, termoencogibles, nylon y coextruidos.",
       "website": "https://alfaflexo.com",
       "accentColor": "#0F172A",
-      "featured": false
+      "featured": false,
+      "logo": "/logos/alfaflexo.jpg"
     }
   ],
   "categories": [
