@@ -1294,6 +1294,21 @@
           "images": [
             "/products/cilindros/manga-anilox-1.jpg"
           ]
+        },
+        {
+          "id": "dr-blade",
+          "name": "Dr. Blade o Raclas",
+          "slug": "dr-blade",
+          "brandId": "",
+          "brandName": "",
+          "categoryId": "cilindros",
+          "type": "consumable",
+          "shortDescription": "Cuchillas doctoras de precisión para dosificación de tinta",
+          "description": "Cuchillas Dr. Blade (raclas) de precisión para la correcta dosificación y remoción de exceso de tinta sobre el rodillo anilox, garantizando una transferencia uniforme de tinta.",
+          "specs": [],
+          "images": [
+            "/products/cilindros/dr-blade-1.jpg"
+          ]
         }
       ]
     },

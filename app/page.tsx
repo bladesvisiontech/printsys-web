@@ -21,8 +21,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="stagger">
-              <div className="animate-fade-up inline-flex items-center gap-2 text-[11px] font-semibold bg-[var(--color-bg-card)] border border-[var(--color-border)] text-[var(--color-muted)] pl-2 pr-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
-                <Image src="/logos/gew.svg" alt="GEW" width={18} height={18} className="h-[18px] w-auto rounded-sm bg-white p-0.5" />
+              <div className="animate-fade-up inline-flex items-center gap-2.5 text-[11px] font-semibold bg-[var(--color-bg-card)] border border-[var(--color-border)] text-[var(--color-muted)] pl-2 pr-4 py-2 rounded-full mb-6 tracking-wider uppercase">
+                <Image src="/logos/gew.svg" alt="GEW" width={32} height={32} className="h-8 w-auto rounded-md bg-white p-1" />
                 Distribuidor oficial GEW · Colombia
               </div>
               <h1 className="animate-fade-up text-4xl sm:text-6xl font-bold text-[var(--color-brand-dark)] leading-[1.15] tracking-tight">
