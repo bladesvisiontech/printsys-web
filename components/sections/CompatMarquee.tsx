@@ -10,10 +10,6 @@ const logos = [
   { id: 'bhs', name: 'BHS', src: '/logos/compat/bhs.jpg' },
   { id: 'comexi', name: 'Comexi', src: '/logos/compat/comexi.jpg' },
   { id: 'windmoller', name: 'Windmöller & Hölscher', src: '/logos/compat/windmoller.jpg' },
-  { id: 'imavision', name: 'Imavision', src: '/logos/compat/imavision.jpg' },
-  { id: 'gmi', name: 'GMI', src: '/logos/compat/gmi.jpg' },
-  { id: 'spi', name: 'SPI', src: '/logos/compat/spi.jpg' },
-  { id: 'martignoni', name: 'Martignoni', src: '/logos/compat/martignoni.jpg' },
 ]
 
 // Duplicated so the CSS marquee loop is seamless
