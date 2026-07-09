@@ -1513,14 +1513,24 @@
           "type": "consumable",
           "featured": true,
           "shortDescription": "Para impresión de film y foil, tripas y no tejidos",
-          "description": "Tintas base solvente para impresión de film y foil, tripas para embutidos, no tejidos y aplicaciones de contacto indirecto con alimentos.",
+          "description": "Tintas base solvente desarrolladas para garantizar una adhesión, brillo y fuerza de color sobresalientes en una amplia variedad de sustratos, con excelente resistencia a la ebullición, esterilización y condiciones ambientales exigentes.\n\nLíneas de producto: REFLEX® (series 132-51, 135-6, 138-03, 138-04, 146-01) para impresión de film y foil, resistencia a grasas y aceites, alto encogimiento/estiramiento y aplicaciones alcohol-base para flexografía; RESTINE® (series 173-03, 173-04, 175-03, 176-1) para PVC/PVdC y tripas celulósicas, de colágeno y fibrosas, con sistemas 1K y 2K; RETURIN® (series 194-24, 194-26, 194-30) con alta cobertura de tinta, resistencia a esterilización y curado rápido.",
           "specs": [
             {
+              "label": "Líneas",
+              "value": "REFLEX®, RESTINE®, RETURIN®"
+            },
+            {
+              "label": "Resistencia",
+              "value": "Ebullición, esterilización, grasas y aceites"
+            },
+            {
               "label": "Aplicaciones",
-              "value": "Film y foil, tripas para embutidos, no tejidos, contacto indirecto con alimentos"
+              "value": "Film y foil, tripas para embutidos, PVC/PVdC"
             }
           ],
-          "images": []
+          "images": [
+            "/products/consumibles/tintas-base-solvente-1.jpg"
+          ]
         },
         {
           "id": "resino-water-based",
@@ -1531,14 +1541,24 @@
           "categoryId": "consumibles",
           "type": "consumable",
           "shortDescription": "Para papel, cartón, film y contacto directo con alimentos",
-          "description": "Tintas base agua para impresión en papel y cartón, contacto directo e indirecto con alimentos, film y foil, tripas para embutidos y no tejidos.",
+          "description": "Formulaciones base agua que combinan alto desempeño con sostenibilidad, con bajas emisiones de VOC, excelente calidad de impresión y adhesión confiable en una amplia variedad de sustratos — ideales para empaques de alimentos y materiales sensibles.\n\nLíneas de producto: REVALUX® 153-01 (papel y cartón, alta velocidad), 156-01 y 156-02 (ingredientes aptos para contacto con alimentos, alta intensidad, resistencia al agua), 156-3 (termosellable, resistente a grasas y aceites), 161-1 (impresión reversa sobre laminado PE), 164-05 (compostable, base biológica, cumple SUPD), 164-15 (tinta removible), 168-13 (tripas para embutidos con sistema 2K tradicional).",
           "specs": [
             {
+              "label": "Líneas",
+              "value": "REVALUX®"
+            },
+            {
+              "label": "VOC",
+              "value": "Bajas emisiones"
+            },
+            {
               "label": "Aplicaciones",
-              "value": "Papel y cartón, contacto directo e indirecto con alimentos, film y foil, tripas, no tejidos"
+              "value": "Papel y cartón, film PE, empaques de alimentos, tripas para embutidos"
             }
           ],
-          "images": []
+          "images": [
+            "/products/consumibles/tintas-base-agua-1.jpg"
+          ]
         },
         {
           "id": "resino-uv-curing",
@@ -1550,18 +1570,24 @@
           "type": "consumable",
           "featured": true,
           "shortDescription": "Resistentes a ebullición y esterilización — empaques de alimentos",
-          "description": "Tintas de curado UV diseñadas para tripas de embutidos y empaques de alimentos, con resistencia a procesos de ebullición y esterilización.",
+          "description": "Tintas de curado UV que ofrecen durabilidad excepcional, curado instantáneo y una fuerza de color sobresaliente para aplicaciones de impresión exigentes. Desarrolladas para sistemas flexográficos e inkjet, con adhesión superior y resistencia química.\n\nLíneas de producto: RESUCAT® 212-31 (UV LED, curado dual, impresión rápida), 212-08 (formulación estándar de la industria, excelente blanco cubriente), 212-24 (bajo olor, económica), 212-30 (para tripas de embutidos y empaques de alimentos, baja migración, resistente a ebullición y esterilización), 213-14 (bajo olor y migración, resistente a ebullición y esterilización, excelente adhesión).",
           "specs": [
+            {
+              "label": "Líneas",
+              "value": "RESUCAT®"
+            },
+            {
+              "label": "Curado",
+              "value": "UV / UV LED"
+            },
             {
               "label": "Aplicaciones",
               "value": "Tripas para embutidos, empaques de alimentos"
-            },
-            {
-              "label": "Resistencia",
-              "value": "Ebullición y esterilización"
             }
           ],
-          "images": []
+          "images": [
+            "/products/consumibles/tintas-curado-uv-1.jpg"
+          ]
         },
         {
           "id": "resino-additives",
@@ -1572,11 +1598,15 @@
           "categoryId": "consumibles",
           "type": "consumable",
           "shortDescription": "Endurecedores, promotores de adhesión, antiespumantes y fotoiniciadores",
-          "description": "Productos para ajustar el rendimiento de la tinta: endurecedores y promotores de adhesión, antiespumante y fotoiniciador para tintas UV.",
+          "description": "Aditivos diseñados para elevar el rendimiento de la tinta, con soluciones específicas para prevención de bloqueo, antiespumante, estabilización de pH, promoción de adhesión y mejoras de curado UV — compatibles con tintas base solvente, base agua y UV, optimizando flujo, durabilidad y eficiencia de producción.\n\nLínea REDIVERS® 300: fotoiniciadores UV para tintas catiónicas RESUCAT, antibloqueo para RETURIN, antiespumantes para tintas UV y base agua, estabilizador de pH para REVALUX, y promotores de adhesión/endurecedores para RETURIN, RESTINE y REVALUX.",
           "specs": [
             {
-              "label": "Tipos",
-              "value": "Endurecedor, promotor de adhesión, antiespumante, fotoiniciador UV"
+              "label": "Línea",
+              "value": "REDIVERS® 300"
+            },
+            {
+              "label": "Funciones",
+              "value": "Fotoiniciador UV, antibloqueo, antiespumante, estabilizador de pH, promotor de adhesión"
             }
           ],
           "images": []
@@ -1590,8 +1620,17 @@
           "categoryId": "consumibles",
           "type": "consumable",
           "shortDescription": "Ajuste de viscosidad y velocidad de secado",
-          "description": "Diluyentes para ajustar la viscosidad de la tinta y mejorar la velocidad de secado.",
-          "specs": [],
+          "description": "Soluciones de diluyentes diseñadas para ajustar la viscosidad y el comportamiento de secado de la tinta en sistemas base solvente, base agua y UV — logrando secado más rápido, mejor flujo o mayor adhesión según el proceso de impresión.\n\nLínea REDIVERS® 300: aceleradores y retardantes en base alcohol, éster y agua; diluyentes en base MEK, éster y alcohol; diluyente UV catiónico.",
+          "specs": [
+            {
+              "label": "Línea",
+              "value": "REDIVERS® 300"
+            },
+            {
+              "label": "Tipos",
+              "value": "Acelerador, retardante, diluyente, diluyente UV"
+            }
+          ],
           "images": []
         },
         {
@@ -1603,8 +1642,17 @@
           "categoryId": "consumibles",
           "type": "consumable",
           "shortDescription": "Materiales de limpieza de planchas y anilox",
-          "description": "Materiales de limpieza para planchas y para rodillos anilox.",
-          "specs": [],
+          "description": "La limpieza efectiva es esencial para mantener la calidad de impresión, extender la vida útil del equipo y asegurar procesos de producción fluidos. Soluciones para remover residuos de tinta protegiendo los componentes de los sistemas de impresión flexográfica e industrial, para mantenimiento rutinario y limpieza profunda del sistema.\n\nREDIVERS® 300 Ultra Clean 0111: limpiador concentrado para tintas base agua en planchas y otros componentes (línea REVALUX). REDIVERS® 300 UV-Cleaner 0081-1: limpiador para tintas de curado UV (líneas RESUCAT y RESURAD).",
+          "specs": [
+            {
+              "label": "Línea",
+              "value": "REDIVERS® 300"
+            },
+            {
+              "label": "Productos",
+              "value": "Ultra Clean 0111 (base agua), UV-Cleaner 0081-1 (UV)"
+            }
+          ],
           "images": []
         }
       ]
