@@ -29,7 +29,7 @@ export default function ProductosPage() {
             >
               <div className="relative aspect-[16/10] overflow-hidden bg-[var(--color-bg-card)]">
                 <Image
-                  src={`/categories/${cat.slug}.jpg`}
+                  src={cat.image ?? `/categories/${cat.slug}.jpg`}
                   alt={cat.name}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

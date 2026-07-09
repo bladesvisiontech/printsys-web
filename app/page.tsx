@@ -1,20 +1,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRight, Zap, Wrench, Package, GraduationCap } from 'lucide-react'
-import { siteConfig, getBrandBySlug } from '@/data/catalog'
+import { siteConfig, brands } from '@/data/catalog'
 import HomeCatalog from '@/components/sections/HomeCatalog'
 import CompatMarquee from '@/components/sections/CompatMarquee'
 
-const logos = [
-  { id: 'gew',       name: 'GEW',       src: '/logos/gew.svg'       },
-  { id: 'etirama',   name: 'Etirama',   src: '/logos/etirama.jpg'   },
-  { id: 'cartes',    name: 'Cartes',    src: '/logos/cartes.png'    },
-  { id: 'rotometal', name: 'Rotometal', src: '/logos/rotometal.jpg', scale: 0.7 },
-  { id: 'alfaflexo', name: 'Alfaflexo', src: '/logos/alfaflexo.jpg' },
-  { id: 'kingsun',   name: 'Kingsun',   src: '/logos/kingsun.webp'  },
-]
-
 export default function HomePage() {
+  const partnerLogos = brands.filter(b => b.featured && b.logo)
+
   return (
     <main>
       {/* ── Hero ─────────────────────────────────────────────────────── */}
@@ -24,11 +17,11 @@ export default function HomePage() {
             <div className="stagger">
               <div className="animate-fade-up inline-flex items-center gap-2.5 text-[11px] font-semibold bg-[var(--color-bg-card)] border border-[var(--color-border)] text-[var(--color-muted)] pl-2 pr-4 py-2 rounded-full mb-6 tracking-wider uppercase">
                 <Image src="/logos/gew.svg" alt="GEW" width={32} height={32} className="h-8 w-auto rounded-md bg-white p-1" />
-                Distribuidor oficial GEW
+                {siteConfig.heroEyebrow ?? 'Distribuidor oficial GEW'}
               </div>
               <h1 className="animate-fade-up text-4xl sm:text-6xl font-bold text-[var(--color-brand-dark)] leading-[1.15] tracking-tight">
-                Soluciones tecnológicas de impresión, acabado y etiquetado{' '}
-                <span className="text-[var(--color-green-mid)]">con un enfoque sostenible</span>
+                {siteConfig.heroTitle ?? 'Soluciones tecnológicas de impresión, acabado y etiquetado'}{' '}
+                <span className="text-[var(--color-green-mid)]">{siteConfig.heroHighlight ?? 'con un enfoque sostenible'}</span>
               </h1>
               <p className="animate-fade-up text-[var(--color-muted)] mt-6 text-lg max-w-xl leading-relaxed">
                 {siteConfig.description}
@@ -52,7 +45,7 @@ export default function HomePage() {
 
             <div className="animate-fade-up relative rounded-2xl overflow-hidden">
               <video
-                src="/hero-video.webm"
+                src={siteConfig.heroVideo ?? '/hero-video.webm'}
                 autoPlay
                 muted
                 loop
@@ -69,19 +62,19 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-zinc-400 text-center mb-7">Nuestros aliados estratégicos</p>
           <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-16">
-            {logos.map(brand => (
+            {partnerLogos.map(brand => (
               <Link
                 key={brand.id}
-                href={getBrandBySlug(brand.id) ? `/aliados/${brand.id}` : '/aliados'}
+                href={`/aliados/${brand.slug}`}
                 className="opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105 flex items-center justify-center h-14 w-32"
               >
                 <Image
-                  src={brand.src}
+                  src={brand.logo!}
                   alt={brand.name}
                   width={160}
                   height={64}
                   className="w-auto max-w-full object-contain"
-                  style={{ height: `${3.5 * (brand.scale ?? 1)}rem`, maxHeight: '100%' }}
+                  style={{ height: '3.5rem', maxHeight: '100%' }}
                 />
               </Link>
             ))}
@@ -93,7 +86,7 @@ export default function HomePage() {
       <HomeCatalog />
 
       {/* ── Compatible brands marquee ────────────────────────────────── */}
-      <CompatMarquee />
+      <CompatMarquee logos={siteConfig.compatBrands ?? []} />
 
       {/* ── Por qué Printsys ─────────────────────────────────────────── */}
       <section className="bg-[var(--color-brand-dark)] py-24">

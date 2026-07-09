@@ -27,7 +27,58 @@
       "whatsapp": "https://wa.me/573208658982"
     },
     "legalName": "Print Sys SAS",
-    "nit": "901427773-7"
+    "nit": "901427773-7",
+    "heroEyebrow": "Distribuidor oficial GEW",
+    "heroTitle": "Soluciones tecnológicas de impresión, acabado y etiquetado",
+    "heroHighlight": "con un enfoque sostenible",
+    "heroVideo": "/hero-video.webm",
+    "compatBrands": [
+      {
+        "id": "bobst",
+        "name": "BOBST",
+        "logo": "/logos/compat/bobst.jpg"
+      },
+      {
+        "id": "markandy",
+        "name": "Mark Andy",
+        "logo": "/logos/compat/markandy.jpg"
+      },
+      {
+        "id": "heidelberg",
+        "name": "Heidelberg",
+        "logo": "/logos/compat/heidelberg.jpg"
+      },
+      {
+        "id": "manroland",
+        "name": "manroland",
+        "logo": "/logos/compat/manroland.jpg"
+      },
+      {
+        "id": "gallus",
+        "name": "Gallus",
+        "logo": "/logos/compat/gallus.jpg"
+      },
+      {
+        "id": "nilpeter",
+        "name": "Nilpeter",
+        "logo": "/logos/compat/nilpeter.jpg"
+      },
+      {
+        "id": "bhs",
+        "name": "BHS",
+        "logo": "/logos/compat/bhs.jpg"
+      },
+      {
+        "id": "comexi",
+        "name": "Comexi",
+        "logo": "/logos/compat/comexi.jpg"
+      },
+      {
+        "id": "windmoller",
+        "name": "Windmöller & Hölscher",
+        "logo": "/logos/compat/windmoller.jpg"
+      }
+    ]
   },
   "brands": [
     {
@@ -149,7 +200,7 @@
       "relationship": "Representante autorizado",
       "description": "Kingsun Machinery es uno de los fabricantes y exportadores más experimentados de equipos de impresión y embalaje en China. Su gama de productos abarca máquinas de corte, laminadoras de papel, máquinas de troquelado, laminadoras térmicas, estampadoras de papel caliente, recubridoras UV, pegadoras plegadoras, máquinas de parchear ventanas, líneas de conversión de etiquetas, máquinas de bolsas de plástico y más. Conocida por su calidad estable, precios competitivos y un servicio posventa fiable, Kingsun ayuda a los clientes a reducir el riesgo de inversión y aumentar el valor de producción.",
       "accentColor": "#B91C1C",
-      "featured": false,
+      "featured": true,
       "logo": "/logos/kingsun.webp"
     },
     {
@@ -172,7 +223,7 @@
       "description": "Fabricante brasileño de prensas flexográficas de cilindro central de banda ancha, con más de 15 años de experiencia en el segmento. Ofrece equipos personalizados con ancho de impresión de hasta 2000 mm y velocidades de hasta 400 m/min, para papel, film de polipropileno, plástico, aluminio, termoencogibles, nylon y coextruidos.",
       "website": "https://alfaflexo.com",
       "accentColor": "#0F172A",
-      "featured": false,
+      "featured": true,
       "logo": "/logos/alfaflexo.jpg"
     }
   ],
@@ -661,7 +712,8 @@
             "/products/curado-uv/anticongelante-alphi11-1.jpg"
           ]
         }
-      ]
+      ],
+      "image": "/categories/curado-uv.jpg"
     },
     {
       "id": "prensas-flexo",
@@ -940,7 +992,8 @@
             "/products/prensas-flexo/gear-flex-1.jpg"
           ]
         }
-      ]
+      ],
+      "image": "/categories/prensas-flexo.jpg"
     },
     {
       "id": "maquinas-etiquetas",
@@ -1102,7 +1155,8 @@
             "/products/maquinas-etiquetas/atr-360-1.jpg"
           ]
         }
-      ]
+      ],
+      "image": "/categories/maquinas-etiquetas.jpg"
     },
     {
       "id": "cilindros",
@@ -1324,7 +1378,8 @@
             "/products/cilindros/dr-blade-1.jpg"
           ]
         }
-      ]
+      ],
+      "image": "/categories/cilindros.jpg"
     },
     {
       "id": "instrumentos",
@@ -1454,7 +1509,8 @@
             "/products/instrumentos/gmi-drc5000-1.jpg"
           ]
         }
-      ]
+      ],
+      "image": "/categories/instrumentos.jpg"
     },
     {
       "id": "consumibles",
@@ -1660,7 +1716,8 @@
             "/products/consumibles/limpieza-resino-1.jpg"
           ]
         }
-      ]
+      ],
+      "image": "/categories/consumibles.jpg"
     }
   ]
 }

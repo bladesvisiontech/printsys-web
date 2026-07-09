@@ -26,6 +26,7 @@ export interface ProductCategory {
   name: string
   description: string
   icon: string
+  image?: string
   brands: string[]          // brand IDs that appear in this category
   products: Product[]
 }
@@ -52,6 +53,12 @@ export interface SiteContact {
   whatsapp?: string
 }
 
+export interface CompatBrand {
+  id: string
+  name: string
+  logo: string
+}
+
 export interface SiteConfig {
   name: string
   legalName?: string
@@ -68,4 +75,9 @@ export interface SiteConfig {
     instagram?: string
     whatsapp?: string
   }
+  heroEyebrow?: string
+  heroTitle?: string
+  heroHighlight?: string
+  heroVideo?: string
+  compatBrands?: CompatBrand[]
 }
