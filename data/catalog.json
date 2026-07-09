@@ -1340,27 +1340,6 @@
       ],
       "products": [
         {
-          "id": "gmi-cip3",
-          "name": "GMI CIP3 Presetting",
-          "slug": "gmi-cip3",
-          "brandId": "gmi",
-          "brandName": "GMI",
-          "categoryId": "instrumentos",
-          "type": "instrument",
-          "featured": true,
-          "shortDescription": "Preajuste automático teclas de tinta — reduce makeready",
-          "description": "Automatiza la configuración de teclas de tinta en prensas offset. Instalado en más de 750 diseños de prensa. Compatible: Offset, Flexo, Digital.",
-          "specs": [
-            {
-              "label": "Compatible",
-              "value": "Offset, Flexo, Digital"
-            }
-          ],
-          "images": [
-            "/products/instrumentos/gmi-cip3-1.jpg"
-          ]
-        },
-        {
           "id": "visionary-ii",
           "name": "Visionary II",
           "slug": "visionary-ii",
@@ -1463,8 +1442,8 @@
           "brandName": "GMI",
           "categoryId": "instrumentos",
           "type": "instrument",
-          "shortDescription": "Control de registro automático offset y flexo",
-          "description": "Cámaras inteligentes reconocen marcas de registro y ordenan ajustes automáticamente. Microdots de solo 0.5mm. Mantiene registro perfecto durante toda la tirada.",
+          "shortDescription": "Preparación más rápida y menor desperdicio en producción",
+          "description": "Preparación más rápida y menor desperdicio en producción: adquirir y mantener un registro perfecto es un requisito básico de la impresión moderna. El DRC-5000 permite que su prensa alcance el registro en el menor tiempo posible al inicio de la tirada, y luego mantiene y ajusta el registro para conservar una impresión perfecta durante todo el proceso. Un algoritmo de escaneo encuentra rápidamente las marcas de registro, y el algoritmo del DRC-5000 es lo suficientemente preciso como para corregir el registro desde su posición inicial con un solo movimiento de motor comandado.\n\nSimple, potente y eficaz: las cámaras inteligentes con inteligencia embebida reconocen las marcas de registro y ordenan automáticamente los ajustes de registro necesarios. Gracias a que la inteligencia está embebida, el DRC-5000 puede tener tantas cámaras como se necesiten sin reducir la velocidad de procesamiento de imagen. El DRC-5000 puede conectarse directamente a los motores de registro, lo que permite instalarlo en cualquier prensa, sin importar la consola original. Una interfaz de usuario simple y un proceso de configuración de trabajo sencillo hacen que la capacitación y la operación sean rápidas y fáciles.",
           "specs": [
             {
               "label": "Compatible",
