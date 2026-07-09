@@ -93,7 +93,8 @@
       "relationship": "Representante autorizado",
       "description": "Tratadores de corona, extrusión, limpieza de web, sistemas antiestáticos y transformadores eléctricos para la industria de la impresión.",
       "accentColor": "#6B7280",
-      "featured": false
+      "featured": false,
+      "logo": "/logos/martignoni.jpg"
     },
     {
       "id": "spi",
@@ -103,7 +104,8 @@
       "relationship": "Representante autorizado",
       "description": "Instrumentos para alineación y presión de rodillos en prensas de impresión offset y flexo.",
       "accentColor": "#374151",
-      "featured": false
+      "featured": false,
+      "logo": "/logos/spi.jpg"
     },
     {
       "id": "gmi",
@@ -113,7 +115,8 @@
       "relationship": "Representante autorizado",
       "description": "Soluciones de automatización para prensas offset, flexo y digital. Instalado en más de 750 diseños de prensa diferentes.",
       "accentColor": "#1D4ED8",
-      "featured": false
+      "featured": false,
+      "logo": "/logos/gmi.jpg"
     },
     {
       "id": "imavision",
@@ -123,7 +126,8 @@
       "relationship": "Representante autorizado",
       "description": "Sistemas de inspección de impresión 100% en tiempo real. Identificación de defectos y análisis para mejora de procesos.",
       "accentColor": "#065F46",
-      "featured": false
+      "featured": false,
+      "logo": "/logos/imavision.jpg"
     },
     {
       "id": "kingsun",
@@ -395,7 +399,9 @@
               "value": "E2C / E2C HP / E4C"
             }
           ],
-          "images": []
+          "images": [
+            "/products/curado-uv/reflectores-dicroicos-1.jpg"
+          ]
         },
         {
           "id": "doseguard",
@@ -636,7 +642,9 @@
               "value": "LeoLED2 / E4C"
             }
           ],
-          "images": []
+          "images": [
+            "/products/curado-uv/anticongelante-alphi11-1.jpg"
+          ]
         }
       ]
     },
@@ -1267,7 +1275,9 @@
               "value": "Ceramic, Metal, Sleeve"
             }
           ],
-          "images": []
+          "images": [
+            "/products/cilindros/anilox-ceramico-1.jpg"
+          ]
         },
         {
           "id": "manga-anilox",
@@ -1280,7 +1290,9 @@
           "shortDescription": "Cambio rápido — alta concentricidad",
           "description": "Mangas Anilox de precisión para cambio rápido en prensa. Alta concentricidad. Compatible con sistemas de aire estándar.",
           "specs": [],
-          "images": []
+          "images": [
+            "/products/cilindros/manga-anilox-1.jpg"
+          ]
         }
       ]
     },
@@ -1314,7 +1326,9 @@
               "value": "Offset, Flexo, Digital"
             }
           ],
-          "images": []
+          "images": [
+            "/products/instrumentos/gmi-cip3-1.jpg"
+          ]
         },
         {
           "id": "gmi-drc5000",
@@ -1332,7 +1346,9 @@
               "value": "Offset, Flexo"
             }
           ],
-          "images": []
+          "images": [
+            "/products/instrumentos/gmi-drc5000-1.jpg"
+          ]
         },
         {
           "id": "gmi-mercurio",
@@ -1350,7 +1366,9 @@
               "value": "25 micras"
             }
           ],
-          "images": []
+          "images": [
+            "/products/instrumentos/gmi-mercurio-1.jpg"
+          ]
         },
         {
           "id": "spi-instrumentos",
@@ -1382,7 +1400,9 @@
               "value": "920 m/min"
             }
           ],
-          "images": []
+          "images": [
+            "/products/instrumentos/imavision-1.jpg"
+          ]
         },
         {
           "id": "martignoni-corona",
@@ -1395,7 +1415,9 @@
           "shortDescription": "Tratamiento de superficie para adhesión superior",
           "description": "Tratadores de corona, extrusión, limpieza de web, sistemas antiestáticos y transformadores eléctricos. Amplia variedad para cada aplicación.",
           "specs": [],
-          "images": []
+          "images": [
+            "/products/instrumentos/martignoni-corona-1.jpg"
+          ]
         }
       ]
     },
@@ -1427,7 +1449,9 @@
               "value": "Alimentos, Higiene, Farmacéuticos"
             }
           ],
-          "images": []
+          "images": [
+            "/products/consumibles/resino-cationicas-1.jpg"
+          ]
         },
         {
           "id": "lamparas-consumibles",

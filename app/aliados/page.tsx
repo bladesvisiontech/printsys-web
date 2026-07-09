@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, ExternalLink } from 'lucide-react'
 import { brands, categories } from '@/data/catalog'
 import PageHero from '@/components/ui/PageHero'
@@ -25,9 +26,16 @@ export default function AliadosPage() {
             return (
               <div key={brand.id} className="card-hover animate-fade-up bg-white rounded-2xl border border-[var(--color-border)] p-7 flex flex-col gap-4">
                 <div className="flex items-start justify-between gap-3">
-                  <Link href={`/aliados/${brand.slug}`} className="group">
-                    <h2 className="text-[17px] font-semibold text-[var(--color-brand-dark)] tracking-tight group-hover:text-[var(--color-purple-mid)] transition-colors">{brand.name}</h2>
-                    <p className="text-[11px] font-semibold text-[var(--color-cta)] mt-0.5 uppercase tracking-wide">{brand.relationship}</p>
+                  <Link href={`/aliados/${brand.slug}`} className="group flex items-center gap-3 min-w-0">
+                    {brand.logo && (
+                      <div className="w-11 h-11 rounded-xl border border-[var(--color-border)] bg-white flex items-center justify-center shrink-0 p-1.5">
+                        <Image src={brand.logo} alt={brand.name} width={40} height={40} className="w-full h-full object-contain" />
+                      </div>
+                    )}
+                    <div className="min-w-0">
+                      <h2 className="text-[17px] font-semibold text-[var(--color-brand-dark)] tracking-tight group-hover:text-[var(--color-purple-mid)] transition-colors">{brand.name}</h2>
+                      <p className="text-[11px] font-semibold text-[var(--color-cta)] mt-0.5 uppercase tracking-wide">{brand.relationship}</p>
+                    </div>
                   </Link>
                   {brand.featured && (
                     <span className="shrink-0 text-[11px] font-semibold bg-[var(--color-purple-mid)]/10 text-[var(--color-purple-mid)] border border-[var(--color-purple-mid)]/20 px-2.5 py-1 rounded-full">
