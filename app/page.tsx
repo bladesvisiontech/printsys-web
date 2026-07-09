@@ -50,14 +50,14 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="animate-fade-up relative">
-              <Image
-                src="/hero-banner.jpg"
-                alt="Rodillo anilox compatible con las principales marcas de prensas de impresión"
-                width={1080}
-                height={1080}
-                priority
-                className="w-full h-auto"
+            <div className="animate-fade-up relative rounded-2xl overflow-hidden">
+              <video
+                src="/hero-video.webm"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
