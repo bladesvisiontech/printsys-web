@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { ArrowRight, Zap, Wrench, Package, GraduationCap } from 'lucide-react'
 import { siteConfig, getBrandBySlug } from '@/data/catalog'
 import HomeCatalog from '@/components/sections/HomeCatalog'
+import CompatMarquee from '@/components/sections/CompatMarquee'
 
 const logos = [
   { id: 'gew',       name: 'GEW',       src: '/logos/gew.svg'       },
@@ -90,6 +91,9 @@ export default function HomePage() {
 
       {/* ── Catalog with tabs ────────────────────────────────────────── */}
       <HomeCatalog />
+
+      {/* ── Compatible brands marquee ────────────────────────────────── */}
+      <CompatMarquee />
 
       {/* ── Por qué Printsys ─────────────────────────────────────────── */}
       <section className="bg-[var(--color-brand-dark)] py-24">
