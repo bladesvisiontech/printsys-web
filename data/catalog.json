@@ -248,7 +248,7 @@
           "type": "equipment",
           "featured": true,
           "shortDescription": "El sistema UV más instalado del mundo — 43.000+ unidades",
-          "description": "Con más de 43.000 unidades instaladas, el E2C es el sistema de curado UV más utilizado globalmente. Cambio de lámpara en menos de 2 minutos. Compatible con tecnología ArcLED para actualización a LED.",
+          "description": "Con más de 43.000 unidades instaladas en todo el mundo, el E2C es el sistema de curado UV más utilizado a nivel global, con hasta 140 W/cm de potencia — la referencia del mercado para flexografía, conversión de etiquetas e impresión offset de pliego.\n\nReflectores ópticos de alta eficiencia y baja emisión de infrarrojo permiten curado a alta velocidad incluso sobre sustratos sensibles al calor. La tecnología de encendido rápido evita paradas no planificadas, y el sistema de casetes de cambio rápido permite reemplazar la lámpara en menos de 2 minutos usando solo una llave hexagonal.\n\nPor qué elegir el E2C: resuelve el reto de curar sobre materiales delicados sin sacrificar velocidad de producción, ofrece fiabilidad comprobada gracias a su adopción masiva en la industria, se configura de forma flexible para distintos tipos de prensa (Heidelberg, Komori, RMGT, Ryobi, Mitsubishi, KBA, Manroland) y entrega ahorros de decenas de miles de dólares durante la vida útil de la máquina gracias a su eficiencia y bajo mantenimiento. Garantía de 5 años disponible con el sistema de mando RHINO, y compatible con actualización futura a LED mediante la fuente híbrida RHINO ArcLED.\n\nOpciones de personalización: lámparas dopadas (hierro, galio), control UV multipunto (mUVm), curado en atmósfera inerte, casetes de infrarrojo, ventanas de cuarzo, protectores de cable, sistemas de purga positiva y NetZero, filtros de ozono y sistemas de enfriamiento de sustrato.",
           "specs": [
             {
               "label": "Potencia máx.",
@@ -267,12 +267,20 @@
               "value": "60 cm"
             },
             {
+              "label": "Sección transversal",
+              "value": "110 x 190 mm"
+            },
+            {
               "label": "Enfriamiento",
               "value": "Aire"
             },
             {
               "label": "Espectro",
               "value": "Mercurio"
+            },
+            {
+              "label": "Temp. máx. operación",
+              "value": "40°C"
             }
           ],
           "images": [
@@ -365,7 +373,7 @@
           "type": "equipment",
           "featured": true,
           "shortDescription": "UV LED refrigerado por agua — 65% ahorro energético",
-          "description": "55% más potencia que su predecesor. 65% de ahorro energético vs sistemas de mercurio. Sin ozono, sin mercurio. Garantía 5 años independiente de horas.",
+          "description": "LeoLED2 es el sistema de curado UV LED refrigerado por agua de nueva generación de GEW, con hasta 147 W/cm de potencia y 44 W/cm² de irradiancia — un 55% más de potencia eléctrica, 50% más de dosis UV y 45% más de irradiancia que su predecesor.\n\nDisponible en versión de casete y versión compacta, utiliza la tecnología patentada ArcLED que permite intercambiarlo con las carcasas de lámparas de arco existentes en equipos GEW actuales — es decir, se puede actualizar un sistema convencional a LED sin reemplazar toda la máquina.\n\nBeneficios clave: ahorro energético superior al 65% frente a sistemas UV de mercurio comparables; operación libre de ozono y mercurio, sin necesidad de extracción de aire; garantía de hasta 5 años pese a una vida útil de diodos superior a 40.000 horas; solución completa que integra cabezales, refrigeración, fuente de alimentación y sistema de mando; curado más rápido gracias a una dosis de salida líder en la industria; versatilidad de materiales, procesando films sin soporte, mangas termoencogibles y sustratos delicados sin daño térmico; y mantenimiento reducido, sin partes móviles ni tiempos de calentamiento o enfriamiento.\n\nAplicaciones: impresión flexográfica, conversión de etiquetas, offset de pliego, impresión comercial, recubrimiento de madera, pisos sintéticos, muebles, adhesivos UV acrílicos hot-melt, conversión de empaques, decoración directa de producto, decoración de metal e impresión industrial.\n\nFunciona con la fuente de alimentación RHINO y se controla mediante el sistema RHINO Control, con monitoreo remoto IoT integrado, permitiendo actualizar sistemas de arco existentes con una inversión mínima.",
           "specs": [
             {
               "label": "Potencia máx. (HP)",
@@ -378,6 +386,14 @@
             {
               "label": "Irradiancia (HP)",
               "value": "44 W/cm²"
+            },
+            {
+              "label": "Dosis @ 100 m/min (HP)",
+              "value": "300 mJ/cm²"
+            },
+            {
+              "label": "Longitud máx.",
+              "value": "240 cm"
             },
             {
               "label": "Vida útil diodos",
@@ -406,15 +422,35 @@
           "type": "equipment",
           "featured": true,
           "shortDescription": "UV LED refrigerado por aire — largo hasta 2.5 m",
-          "description": "Sistema LED de nueva generación refrigerado por aire. Largo hasta 2.5 metros. Pronto retorno de inversión. Bajo mantenimiento, cero consumibles.",
+          "description": "AeroLED2 es el sistema de curado UV LED refrigerado por aire de nueva generación de GEW, para aplicaciones de etiquetas y banda estrecha de hasta 70 cm de ancho — un 30% más de potencia eléctrica (67 W/cm), 30% más de dosis UV (170 mJ/cm²) y 40% más de irradiancia (26 W/cm²) que su predecesor.\n\nEficiencia y ahorro: reduce los costos operativos hasta un 55% frente a sistemas UV de arco convencionales, y libera más del 50% de la capacidad eléctrica de red, permitiendo instalar maquinaria adicional sin necesidad de ampliar la infraestructura eléctrica. El retorno de inversión esperado en maquinaria nueva puede ser inferior a un año.\n\nDiseño de enfriamiento: un único sistema de ventilación centralizado elimina el ruido y el riesgo de falla de electrónica integrada, sin necesidad de chiller, reduciendo inversión y consumo. El aire puede conducirse fuera de la prensa y de la sala de impresión, con sellos herméticos que protegen los LED y facilitan la limpieza.\n\nFiabilidad: comparte componentes clave con el LeoLED2 para una fabricación industrializada y mayor fiabilidad; sensores de temperatura embebidos monitorean continuamente la seguridad de los LED; disipadores de calor robustos y de fácil acceso; sin ventiladores ni electrónica integrada en el cabezal; vida útil esperada de diodos superior a 30.000 horas, con garantía opcional de 5 años.\n\nCompatible con tecnología ArcLED — permite alternar entre curado por arco y AeroLED2 en cualquier estación de la prensa, usando el mismo ventilador y conductos que el sistema estándar E2C. Los usuarios de RHINO y RLT pueden actualizar a AeroLED2 con mínimo tiempo de inactividad, reemplazando casetes y actualizando el software. Aprobado para Industria 4.0 con monitoreo remoto IoT de serie. Sin emisiones de ozono ni mercurio.\n\nAplicaciones: impresión y conversión de etiquetas, banda estrecha, curado total, impresión, recubrimiento y conversión, flexografía.",
           "specs": [
+            {
+              "label": "Potencia máx.",
+              "value": "67 W/cm"
+            },
             {
               "label": "Longitud de onda",
               "value": "395 nm"
             },
             {
+              "label": "Irradiancia",
+              "value": "26 W/cm²"
+            },
+            {
+              "label": "Dosis @ 100 m/min",
+              "value": "170 mJ/cm²"
+            },
+            {
               "label": "Longitud máx.",
-              "value": "250 cm"
+              "value": "70 cm"
+            },
+            {
+              "label": "Sección transversal",
+              "value": "110 x 190 mm"
+            },
+            {
+              "label": "Vida útil diodos",
+              "value": ">30.000 horas"
             },
             {
               "label": "Enfriamiento",
@@ -422,7 +458,7 @@
             },
             {
               "label": "Aplicaciones",
-              "value": "Flexo, Offset"
+              "value": "Etiquetas, banda estrecha, flexo"
             }
           ],
           "images": [
