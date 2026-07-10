@@ -1166,7 +1166,8 @@
       "icon": "⚙️",
       "brands": [
         "rotometal",
-        "jctprint"
+        "jctprint",
+        "kingsun"
       ],
       "products": [
         {
@@ -1376,6 +1377,35 @@
           "specs": [],
           "images": [
             "/products/cilindros/dr-blade-1.jpg"
+          ]
+        },
+        {
+          "id": "km-450",
+          "name": "Máquina de Montaje de Placas Flexográficas KM-450",
+          "slug": "km-450",
+          "brandId": "kingsun",
+          "brandName": "Kingsun",
+          "categoryId": "cilindros",
+          "type": "equipment",
+          "featured": true,
+          "shortDescription": "Montaje de placas flexo — ancho 254-650mm",
+          "description": "Máquina de montaje de placas flexográficas KM-450, diseñada para el montaje preciso de planchas sobre camisas y cilindros porta-clichés en procesos de impresión flexográfica.",
+          "specs": [
+            {
+              "label": "Ancho de montaje",
+              "value": "254-650 mm"
+            },
+            {
+              "label": "Peso de la máquina",
+              "value": "220 kg"
+            },
+            {
+              "label": "Tamaño de la máquina",
+              "value": "1250 x 700 x 1800 mm"
+            }
+          ],
+          "images": [
+            "/products/cilindros/km-450-1.jpg"
           ]
         }
       ],
