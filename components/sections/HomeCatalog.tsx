@@ -4,7 +4,6 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { categories } from '@/data/catalog'
-import { categoryIconMap } from '@/lib/categoryIcons'
 import ProductCard from '@/components/ui/ProductCard'
 
 export default function HomeCatalog() {
@@ -36,7 +35,7 @@ export default function HomeCatalog() {
               }`}
             >
               <span className={active === c.slug ? 'text-white' : 'text-[var(--color-muted)]'}>
-                {categoryIconMap[c.slug]}
+                {c.icon}
               </span>
               {c.name}
             </button>
@@ -56,7 +55,7 @@ export default function HomeCatalog() {
               }`}
             >
               <span className={`shrink-0 ${active === c.slug ? 'text-white' : 'text-[var(--color-muted)]'}`}>
-                {categoryIconMap[c.slug]}
+                {c.icon}
               </span>
               <span className="leading-tight">{c.name}</span>
             </button>

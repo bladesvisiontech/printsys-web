@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { categories, getBrandById } from '@/data/catalog'
-import { categoryIconLg } from '@/lib/categoryIcons'
 import ProductGrid from '@/components/sections/ProductGrid'
 import PageHero from '@/components/ui/PageHero'
 import type { Metadata } from 'next'
@@ -34,7 +33,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       <PageHero
         title={cat.name}
         description={cat.description}
-        icon={categoryIconLg[cat.slug]}
+        icon={<span className="text-2xl">{cat.icon}</span>}
       >
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-[11px] text-white/30 mt-4">

@@ -5,14 +5,13 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { X, Menu, Phone, ChevronRight } from 'lucide-react'
 import { categories } from '@/data/catalog'
-import { categoryIconMap } from '@/lib/categoryIcons'
 import { siteConfig } from '@/data/catalog'
 
 const navItems = [
   {
     label: 'Productos',
     href: '/productos',
-    children: categories.map(c => ({ label: c.name, slug: c.slug, href: `/productos/${c.slug}` })),
+    children: categories.map(c => ({ label: c.name, slug: c.slug, href: `/productos/${c.slug}`, icon: c.icon })),
   },
   { label: 'Aliados', href: '/aliados' },
   { label: 'Contacto', href: '/contacto' },
@@ -66,7 +65,7 @@ export default function Header() {
                         href={child.href}
                         className="flex items-center gap-2.5 px-4 py-2 text-[13px] text-[var(--color-brand-dark)] hover:bg-[var(--color-bg-card)] transition-colors"
                       >
-                        <span className="text-[var(--color-muted)]">{categoryIconMap[child.slug]}</span>
+                        <span className="text-[var(--color-muted)]">{child.icon}</span>
                         {child.label}
                       </Link>
                     ))}
@@ -158,7 +157,7 @@ export default function Header() {
                   onClick={close}
                   className="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-[var(--color-bg-card)] hover:bg-zinc-100 transition-colors"
                 >
-                  <span className="text-[var(--color-purple-mid)] shrink-0">{categoryIconMap[c.slug]}</span>
+                  <span className="text-[var(--color-purple-mid)] shrink-0">{c.icon}</span>
                   <span className="text-[12px] font-medium text-[var(--color-brand-dark)] leading-tight">{c.name}</span>
                 </Link>
               ))}

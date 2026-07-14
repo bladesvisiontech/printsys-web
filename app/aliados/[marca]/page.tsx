@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import { brands, categories, getBrandBySlug } from '@/data/catalog'
-import { categoryIconMap } from '@/lib/categoryIcons'
 import { toYouTubeEmbed } from '@/lib/youtube'
 import PageHero from '@/components/ui/PageHero'
 import type { Metadata } from 'next'
@@ -113,7 +112,7 @@ export default async function BrandPage({ params }: { params: Promise<{ marca: s
                   href={`/productos/${cat.slug}`}
                   className="card-hover group flex items-center gap-3 bg-white rounded-2xl border border-[var(--color-border)] p-5 hover:border-zinc-400 transition-all"
                 >
-                  <span className="text-[var(--color-purple-mid)] shrink-0">{categoryIconMap[cat.slug]}</span>
+                  <span className="text-[var(--color-purple-mid)] shrink-0">{cat.icon}</span>
                   <div className="min-w-0">
                     <p className="font-semibold text-[var(--color-brand-dark)] text-[14px] tracking-tight">{cat.name}</p>
                     <p className="text-[12px] text-[var(--color-muted)] mt-0.5 line-clamp-1">{cat.description}</p>

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { categories, brands } from '@/data/catalog'
 
-const BASE_URL = 'https://printsys-web.vercel.app'
+const BASE_URL = 'https://www.printsys.com.co'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
