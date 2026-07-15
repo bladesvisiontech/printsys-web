@@ -123,7 +123,8 @@
         "/brands/cartes/04.jpg",
         "/brands/cartes/05.jpg",
         "/brands/cartes/06.jpg"
-      ]
+      ],
+      "logo": "/logos/cartes.jpg"
     },
     {
       "id": "rotometal",
