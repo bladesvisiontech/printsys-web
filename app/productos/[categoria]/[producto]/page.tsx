@@ -71,6 +71,33 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                 </div>
               </div>
             )}
+
+            {/* Video */}
+            {product.video_url && (
+              <div className="bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden">
+                <div className="aspect-video">
+                  <iframe
+                    src={toYouTubeEmbed(product.video_url)}
+                    title={`Video — ${product.name}`}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            )}
+
+            {product.videoImage && (
+              <div className="bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden p-4">
+                <Image
+                  src={product.videoImage}
+                  alt={`${product.name}`}
+                  width={800}
+                  height={500}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+            )}
           </div>
 
           {/* Info panel */}
@@ -133,33 +160,6 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                     Ver ficha técnica en PDF
                   </a>
                 )}
-              </div>
-            )}
-
-            {/* Video */}
-            {product.video_url && (
-              <div className="bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden">
-                <div className="aspect-video">
-                  <iframe
-                    src={toYouTubeEmbed(product.video_url)}
-                    title={`Video — ${product.name}`}
-                    className="w-full h-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-              </div>
-            )}
-
-            {product.videoImage && (
-              <div className="bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden p-4">
-                <Image
-                  src={product.videoImage}
-                  alt={`${product.name}`}
-                  width={800}
-                  height={500}
-                  className="w-full h-auto rounded-lg"
-                />
               </div>
             )}
 
