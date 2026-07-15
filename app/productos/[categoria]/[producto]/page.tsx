@@ -186,6 +186,27 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
             </div>
           </div>
         </div>
+
+        {product.applicationImages && product.applicationImages.length > 0 && (
+          <div className="mt-14">
+            <h2 className="text-[13px] font-bold text-[var(--color-brand-dark)] uppercase tracking-widest mb-5">
+              Ejemplo de aplicación
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {product.applicationImages.map((img, i) => (
+                <div key={img} className="relative aspect-video rounded-2xl border border-[var(--color-border)] overflow-hidden bg-white">
+                  <Image
+                    src={img}
+                    alt={`${product.name} — aplicación ${i + 1}`}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Bottom bar */}
