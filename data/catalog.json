@@ -533,7 +533,8 @@
             "/products/curado-uv/aero-led2-1.png"
           ],
           "specsNote": "DISPONEMOS DE LAMPARA PARA PRUEBAS DE CURADO EN SU PRENSA.",
-          "specsImage": "/products/curado-uv/aero-led2-ahorro-energetico.jpg"
+          "specsImage": "/products/curado-uv/aero-led2-ahorro-energetico.jpg",
+          "datasheet_url": "/datasheets/aeroled2-brochure-es.pdf"
         },
         {
           "id": "lamparas-uv",
