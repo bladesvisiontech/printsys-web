@@ -294,7 +294,8 @@
           "images": [
             "/products/curado-uv/e2c-1.jpg",
             "/products/curado-uv/e2c-2.png"
-          ]
+          ],
+          "datasheet_url": "/datasheets/e2c-brochure-es.pdf"
         },
         {
           "id": "e2c-hp",
