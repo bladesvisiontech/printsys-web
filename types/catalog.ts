@@ -19,6 +19,7 @@ export interface Product {
   images: string[]
   datasheet_url?: string
   video_url?: string
+  videoImage?: string
   featured?: boolean
 }
 

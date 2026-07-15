@@ -151,6 +151,18 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
               </div>
             )}
 
+            {product.videoImage && (
+              <div className="bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden p-4">
+                <Image
+                  src={product.videoImage}
+                  alt={`${product.name}`}
+                  width={800}
+                  height={500}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+            )}
+
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
