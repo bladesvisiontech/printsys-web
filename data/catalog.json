@@ -345,7 +345,48 @@
           "featured": true,
           "shortDescription": "Máxima potencia UV — refrigerado por agua",
           "description": "La solución de mayor potencia UV para las aplicaciones más exigentes y velocidades más altas. Refrigerado por agua para máxima transferencia UV con mínimo calor.",
-          "specs": [],
+          "specs": [
+            {
+              "label": "Potencia eléctrica máx.",
+              "value": "220W / cm"
+            },
+            {
+              "label": "Espectro",
+              "value": "Mercurio**"
+            },
+            {
+              "label": "Irradiación en el punto focal",
+              "value": "10,7W / cm2*"
+            },
+            {
+              "label": "Dosis típica @ 100m / min",
+              "value": "220mJ / cm2*"
+            },
+            {
+              "label": "Longitud máxima",
+              "value": "170cm"
+            },
+            {
+              "label": "Sección transversal estándar",
+              "value": "110mm W x 190mm H"
+            },
+            {
+              "label": "Refrigeración",
+              "value": "Aire y Agua"
+            },
+            {
+              "label": "Temperatura de funcionamiento estándar máx.",
+              "value": "40°C (104°F)"
+            },
+            {
+              "label": "Humedad estándar máx.",
+              "value": "Sin condensación"
+            },
+            {
+              "label": "Nota",
+              "value": "* Medido en las condiciones del laboratorio estándar de GEW con una configuración estándar de cabeza de lámpara. ** Existen variables de lámpara disponibles bajo demanda."
+            }
+          ],
           "images": [
             "/products/curado-uv/e4c-1.png",
             "/products/curado-uv/e4c-2.jpg"
