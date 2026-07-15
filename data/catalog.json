@@ -469,7 +469,8 @@
               "image": "/products/curado-uv/leo-led2-app-1.jpg",
               "caption": "Secado de Etiquetas"
             }
-          ]
+          ],
+          "datasheet_url": "/datasheets/leoled2-brochure-es.pdf"
         },
         {
           "id": "aero-led2",

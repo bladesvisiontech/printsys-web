@@ -98,6 +98,32 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                 />
               </div>
             )}
+
+            {product.applicationImages && product.applicationImages.length > 0 && (
+              <div>
+                <h2 className="text-[13px] font-bold text-[var(--color-brand-dark)] uppercase tracking-widest mb-4">
+                  Ejemplo de aplicación
+                </h2>
+                <div className="flex flex-col gap-6">
+                  {product.applicationImages.map((item, i) => (
+                    <div key={item.image}>
+                      <div className="relative aspect-video rounded-2xl border border-[var(--color-border)] overflow-hidden bg-white">
+                        <Image
+                          src={item.image}
+                          alt={item.caption || `${product.name} — aplicación ${i + 1}`}
+                          fill
+                          sizes="(max-width: 1024px) 100vw, 50vw"
+                          className="object-cover"
+                        />
+                      </div>
+                      {item.caption && (
+                        <p className="text-center text-[13px] text-[var(--color-muted)] mt-3">{item.caption}</p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Info panel */}
@@ -186,32 +212,6 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
             </div>
           </div>
         </div>
-
-        {product.applicationImages && product.applicationImages.length > 0 && (
-          <div className="mt-14">
-            <h2 className="text-[13px] font-bold text-[var(--color-brand-dark)] uppercase tracking-widest mb-5">
-              Ejemplo de aplicación
-            </h2>
-            <div className="flex flex-col gap-8 max-w-2xl">
-              {product.applicationImages.map((item, i) => (
-                <div key={item.image}>
-                  <div className="relative aspect-video rounded-2xl border border-[var(--color-border)] overflow-hidden bg-white">
-                    <Image
-                      src={item.image}
-                      alt={item.caption || `${product.name} — aplicación ${i + 1}`}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 672px"
-                      className="object-cover"
-                    />
-                  </div>
-                  {item.caption && (
-                    <p className="text-center text-[13px] text-[var(--color-muted)] mt-3">{item.caption}</p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
 
       {/* Bottom bar */}
