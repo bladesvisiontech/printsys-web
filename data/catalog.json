@@ -248,39 +248,47 @@
           "type": "equipment",
           "featured": true,
           "shortDescription": "El sistema UV más instalado del mundo — 43.000+ unidades",
-          "description": "Con más de 43.000 unidades instaladas en todo el mundo, el E2C es el sistema de curado UV más utilizado a nivel global, con hasta 140 W/cm de potencia — la referencia del mercado para flexografía, conversión de etiquetas e impresión offset de pliego.\n\nReflectores ópticos de alta eficiencia y baja emisión de infrarrojo permiten curado a alta velocidad incluso sobre sustratos sensibles al calor. La tecnología de encendido rápido evita paradas no planificadas, y el sistema de casetes de cambio rápido permite reemplazar la lámpara en menos de 2 minutos usando solo una llave hexagonal.\n\nPor qué elegir el E2C: resuelve el reto de curar sobre materiales delicados sin sacrificar velocidad de producción, ofrece fiabilidad comprobada gracias a su adopción masiva en la industria, se configura de forma flexible para distintos tipos de prensa (Heidelberg, Komori, RMGT, Ryobi, Mitsubishi, KBA, Manroland) y entrega ahorros de decenas de miles de dólares durante la vida útil de la máquina gracias a su eficiencia y bajo mantenimiento. Garantía de 5 años disponible con el sistema de mando RHINO, y compatible con actualización futura a LED mediante la fuente híbrida RHINO ArcLED.\n\nOpciones de personalización: lámparas dopadas (hierro, galio), control UV multipunto (mUVm), curado en atmósfera inerte, casetes de infrarrojo, ventanas de cuarzo, protectores de cable, sistemas de purga positiva y NetZero, filtros de ozono y sistemas de enfriamiento de sustrato.",
+          "description": "Con más de 43.000 unidades instaladas en todo el mundo, el E2C es el sistema de curado UV más utilizado a nivel global, con hasta 140 W/cm de potencia — la referencia del mercado para flexografía, conversión de etiquetas e impresión offset de pliego.\n\nReflectores ópticos de alta eficiencia y baja emisión de infrarrojo permiten curado a alta velocidad incluso sobre sustratos sensibles al calor. La tecnología de encendido rápido evita paradas no planificadas, y el sistema de casetes de cambio rápido permite reemplazar la lámpara en menos de 2 minutos usando solo una llave hexagonal.\n\nPor qué elegir el E2C: resuelve el reto de curar sobre materiales delicados sin sacrificar velocidad de producción, ofrece fiabilidad comprobada gracias a su adopción masiva en la industria, se configura de forma flexible para distintos tipos de prensa (Heidelberg, Komori, RMGT, Ryobi, Mitsubishi, KBA, Manroland) y entrega ahorros de decenas de miles de dólares durante la vida útil de la máquina gracias a su eficiencia y bajo mantenimiento.\n\nOpciones de personalización: lámparas dopadas (hierro, galio), control UV multipunto (mUVm), curado en atmósfera inerte, casetes de infrarrojo, ventanas de cuarzo, protectores de cable, sistemas de purga positiva y NetZero, filtros de ozono y sistemas de enfriamiento de sustrato.",
           "specs": [
             {
-              "label": "Potencia máx.",
-              "value": "140 W/cm"
-            },
-            {
-              "label": "Irradiancia focal",
-              "value": "5.8 W/cm²"
-            },
-            {
-              "label": "Dosis @ 100 m/min",
-              "value": "125 mJ/cm²"
-            },
-            {
-              "label": "Longitud máx.",
-              "value": "60 cm"
-            },
-            {
-              "label": "Sección transversal",
-              "value": "110 x 190 mm"
-            },
-            {
-              "label": "Enfriamiento",
-              "value": "Aire"
+              "label": "Potencia eléctrica máx.",
+              "value": "140W / cm"
             },
             {
               "label": "Espectro",
-              "value": "Mercurio"
+              "value": "Mercurio**"
             },
             {
-              "label": "Temp. máx. operación",
-              "value": "40°C"
+              "label": "Irradiación en el punto focal",
+              "value": "5,8W / cm2*"
+            },
+            {
+              "label": "Dosis típica @ 100m / min",
+              "value": "125mJ / cm2*"
+            },
+            {
+              "label": "Longitud máxima",
+              "value": "60cm"
+            },
+            {
+              "label": "Sección transversal estándar",
+              "value": "110mm W x 190mm H"
+            },
+            {
+              "label": "Refrigeración",
+              "value": "Aire"
+            },
+            {
+              "label": "Temperatura de funcionamiento estándar máx.",
+              "value": "40°C (104°F)"
+            },
+            {
+              "label": "Humedad estándar máx.",
+              "value": "Sin condensación"
+            },
+            {
+              "label": "Nota",
+              "value": "* Medido en las condiciones del laboratorio estándar de GEW con una configuración estándar de cabeza de lámpara. ** Existen variables de lámpara disponibles bajo demanda."
             }
           ],
           "images": [
