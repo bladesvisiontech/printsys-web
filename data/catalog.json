@@ -461,8 +461,14 @@
           "specsImage": "/products/curado-uv/leo-led2-ahorro-energetico.jpg",
           "specsNote": "DISPONEMOS DE LAMPARA PARA PRUEBAS DE CURADO EN SU PRENSA.",
           "applicationImages": [
-            "/products/curado-uv/leo-led2-app-1.jpg",
-            "/products/curado-uv/leo-led2-app-2.jpg"
+            {
+              "image": "/products/curado-uv/leo-led2-app-2.jpg",
+              "caption": "Secado de una lámina de concreto"
+            },
+            {
+              "image": "/products/curado-uv/leo-led2-app-1.jpg",
+              "caption": "Secado de Etiquetas"
+            }
           ]
         },
         {
