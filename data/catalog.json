@@ -473,45 +473,54 @@
           "description": "AeroLED2 es el sistema de curado UV LED refrigerado por aire de nueva generación de GEW, para aplicaciones de etiquetas y banda estrecha de hasta 70 cm de ancho — un 30% más de potencia eléctrica (67 W/cm), 30% más de dosis UV (170 mJ/cm²) y 40% más de irradiancia (26 W/cm²) que su predecesor.\n\nEficiencia y ahorro: reduce los costos operativos hasta un 55% frente a sistemas UV de arco convencionales, y libera más del 50% de la capacidad eléctrica de red, permitiendo instalar maquinaria adicional sin necesidad de ampliar la infraestructura eléctrica. El retorno de inversión esperado en maquinaria nueva puede ser inferior a un año.\n\nDiseño de enfriamiento: un único sistema de ventilación centralizado elimina el ruido y el riesgo de falla de electrónica integrada, sin necesidad de chiller, reduciendo inversión y consumo. El aire puede conducirse fuera de la prensa y de la sala de impresión, con sellos herméticos que protegen los LED y facilitan la limpieza.\n\nFiabilidad: comparte componentes clave con el LeoLED2 para una fabricación industrializada y mayor fiabilidad; sensores de temperatura embebidos monitorean continuamente la seguridad de los LED; disipadores de calor robustos y de fácil acceso; sin ventiladores ni electrónica integrada en el cabezal; vida útil esperada de diodos superior a 30.000 horas, con garantía opcional de 5 años.\n\nCompatible con tecnología ArcLED — permite alternar entre curado por arco y AeroLED2 en cualquier estación de la prensa, usando el mismo ventilador y conductos que el sistema estándar E2C. Los usuarios de RHINO y RLT pueden actualizar a AeroLED2 con mínimo tiempo de inactividad, reemplazando casetes y actualizando el software. Aprobado para Industria 4.0 con monitoreo remoto IoT de serie. Sin emisiones de ozono ni mercurio.\n\nAplicaciones: impresión y conversión de etiquetas, banda estrecha, curado total, impresión, recubrimiento y conversión, flexografía.",
           "specs": [
             {
-              "label": "Potencia máx.",
-              "value": "67 W/cm"
+              "label": "Potencia eléctrica máxima",
+              "value": "67W / cm"
             },
             {
               "label": "Longitud de onda",
-              "value": "395 nm"
+              "value": "395nm*"
             },
             {
-              "label": "Irradiancia",
-              "value": "26 W/cm²"
+              "label": "Irradiancia en la ventana",
+              "value": "26W / cm2"
             },
             {
-              "label": "Dosis @ 100 m/min",
-              "value": "170 mJ/cm²"
+              "label": "Dosis típica a 100m/min",
+              "value": "170mJ / cm2**"
             },
             {
-              "label": "Longitud máx.",
-              "value": "70 cm"
+              "label": "Longitud máxima",
+              "value": "70cm"
             },
             {
-              "label": "Sección transversal",
-              "value": "110 x 190 mm"
+              "label": "Sección transversal estándar",
+              "value": "110mm Ancho x 190mm Alto"
             },
             {
-              "label": "Vida útil diodos",
-              "value": ">30.000 horas"
-            },
-            {
-              "label": "Enfriamiento",
+              "label": "Refrigeración",
               "value": "Aire"
             },
             {
-              "label": "Aplicaciones",
-              "value": "Etiquetas, banda estrecha, flexo"
+              "label": "Temperatura máxima de operación estándar",
+              "value": "35°C (95°F)"
+            },
+            {
+              "label": "Humedad máxima estándar",
+              "value": "Sin condensación"
+            },
+            {
+              "label": "Vida útil esperada de los diodos",
+              "value": ">30,000 horas"
+            },
+            {
+              "label": "Nota",
+              "value": "* Longitudes de onda de 365nm, 385nm y 405nm disponibles bajo petición. ** Medido con un EIT LEDMAP con sensibilidad L395 (370 – 422nm)."
             }
           ],
           "images": [
             "/products/curado-uv/aero-led2-1.png"
-          ]
+          ],
+          "specsNote": "DISPONEMOS DE LAMPARA PARA PRUEBAS DE CURADO EN SU PRENSA."
         },
         {
           "id": "lamparas-uv",
