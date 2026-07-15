@@ -345,28 +345,7 @@
           "featured": true,
           "shortDescription": "Máxima potencia UV — refrigerado por agua",
           "description": "La solución de mayor potencia UV para las aplicaciones más exigentes y velocidades más altas. Refrigerado por agua para máxima transferencia UV con mínimo calor.",
-          "specs": [
-            {
-              "label": "Potencia máx.",
-              "value": "220 W/cm"
-            },
-            {
-              "label": "Irradiancia focal",
-              "value": "10.7 W/cm²"
-            },
-            {
-              "label": "Dosis @ 100 m/min",
-              "value": "220 mJ/cm²"
-            },
-            {
-              "label": "Longitud máx.",
-              "value": "170 cm"
-            },
-            {
-              "label": "Enfriamiento",
-              "value": "Aire + Agua"
-            }
-          ],
+          "specs": [],
           "images": [
             "/products/curado-uv/e4c-1.png",
             "/products/curado-uv/e4c-2.jpg"
