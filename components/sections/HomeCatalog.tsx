@@ -10,8 +10,8 @@ export default function HomeCatalog() {
   const [active, setActive] = useState(categories[0].slug)
 
   const cat = categories.find(c => c.slug === active)!
-  const display = cat.products.filter(p => p.featured).slice(0, 4)
-  const products = display.length >= 2 ? display : cat.products.slice(0, 4)
+  const display = cat.products.filter(p => p.featured).slice(0, 8)
+  const products = display.length >= 2 ? display : cat.products.slice(0, 8)
 
   return (
     <section className="bg-white py-16">
