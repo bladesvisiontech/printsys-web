@@ -406,36 +406,52 @@
           "description": "LeoLED2 es el sistema de curado UV LED refrigerado por agua de nueva generación de GEW, con hasta 147 W/cm de potencia y 44 W/cm² de irradiancia — un 55% más de potencia eléctrica, 50% más de dosis UV y 45% más de irradiancia que su predecesor.\n\nDisponible en versión de casete y versión compacta, utiliza la tecnología patentada ArcLED que permite intercambiarlo con las carcasas de lámparas de arco existentes en equipos GEW actuales — es decir, se puede actualizar un sistema convencional a LED sin reemplazar toda la máquina.\n\nBeneficios clave: ahorro energético superior al 65% frente a sistemas UV de mercurio comparables; operación libre de ozono y mercurio, sin necesidad de extracción de aire; Se ofrecen garantias de hasta 5 años; solución completa que integra cabezales, refrigeración, fuente de alimentación y sistema de mando; curado más rápido gracias a una dosis de salida líder en la industria; versatilidad de materiales, procesando films sin soporte, mangas termoencogibles y sustratos delicados sin daño térmico; y mantenimiento reducido, sin partes móviles ni tiempos de calentamiento o enfriamiento.\n\nAplicaciones: impresión flexográfica, conversión de etiquetas, offset de pliego, impresión comercial, recubrimiento de madera, pisos sintéticos, muebles, adhesivos UV acrílicos hot-melt, conversión de empaques, decoración directa de producto, decoración de metal e impresión industrial.\n\nFunciona con la fuente de alimentación RHINO y se controla mediante el sistema RHINO Control, con monitoreo remoto IoT integrado, permitiendo actualizar sistemas de arco existentes con una inversión mínima.",
           "specs": [
             {
-              "label": "Potencia máx. (HP)",
-              "value": "147 W/cm"
+              "label": "Potencia eléctrica máxima",
+              "value": "Opción 1: 84W / cm · Opción 2: 147W / cm"
             },
             {
               "label": "Longitud de onda",
-              "value": "395 nm"
+              "value": "Opción 1: 395nm* · Opción 2: 395nm solamente"
             },
             {
-              "label": "Irradiancia (HP)",
-              "value": "44 W/cm²"
+              "label": "Irradiancia en la ventana",
+              "value": "Opción 1: 32W / cm² · Opción 2: 44W / cm²"
             },
             {
-              "label": "Dosis @ 100 m/min (HP)",
-              "value": "300 mJ/cm²"
+              "label": "Dosis típica a 100m/min",
+              "value": "Opción 1: 200mJ / cm²** · Opción 2: 300mJ / cm²**"
             },
             {
-              "label": "Longitud máx.",
-              "value": "240 cm"
+              "label": "Longitud máxima",
+              "value": "240cm"
             },
             {
-              "label": "Vida útil diodos",
-              "value": "40.000 horas"
+              "label": "Sección transversal (Casete LeoLED2)",
+              "value": "110mm W x 190mm H"
             },
             {
-              "label": "Enfriamiento",
+              "label": "Sección transversal (LeoLED2 estándar)",
+              "value": "100mm W x 40mm H"
+            },
+            {
+              "label": "Refrigeración",
               "value": "Agua"
             },
             {
-              "label": "Ahorro energético",
-              "value": "~65%"
+              "label": "Temperatura máxima de operación estándar",
+              "value": "40°C (104°F)"
+            },
+            {
+              "label": "Vida útil esperada de los diodos",
+              "value": "40,000 horas"
+            },
+            {
+              "label": "Humedad máxima estándar",
+              "value": "Sin condensación"
+            },
+            {
+              "label": "Nota",
+              "value": "* Longitudes de onda de 365nm, 385nm y 405nm disponibles bajo petición. ** Medido con un EIT LEDMAP con sensibilidad L395 (370 – 422nm)."
             }
           ],
           "images": [
