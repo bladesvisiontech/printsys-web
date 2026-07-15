@@ -744,7 +744,8 @@
             "/products/curado-uv/arcled-1.png"
           ],
           "video_url": "https://www.youtube.com/watch?v=cwNHtBbFZvY",
-          "videoImage": "/products/curado-uv/arcled-video.png"
+          "videoImage": "/products/curado-uv/arcled-video.png",
+          "datasheet_url": "/datasheets/arcled-brochure-es.pdf"
         },
         {
           "id": "aplicaciones-especiales",
