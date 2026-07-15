@@ -106,6 +106,17 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                     </div>
                   ))}
                 </div>
+                {product.datasheet_url && (
+                  <a
+                    href={product.datasheet_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 px-5 py-3 text-[13px] font-semibold text-[var(--color-brand-dark)] border-t border-[var(--color-border)] bg-[var(--color-bg-card)] hover:bg-zinc-100 transition-colors"
+                  >
+                    <FileText className="w-3.5 h-3.5" />
+                    Ver ficha técnica en PDF
+                  </a>
+                )}
               </div>
             )}
 
