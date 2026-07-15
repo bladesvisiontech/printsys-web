@@ -23,7 +23,7 @@ export default function HomeCatalog() {
         </div>
 
         {/* Tabs — desktop: horizontal pills / mobile: 2-col grid */}
-        <div className="hidden sm:flex items-center gap-1.5 overflow-x-auto pb-1 mb-8 scrollbar-none">
+        <div className="hidden sm:flex flex-wrap items-center gap-1.5 mb-8">
           {categories.map(c => (
             <button
               key={c.slug}
