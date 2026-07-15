@@ -817,6 +817,71 @@
           "images": [
             "/products/curado-uv/anticongelante-alphi11-1.jpg"
           ]
+        },
+        {
+          "id": "nuva2",
+          "name": "NUVA2",
+          "slug": "nuva2",
+          "brandId": "gew",
+          "brandName": "GEW",
+          "categoryId": "curado-uv",
+          "type": "equipment",
+          "featured": false,
+          "shortDescription": "UV refrigerado por aire — recubrimiento de banda ancha hasta 250 cm",
+          "description": "NUVA2 es el sistema de curado UV refrigerado por aire más eficaz de GEW para recubrimiento de sustratos anchos y aplicaciones industriales especializadas, totalmente refrigerado por aire hasta 250 cm de longitud, con hasta 27kW de potencia total de lámpara.\n\nSus reflectores refrigerados activamente y patentados minimizan la transferencia de calor al sustrato mientras maximizan la intensidad UV. El diseño de casete de cambio rápido requiere solo una llave Allen para el cambio de lámparas, y los extremos esféricos de la lámpara evitan roturas durante los recambios de lámparas largas. Disponible con garantía de 5 años cuando se alimenta con el sistema RHINO de GEW.\n\n\"ArcLED ready\": es intercambiable con casetes LeoLED en la misma carcasa, por lo que los sistemas NUVA2 existentes pueden actualizarse a LED solo agregando el casete LED y un chiller. Cuenta con tecnología de encendido rápido de lámparas, admite lámparas dopadas (variantes Fe, Ga) y ofrece monitoreo UV multipunto y curado con atmósfera inerte como opciones.\n\nAplicaciones: recubrimiento de banda ancha, aplicaciones industriales especializadas, decoración directa de producto, recubrimiento/conversión/acabado industrial, y configuraciones híbridas que combinan estaciones de curado por arco y LED.",
+          "specs": [
+            {
+              "label": "Potencia eléctrica máx.",
+              "value": "180W / cm"
+            },
+            {
+              "label": "Espectro",
+              "value": "Mercurio**"
+            },
+            {
+              "label": "Irradiación en el punto focal",
+              "value": "6,9W / cm2*"
+            },
+            {
+              "label": "Dosis típica @ 100m / min",
+              "value": "160mJ / cm2*"
+            },
+            {
+              "label": "Longitud máxima",
+              "value": "250cm"
+            },
+            {
+              "label": "Sección transversal estándar",
+              "value": "145mm W x 293mm H"
+            },
+            {
+              "label": "Refrigeración",
+              "value": "Aire"
+            },
+            {
+              "label": "Temperatura de funcionamiento estándar máx.",
+              "value": "40°C (104°F)"
+            },
+            {
+              "label": "Humedad estándar máx.",
+              "value": "Sin condensación"
+            },
+            {
+              "label": "Nota",
+              "value": "* Medido en las condiciones del laboratorio estándar de GEW con una configuración estándar de cabeza de lámpara. ** Existen variables de lámpara disponibles bajo demanda."
+            }
+          ],
+          "images": [],
+          "applicationImages": [
+            {
+              "image": "/products/curado-uv/nuva2-app-1.jpg",
+              "caption": "Secado de empaques plásticos"
+            },
+            {
+              "image": "/products/curado-uv/nuva2-app-2.jpg",
+              "caption": "Secado de tapas metálicas"
+            }
+          ]
         }
       ],
       "image": "/categories/curado-uv.jpg"
