@@ -106,6 +106,17 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                     </div>
                   ))}
                 </div>
+                {product.specsImage && (
+                  <div className="border-t border-[var(--color-border)] p-4">
+                    <Image
+                      src={product.specsImage}
+                      alt={`Especificaciones — ${product.name}`}
+                      width={800}
+                      height={500}
+                      className="w-full h-auto rounded-lg"
+                    />
+                  </div>
+                )}
                 {product.datasheet_url && (
                   <a
                     href={product.datasheet_url}
