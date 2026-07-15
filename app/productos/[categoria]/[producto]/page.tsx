@@ -117,6 +117,11 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                     />
                   </div>
                 )}
+                {product.specsNote && (
+                  <p className="px-5 py-3 text-[12px] text-[var(--color-muted)] border-t border-[var(--color-border)] italic">
+                    {product.specsNote}
+                  </p>
+                )}
                 {product.datasheet_url && (
                   <a
                     href={product.datasheet_url}

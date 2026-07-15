@@ -15,6 +15,7 @@ export interface Product {
   description: string
   specs: ProductSpec[]
   specsImage?: string
+  specsNote?: string
   images: string[]
   datasheet_url?: string
   video_url?: string
