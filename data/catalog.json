@@ -212,7 +212,8 @@
       "description": "Tintas catiónicas de alta calidad para envases de alimentos, productos de higiene y farmacéuticos.",
       "accentColor": "#047857",
       "featured": false,
-      "website": "https://resino-inks.com"
+      "website": "https://resino-inks.com",
+      "logo": "/logos/resino.webp"
     },
     {
       "id": "alfaflexo",
