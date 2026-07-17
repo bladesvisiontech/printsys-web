@@ -119,6 +119,9 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
                       {item.caption && (
                         <p className="text-center text-[13px] text-[var(--color-muted)] mt-3">{item.caption}</p>
                       )}
+                      {item.note && (
+                        <p className="text-[var(--color-muted)] leading-relaxed text-[15px] mt-4">{item.note}</p>
+                      )}
                     </div>
                   ))}
                 </div>

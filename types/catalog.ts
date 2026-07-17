@@ -20,7 +20,7 @@ export interface Product {
   datasheet_url?: string
   video_url?: string
   videoImage?: string
-  applicationImages?: { image: string; caption?: string }[]
+  applicationImages?: { image: string; caption?: string; note?: string }[]
   featured?: boolean
 }
 

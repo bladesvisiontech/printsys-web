@@ -332,8 +332,14 @@
           ],
           "images": [
             "/products/curado-uv/e2c-hp-1.png",
-            "/products/curado-uv/e2c-hp-2.jpg",
-            "/products/curado-uv/e2c-hp-3.jpg"
+            "/products/curado-uv/e2c-hp-2.jpg"
+          ],
+          "applicationImages": [
+            {
+              "image": "/products/curado-uv/e2c-hp-3.jpg",
+              "caption": "Secado de Etiquetas",
+              "note": "E2C HP está alojado en una carcasa más grande para permitir más refrigeración por aire y, por lo tanto, más potencia (hasta 180 W / cm). Perfecto para aplicaciones de impresión de alta velocidad o baja migración de hasta 80 cm de ancho de lámpara."
+            }
           ]
         },
         {
