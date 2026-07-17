@@ -29,8 +29,8 @@
     "legalName": "Print Sys SAS",
     "nit": "901427773-7",
     "heroEyebrow": "Distribuidor oficial GEW",
-    "heroTitle": "Soluciones tecnológicas de impresión, acabado y etiquetado",
-    "heroHighlight": "con un enfoque sostenible",
+    "heroTitle": "Impulsamos el futuro de la industria de etiquetas y empaques",
+    "heroHighlight": "",
     "heroVideo": "/hero-video.webm",
     "compatBrands": [
       {
@@ -78,7 +78,8 @@
         "name": "Windmöller & Hölscher",
         "logo": "/logos/compat/windmoller.jpg"
       }
-    ]
+    ],
+    "heroSubtitle": "Tecnología de clase mundial. Respaldo que marca la diferencia."
   },
   "brands": [
     {

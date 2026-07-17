@@ -20,11 +20,16 @@ export default function HomePage() {
                 {siteConfig.heroEyebrow ?? 'Distribuidor oficial GEW'}
               </div>
               <h1 className="animate-fade-up text-4xl sm:text-6xl font-bold text-[var(--color-brand-dark)] leading-[1.15] tracking-tight">
-                {siteConfig.heroTitle ?? 'Soluciones tecnológicas de impresión, acabado y etiquetado'}{' '}
-                <span className="text-[var(--color-green-mid)]">{siteConfig.heroHighlight ?? 'con un enfoque sostenible'}</span>
+                {siteConfig.heroTitle ?? 'Soluciones tecnológicas de impresión, acabado y etiquetado'}
+                {siteConfig.heroHighlight && (
+                  <>
+                    {' '}
+                    <span className="text-[var(--color-green-mid)]">{siteConfig.heroHighlight}</span>
+                  </>
+                )}
               </h1>
               <p className="animate-fade-up text-[var(--color-muted)] mt-6 text-lg max-w-xl leading-relaxed">
-                {siteConfig.description}
+                {siteConfig.heroSubtitle ?? siteConfig.description}
               </p>
               <div className="animate-fade-up flex flex-col sm:flex-row gap-3 mt-10">
                 <Link

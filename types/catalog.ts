@@ -82,6 +82,7 @@ export interface SiteConfig {
   heroEyebrow?: string
   heroTitle?: string
   heroHighlight?: string
+  heroSubtitle?: string
   heroVideo?: string
   compatBrands?: CompatBrand[]
 }
