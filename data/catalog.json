@@ -959,6 +959,32 @@
           "images": [
             "/products/curado-uv/nuva2-hp-1.avif"
           ]
+        },
+        {
+          "id": "excimer",
+          "name": "Excimer",
+          "slug": "excimer",
+          "brandId": "gew",
+          "brandName": "GEW",
+          "categoryId": "curado-uv",
+          "type": "equipment",
+          "featured": false,
+          "shortDescription": "Sistemas de radiación UV de vacío a 172nm",
+          "description": "Los sistemas Excimer de GEW utilizan lámparas de descarga de barrera dieléctrica (DBD) para producir radiación ultravioleta de vacío casi monocromática, típicamente a 172nm. Esta radiación se utiliza comúnmente para la matificación de recubrimientos superficiales, la modificación de la tensión superficial para mejorar la adhesión, o la limpieza de superficies para las industrias de semiconductores y médica.",
+          "specs": [],
+          "images": [
+            "/products/curado-uv/excimer-1.avif"
+          ],
+          "applicationImages": [
+            {
+              "image": "/products/curado-uv/excimer-app-1.jpg",
+              "caption": "Secado laminado de apariencia madera"
+            },
+            {
+              "image": "/products/curado-uv/excimer-app-2.jpg",
+              "caption": "Secado laminado de apariencia madera"
+            }
+          ]
         }
       ],
       "image": "/categories/curado-uv.jpg"
