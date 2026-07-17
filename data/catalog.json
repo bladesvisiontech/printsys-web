@@ -397,10 +397,16 @@
           ],
           "images": [
             "/products/curado-uv/e4c-1.png",
-            "/products/curado-uv/e4c-2.jpg",
-            "/products/curado-uv/e4c-3.jpg"
+            "/products/curado-uv/e4c-2.jpg"
           ],
-          "datasheet_url": "/datasheets/e4c-brochure-es.pdf"
+          "datasheet_url": "/datasheets/e4c-brochure-es.pdf",
+          "applicationImages": [
+            {
+              "image": "/products/curado-uv/e4c-3.jpg",
+              "caption": "Secado de empaques de alimentos",
+              "note": "Funciona con los procedimientos de prueba de curado más duros y es adecuado para aplicaciones de baja migración."
+            }
+          ]
         },
         {
           "id": "leo-led2",
