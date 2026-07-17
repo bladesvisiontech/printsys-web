@@ -902,6 +902,63 @@
             }
           ],
           "datasheet_url": "/datasheets/nuva2-brochure-es.pdf"
+        },
+        {
+          "id": "nuva2-hp",
+          "name": "NUVA2 HP",
+          "slug": "nuva2-hp",
+          "brandId": "gew",
+          "brandName": "GEW",
+          "categoryId": "curado-uv",
+          "type": "equipment",
+          "featured": false,
+          "shortDescription": "UV refrigerado por aire — alta potencia hasta 240W/cm",
+          "description": "NUVA2 HP es el mismo casete NUVA2 en un formato más angosto: la refrigeración adicional disponible permite operar hasta 240W/cm, con la potencia máxima disminuyendo a medida que aumenta la longitud de la lámpara. Totalmente refrigerado por aire, NUVA2 HP está disponible con una amplia gama de opciones de personalización y es perfecto para aplicaciones de curado final de inkjet (con lámparas dopadas con hierro) o máquinas de banda a alta velocidad.\n\nLos reflectores patentados de GEW están refrigerados activamente para garantizar que la transferencia de calor al sustrato sea mínima, mientras se entrega la mayor intensidad y dosis UV disponible. El diseño de casete de cambio rápido garantiza cambios de lámpara veloces, requiriendo solo una llave Allen, y todos los componentes reemplazables son plug and play para facilitar el mantenimiento.\n\nLa confiabilidad está garantizada cuando se alimenta con el sistema RHINO de GEW. NUVA2 HP puede adquirirse con una garantía de 5 años, lo que significa que no habrá costos de mantenimiento imprevistos mucho más allá del período de retorno de la inversión.\n\nNUVA2 HP está preparado para actualización a LED (\"ArcLED ready\"), de modo que un casete NUVA2 HP y uno LeoLED pueden usarse de forma intercambiable en la misma unidad de impresión, y los sistemas NUVA2 existentes pueden actualizarse de forma rentable en campo, requiriendo solo el casete LED y un chiller.",
+          "specs": [
+            {
+              "label": "Potencia eléctrica máx.",
+              "value": "240W / cm"
+            },
+            {
+              "label": "Espectro",
+              "value": "Mercurio**"
+            },
+            {
+              "label": "Irradiación en el punto focal",
+              "value": "9,0W / cm2*"
+            },
+            {
+              "label": "Dosis típica @ 100m / min",
+              "value": "210mJ / cm2*"
+            },
+            {
+              "label": "Longitud máxima",
+              "value": "60cm"
+            },
+            {
+              "label": "Sección transversal estándar",
+              "value": "145mm W x 293mm H"
+            },
+            {
+              "label": "Refrigeración",
+              "value": "Aire"
+            },
+            {
+              "label": "Temperatura de funcionamiento estándar máx.",
+              "value": "40°C (104°F)"
+            },
+            {
+              "label": "Humedad estándar máx.",
+              "value": "Sin condensación"
+            },
+            {
+              "label": "Nota",
+              "value": "* Medido en las condiciones del laboratorio estándar de GEW con una configuración estándar de cabeza de lámpara. ** Existen variables de lámpara disponibles bajo demanda."
+            }
+          ],
+          "images": [
+            "/products/curado-uv/nuva2-hp-1.avif"
+          ]
         }
       ],
       "image": "/categories/curado-uv.jpg"
