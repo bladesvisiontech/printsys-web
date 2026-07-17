@@ -1,9 +1,10 @@
-import type { Brand, ProductCategory, SiteConfig } from '@/types/catalog'
+import type { Brand, ProductCategory, SiteConfig, BlogPost } from '@/types/catalog'
 import catalogData from './catalog.json'
 
 export const siteConfig: SiteConfig = catalogData.siteConfig
 export const brands: Brand[] = catalogData.brands as Brand[]
 export const categories: ProductCategory[] = catalogData.categories as ProductCategory[]
+export const blogPosts: BlogPost[] = (catalogData.blogPosts ?? []) as BlogPost[]
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -30,4 +31,8 @@ export function getFeaturedBrands() {
 
 export function getFeaturedProducts() {
   return categories.flatMap(c => c.products.filter(p => p.featured))
+}
+
+export function getBlogPostBySlug(slug: string) {
+  return blogPosts.find(p => p.slug === slug)
 }

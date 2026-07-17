@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { categories, brands } from '@/data/catalog'
+import { categories, brands, blogPosts } from '@/data/catalog'
 
 const BASE_URL = 'https://www.printsys.com.co'
 
@@ -9,8 +9,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/productos`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE_URL}/aliados`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/quienes-somos`, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE_URL}/blog`, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE_URL}/contacto`, changeFrequency: 'yearly', priority: 0.5 },
   ]
+
+  const blogRoutes: MetadataRoute.Sitemap = blogPosts.map(p => ({
+    url: `${BASE_URL}/blog/${p.slug}`,
+    changeFrequency: 'yearly',
+    priority: 0.4,
+  }))
 
   const categoryRoutes: MetadataRoute.Sitemap = categories.map(cat => ({
     url: `${BASE_URL}/productos/${cat.slug}`,
@@ -32,5 +39,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }))
 
-  return [...staticRoutes, ...categoryRoutes, ...productRoutes, ...brandRoutes]
+  return [...staticRoutes, ...categoryRoutes, ...productRoutes, ...brandRoutes, ...blogRoutes]
 }

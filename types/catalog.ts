@@ -63,6 +63,19 @@ export interface CompatBrand {
   logo: string
 }
 
+export interface BlogPost {
+  id: string
+  slug: string
+  title: string
+  excerpt: string
+  content: string[]
+  image: string
+  imageAlt: string
+  date: string
+  tags: string[]
+  sourceUrl?: string
+}
+
 export interface SiteConfig {
   name: string
   legalName?: string

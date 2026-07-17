@@ -15,6 +15,7 @@ const navItems = [
   },
   { label: 'Aliados', href: '/aliados' },
   { label: 'Quiénes Somos', href: '/quienes-somos' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Contacto', href: '/contacto' },
 ]
 
@@ -174,6 +175,11 @@ export default function Header() {
 
           <Link href="/quienes-somos" onClick={close} className="flex items-center justify-between px-3 py-3 rounded-xl text-[var(--color-brand-dark)] font-semibold text-[15px] hover:bg-[var(--color-bg-card)] transition-colors">
             Quiénes Somos
+            <ChevronRight className="w-4 h-4 text-zinc-400" />
+          </Link>
+
+          <Link href="/blog" onClick={close} className="flex items-center justify-between px-3 py-3 rounded-xl text-[var(--color-brand-dark)] font-semibold text-[15px] hover:bg-[var(--color-bg-card)] transition-colors">
+            Blog
             <ChevronRight className="w-4 h-4 text-zinc-400" />
           </Link>
 
