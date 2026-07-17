@@ -14,6 +14,7 @@ const navItems = [
     children: categories.map(c => ({ label: c.name, slug: c.slug, href: `/productos/${c.slug}`, icon: c.icon })),
   },
   { label: 'Aliados', href: '/aliados' },
+  { label: 'Quiénes Somos', href: '/quienes-somos' },
   { label: 'Contacto', href: '/contacto' },
 ]
 
@@ -168,6 +169,11 @@ export default function Header() {
 
           <Link href="/aliados" onClick={close} className="flex items-center justify-between px-3 py-3 rounded-xl text-[var(--color-brand-dark)] font-semibold text-[15px] hover:bg-[var(--color-bg-card)] transition-colors">
             Aliados
+            <ChevronRight className="w-4 h-4 text-zinc-400" />
+          </Link>
+
+          <Link href="/quienes-somos" onClick={close} className="flex items-center justify-between px-3 py-3 rounded-xl text-[var(--color-brand-dark)] font-semibold text-[15px] hover:bg-[var(--color-bg-card)] transition-colors">
+            Quiénes Somos
             <ChevronRight className="w-4 h-4 text-zinc-400" />
           </Link>
 

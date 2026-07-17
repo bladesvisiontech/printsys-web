@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/`, changeFrequency: 'weekly', priority: 1 },
     { url: `${BASE_URL}/productos`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE_URL}/aliados`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/quienes-somos`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/contacto`, changeFrequency: 'yearly', priority: 0.5 },
   ]
 
