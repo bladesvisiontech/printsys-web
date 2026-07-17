@@ -82,6 +82,54 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Curado UV info ───────────────────────────────────────────── */}
+      <section className="bg-[var(--color-bg-card)] py-20 border-b border-[var(--color-border)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-brand-dark)] tracking-tight">¿Qué es el Curado?</h2>
+              <div className="w-10 h-1 rounded-full bg-[var(--color-cta)] mt-4 mb-6" />
+              <p className="text-[var(--color-muted)] leading-relaxed">
+                Proceso mediante el cual se utiliza la luz ultravioleta para iniciar una reacción fotoquímica con el objetivo de producir adhesión.
+              </p>
+              <p className="text-[var(--color-muted)] leading-relaxed mt-4">
+                En general, el curado UV permite a los fabricantes producir productos con propiedades físicas y mecánicas estéticamente agradables que mejoran la apariencia general, la calidad y el rendimiento de artículos de uso cotidiano.
+              </p>
+              <p className="text-[var(--color-brand-dark)] font-semibold mt-6">
+                En los links siguientes encuentran información de casos reales:
+              </p>
+              <ul className="mt-4 space-y-2">
+                {['Instalaciones Realizadas.', 'Estudios de caso por aplicación.', 'Estudios de caso por producto.'].map(item => (
+                  <li key={item} className="flex items-center gap-2.5 text-[var(--color-purple-mid)] text-[15px] font-medium">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-purple-mid)] shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-brand-dark)] tracking-tight">¿Qué obtiene al utilizar productos GEW?</h2>
+              <div className="w-10 h-1 rounded-full bg-[var(--color-cta)] mt-4 mb-6" />
+              <p className="text-[var(--color-muted)] leading-relaxed">
+                Los sistemas GEW se conectan a Internet y los datos del rendimiento del sistema se envían encriptados en vivo a GEW. La supervisión 24 horas al día, 7 días a la semana de todos los parámetros del sistema garantiza la respuesta de servicio más rápida y precisa de la industria.
+              </p>
+              <p className="text-[var(--color-muted)] leading-relaxed mt-4">
+                Otras ventajas muy importantes que se obtienen son:
+              </p>
+              <ul className="mt-4 space-y-2">
+                {['Ahorro de energía.', 'Reducción inmediata de la huella de CO2.', 'Soporte técnico local-global rápido y efectivo.'].map(item => (
+                  <li key={item} className="flex items-center gap-2.5 text-[var(--color-brand-dark)] text-[15px]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-cta)] shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Catalog with tabs ────────────────────────────────────────── */}
       <HomeCatalog />
 
