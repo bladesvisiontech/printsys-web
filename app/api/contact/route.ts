@@ -6,11 +6,28 @@ import { siteConfig } from '@/data/catalog'
 // to the real contacts. Override via CONTACT_TO_EMAIL in Vercel if needed.
 const DEFAULT_TO = siteConfig.contacts.map(c => c.email)
 
+const MAX_FIELD_LENGTH = 300
+const MAX_MESSAGE_LENGTH = 5000
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+function stripHeaderInjection(value: string): string {
+  return value.replace(/[\r\n]+/g, ' ').slice(0, MAX_FIELD_LENGTH)
+}
+
 export async function POST(request: NextRequest) {
-  const { nombre, empresa, email, telefono, asunto, mensaje } = await request.json()
+  const body = await request.json()
+  const nombre = typeof body.nombre === 'string' ? stripHeaderInjection(body.nombre) : ''
+  const empresa = typeof body.empresa === 'string' ? stripHeaderInjection(body.empresa) : ''
+  const email = typeof body.email === 'string' ? body.email.trim().slice(0, MAX_FIELD_LENGTH) : ''
+  const telefono = typeof body.telefono === 'string' ? stripHeaderInjection(body.telefono) : ''
+  const asunto = typeof body.asunto === 'string' ? stripHeaderInjection(body.asunto) : ''
+  const mensaje = typeof body.mensaje === 'string' ? body.mensaje.slice(0, MAX_MESSAGE_LENGTH) : ''
 
   if (!nombre || !email || !mensaje) {
     return NextResponse.json({ error: 'Faltan campos requeridos' }, { status: 400 })
+  }
+  if (!EMAIL_RE.test(email)) {
+    return NextResponse.json({ error: 'Email inválido' }, { status: 400 })
   }
 
   const resend = new Resend(process.env.RESEND_API_KEY)
