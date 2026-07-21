@@ -19,7 +19,7 @@ export default function HomePage() {
                 <Image src="/logos/gew.svg" alt="GEW" width={32} height={32} className="h-8 w-auto rounded-md bg-white p-1" />
                 {siteConfig.heroEyebrow ?? 'Distribuidor oficial GEW'}
               </div>
-              <h1 className="animate-fade-up text-4xl sm:text-6xl font-bold text-[var(--color-brand-dark)] leading-[1.15] tracking-tight">
+              <h1 className="animate-fade-up text-4xl sm:text-5xl font-bold text-[var(--color-brand-dark)] leading-[1.15] tracking-tight">
                 {siteConfig.heroTitle ?? 'Soluciones tecnológicas de impresión, acabado y etiquetado'}
                 {siteConfig.heroHighlight && (
                   <>
