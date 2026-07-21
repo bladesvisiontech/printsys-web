@@ -76,7 +76,7 @@ export default function QuienesSomosPage() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[var(--color-border)] order-2 lg:order-1">
               <Image
                 src="/quienes-somos/experiencia.jpg"
-                alt="Soporte técnico especializado"
+                alt="Curado UV LED GEW aplicado en la industria"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
