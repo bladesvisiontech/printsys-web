@@ -60,7 +60,7 @@ export default function QuienesSomosPage() {
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[var(--color-border)]">
             <Image
               src="/quienes-somos/tecnologia.jpg"
-              alt="Automatización industrial de clase mundial"
+              alt="Printsys"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
