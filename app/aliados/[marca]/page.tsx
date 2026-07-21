@@ -79,6 +79,33 @@ export default async function BrandPage({ params }: { params: Promise<{ marca: s
           </div>
         )}
 
+        {brand.slug === 'gew' && (
+          <div className="bg-white rounded-2xl border border-[var(--color-border)] p-6 mb-14">
+            <p className="text-[var(--color-brand-dark)] text-[15px] mb-4">
+              En los links siguientes encuentran información de casos reales:
+            </p>
+            <ul className="space-y-2.5">
+              {[
+                { label: 'Instalaciones Realizadas.', href: 'https://www.gewuv.com/news-about-gew/installations/' },
+                { label: 'Estudios de caso por aplicación.', href: 'https://www.gewuv.com/knowledge-centre/case-studies-by-application/' },
+                { label: 'Estudios de caso por producto.', href: 'https://www.gewuv.com/knowledge-centre/case-studies-by-product/' },
+              ].map(({ label, href }) => (
+                <li key={label} className="flex items-center gap-2.5 text-[15px]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-cta)] shrink-0" />
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--color-purple-mid)] hover:underline"
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {brand.gallery && brand.gallery.length > 0 && (
           <>
             <h2 className="text-[13px] font-bold text-[var(--color-brand-dark)] uppercase tracking-widest mb-5">

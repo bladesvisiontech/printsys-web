@@ -100,19 +100,6 @@ export default function HomePage() {
               <p className="text-[var(--color-muted)] leading-relaxed mt-4">
                 En general, el curado UV permite a los fabricantes producir productos con propiedades físicas y mecánicas estéticamente agradables que mejoran la apariencia general, la calidad y el rendimiento de artículos de uso cotidiano.
               </p>
-              <p className="text-[var(--color-muted)] leading-relaxed mt-4">
-                En los links siguientes encuentran información de casos reales:
-              </p>
-              <ul className="mt-3 space-y-2">
-                {['Instalaciones Realizadas.', 'Estudios de caso por aplicación.', 'Estudios de caso por producto.'].map(item => (
-                  <li key={item} className="flex items-center gap-2.5 text-[15px]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-cta)] shrink-0" />
-                    <Link href="/aliados/gew" className="text-[var(--color-purple-mid)] hover:underline">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
             </div>
 
             <div>
