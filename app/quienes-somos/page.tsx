@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Globe, Wrench, Handshake, TrendingUp, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { siteConfig } from '@/data/catalog'
 import PageHero from '@/components/ui/PageHero'
 import type { Metadata } from 'next'
@@ -10,30 +10,23 @@ export const metadata: Metadata = {
   description: 'Conoce a PRINT SYS S.A.S.: nuestra historia, misión, visión y por qué somos el aliado tecnológico de la industria de etiquetas y empaques.',
 }
 
-const razones = [
-  {
-    Icon: Globe,
-    title: 'Tecnología de Clase Mundial',
-    desc: 'Representamos fabricantes reconocidos internacionalmente por su innovación y calidad.',
-  },
-  {
-    Icon: Wrench,
-    title: 'Conocimiento Técnico',
-    desc: 'Asesoramos a nuestros clientes para seleccionar e implementar la solución adecuada para cada aplicación.',
-  },
-  {
-    Icon: Handshake,
-    title: 'Acompañamiento Cercano',
-    desc: 'Construimos relaciones de largo plazo basadas en confianza, soporte y atención personalizada.',
-  },
-  {
-    Icon: TrendingUp,
-    title: 'Resultados para Nuestros Clientes',
-    desc: 'Cada solución busca mejorar productividad, calidad, eficiencia y competitividad.',
-  },
+const DEFAULT_REASONS = [
+  { icon: '🌎', title: 'Tecnología de Clase Mundial', desc: 'Representamos fabricantes reconocidos internacionalmente por su innovación y calidad.' },
+  { icon: '👨‍🔧', title: 'Conocimiento Técnico', desc: 'Asesoramos a nuestros clientes para seleccionar e implementar la solución adecuada para cada aplicación.' },
+  { icon: '🤝', title: 'Acompañamiento Cercano', desc: 'Construimos relaciones de largo plazo basadas en confianza, soporte y atención personalizada.' },
+  { icon: '📈', title: 'Resultados para Nuestros Clientes', desc: 'Cada solución busca mejorar productividad, calidad, eficiencia y competitividad.' },
 ]
 
+const DEFAULT_MISSION = 'Impulsar el crecimiento de la industria de etiquetas y empaques mediante soluciones tecnológicas de clase mundial, asesoría especializada y un servicio cercano que genere valor sostenible para nuestros clientes.'
+const DEFAULT_VISION = 'Ser el aliado tecnológico de mayor confianza para la industria gráfica en Latinoamérica, reconocido por la excelencia de nuestras soluciones, la innovación constante y el compromiso con el éxito de nuestros clientes.'
+const DEFAULT_CTA_TITLE = 'Hablemos sobre cómo podemos impulsar los ahorros energéticos en su empresa'
+
 export default function QuienesSomosPage() {
+  const razones = siteConfig.aboutReasons?.length ? siteConfig.aboutReasons : DEFAULT_REASONS
+  const mission = siteConfig.aboutMission ?? DEFAULT_MISSION
+  const vision = siteConfig.aboutVision ?? DEFAULT_VISION
+  const ctaTitle = siteConfig.aboutCtaTitle ?? DEFAULT_CTA_TITLE
+
   return (
     <div className="min-h-screen bg-[var(--color-bg-card)]">
       <PageHero
@@ -103,10 +96,10 @@ export default function QuienesSomosPage() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">¿Por qué PRINT SYS?</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {razones.map(({ Icon, title, desc }) => (
+            {razones.map(({ icon, title, desc }) => (
               <div key={title} className="bg-white/5 border border-white/8 rounded-2xl p-6 hover:bg-white/8 transition-colors duration-200">
-                <div className="w-10 h-10 rounded-xl bg-[var(--color-green-mid)]/15 flex items-center justify-center mb-4">
-                  <Icon className="w-5 h-5 text-[var(--color-green-mid)]" />
+                <div className="w-10 h-10 rounded-xl bg-[var(--color-green-mid)]/15 flex items-center justify-center mb-4 text-xl">
+                  {icon}
                 </div>
                 <h3 className="font-semibold text-white text-[15px] mb-2">{title}</h3>
                 <p className="text-sm text-white/40 leading-relaxed">{desc}</p>
@@ -126,14 +119,14 @@ export default function QuienesSomosPage() {
             <h3 className="text-[13px] font-bold text-[var(--color-brand-dark)] uppercase tracking-widest">Misión</h3>
             <div className="w-10 h-1 rounded-full bg-[var(--color-cta)] mt-4 mb-5" />
             <p className="text-[var(--color-muted)] leading-relaxed">
-              Impulsar el crecimiento de la industria de etiquetas y empaques mediante soluciones tecnológicas de clase mundial, asesoría especializada y un servicio cercano que genere valor sostenible para nuestros clientes.
+              {mission}
             </p>
           </div>
           <div className="bg-white rounded-2xl border border-[var(--color-border)] p-8">
             <h3 className="text-[13px] font-bold text-[var(--color-brand-dark)] uppercase tracking-widest">Visión</h3>
             <div className="w-10 h-1 rounded-full bg-[var(--color-cta)] mt-4 mb-5" />
             <p className="text-[var(--color-muted)] leading-relaxed">
-              Ser el aliado tecnológico de mayor confianza para la industria gráfica en Latinoamérica, reconocido por la excelencia de nuestras soluciones, la innovación constante y el compromiso con el éxito de nuestros clientes.
+              {vision}
             </p>
           </div>
         </div>
@@ -143,7 +136,7 @@ export default function QuienesSomosPage() {
       <section className="bg-white py-20 border-t border-[var(--color-border)]">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-brand-dark)] tracking-tight">
-            Hablemos sobre cómo podemos impulsar los ahorros energéticos en su empresa
+            {ctaTitle}
           </h2>
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
             <Link

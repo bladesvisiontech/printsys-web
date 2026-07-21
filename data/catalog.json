@@ -89,7 +89,32 @@
       "Cilindros Rotometal",
       "Anilox JCTPRINT",
       "Otro"
-    ]
+    ],
+    "aboutReasons": [
+      {
+        "icon": "🌎",
+        "title": "Tecnología de Clase Mundial",
+        "desc": "Representamos fabricantes reconocidos internacionalmente por su innovación y calidad."
+      },
+      {
+        "icon": "👨‍🔧",
+        "title": "Conocimiento Técnico",
+        "desc": "Asesoramos a nuestros clientes para seleccionar e implementar la solución adecuada para cada aplicación."
+      },
+      {
+        "icon": "🤝",
+        "title": "Acompañamiento Cercano",
+        "desc": "Construimos relaciones de largo plazo basadas en confianza, soporte y atención personalizada."
+      },
+      {
+        "icon": "📈",
+        "title": "Resultados para Nuestros Clientes",
+        "desc": "Cada solución busca mejorar productividad, calidad, eficiencia y competitividad."
+      }
+    ],
+    "aboutMission": "Impulsar el crecimiento de la industria de etiquetas y empaques mediante soluciones tecnológicas de clase mundial, asesoría especializada y un servicio cercano que genere valor sostenible para nuestros clientes.",
+    "aboutVision": "Ser el aliado tecnológico de mayor confianza para la industria gráfica en Latinoamérica, reconocido por la excelencia de nuestras soluciones, la innovación constante y el compromiso con el éxito de nuestros clientes.",
+    "aboutCtaTitle": "Hablemos sobre cómo podemos impulsar los ahorros energéticos en su empresa"
   },
   "brands": [
     {
@@ -1278,7 +1303,11 @@
           ]
         }
       ],
-      "image": "/categories/prensas-flexo.jpg"
+      "image": "/categories/prensas-flexo.jpg",
+      "brandLabels": {
+        "etirama": "banda angosta",
+        "alfaflexo": "banda ancha"
+      }
     },
     {
       "id": "maquinas-etiquetas",

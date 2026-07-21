@@ -32,6 +32,7 @@ export interface ProductCategory {
   icon: string
   image?: string
   brands: string[]          // brand IDs that appear in this category
+  brandLabels?: Record<string, string>  // brand ID -> subtitle shown in brand filter tabs
   products: Product[]
 }
 
@@ -101,4 +102,8 @@ export interface SiteConfig {
   heroVideo?: string
   compatBrands?: CompatBrand[]
   contactSubjects?: string[]
+  aboutReasons?: { icon: string; title: string; desc: string }[]
+  aboutMission?: string
+  aboutVision?: string
+  aboutCtaTitle?: string
 }

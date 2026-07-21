@@ -6,10 +6,6 @@ import ProductGrid from '@/components/sections/ProductGrid'
 import PageHero from '@/components/ui/PageHero'
 import type { Metadata } from 'next'
 
-const BRAND_SUBTITLES: Record<string, Record<string, string>> = {
-  'prensas-flexo': { etirama: 'banda angosta', alfaflexo: 'banda ancha' },
-}
-
 export async function generateStaticParams() {
   return categories.map(c => ({ categoria: c.slug }))
 }
@@ -58,7 +54,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       <ProductGrid
         category={cat}
         brands={catBrands.filter(Boolean) as NonNullable<typeof catBrands[0]>[]}
-        brandSubtitles={BRAND_SUBTITLES[cat.slug]}
+        brandSubtitles={cat.brandLabels}
       />
 
       {/* CTA bar */}
