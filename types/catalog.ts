@@ -100,4 +100,5 @@ export interface SiteConfig {
   heroSubtitle?: string
   heroVideo?: string
   compatBrands?: CompatBrand[]
+  contactSubjects?: string[]
 }

@@ -78,6 +78,17 @@
         "name": "Windmöller & Hölscher",
         "logo": "/logos/compat/windmoller.jpg"
       }
+    ],
+    "contactSubjects": [
+      "Cotización de equipo",
+      "Soporte técnico GEW",
+      "Consumibles y repuestos",
+      "Prensas Etirama",
+      "Prensas Alfaflexo",
+      "Máquinas Cartes",
+      "Cilindros Rotometal",
+      "Anilox JCTPRINT",
+      "Otro"
     ]
   },
   "brands": [

@@ -2,8 +2,22 @@
 
 import { useState } from 'react'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { siteConfig } from '@/data/catalog'
+
+const DEFAULT_SUBJECTS = [
+  'Cotización de equipo',
+  'Soporte técnico GEW',
+  'Consumibles y repuestos',
+  'Prensas Etirama',
+  'Prensas Alfaflexo',
+  'Máquinas Cartes',
+  'Cilindros Rotometal',
+  'Anilox JCTPRINT',
+  'Otro',
+]
 
 export default function ContactForm() {
+  const subjects = siteConfig.contactSubjects?.length ? siteConfig.contactSubjects : DEFAULT_SUBJECTS
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
   const [errorMsg, setErrorMsg] = useState('')
 
@@ -76,15 +90,9 @@ export default function ContactForm() {
         <select name="asunto"
           className="w-full px-4 py-2.5 rounded-xl border border-[var(--color-border)] text-[13px] bg-[var(--color-bg-card)] focus:bg-white focus:outline-none focus:border-[var(--color-purple-mid)] transition-all">
           <option value="">Selecciona un tema</option>
-          <option>Cotización de equipo</option>
-          <option>Soporte técnico GEW</option>
-          <option>Consumibles y repuestos</option>
-          <option>Prensas Etirama</option>
-          <option>Prensas Alfaflexo</option>
-          <option>Máquinas Cartes</option>
-          <option>Cilindros Rotometal</option>
-          <option>Anilox JCTPRINT</option>
-          <option>Otro</option>
+          {subjects.map(subject => (
+            <option key={subject}>{subject}</option>
+          ))}
         </select>
       </div>
       <div>
