@@ -98,6 +98,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           ))}
         </div>
 
+        {post.video && (
+          <div className="rounded-2xl overflow-hidden border border-[var(--color-border)] mb-8 bg-black">
+            {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+            <video src={post.video} controls playsInline className="w-full h-auto" />
+          </div>
+        )}
+
         <div className="space-y-5">
           {post.content.map((paragraph, i) => (
             <p key={i} className="text-[var(--color-brand-dark)] text-[16px] leading-relaxed">
@@ -105,6 +112,22 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             </p>
           ))}
         </div>
+
+        {post.gallery && post.gallery.length > 0 && (
+          <div className="grid grid-cols-2 gap-3 mt-8">
+            {post.gallery.map((img, i) => (
+              <div key={img} className="relative aspect-[4/3] rounded-xl overflow-hidden border border-[var(--color-border)]">
+                <Image
+                  src={img}
+                  alt={`${post.imageAlt} ${i + 2}`}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 384px"
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        )}
 
         {post.sourceUrl && (
           <a

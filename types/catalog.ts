@@ -71,6 +71,8 @@ export interface BlogPost {
   content: string[]
   image: string
   imageAlt: string
+  gallery?: string[]
+  video?: string
   date: string
   tags: string[]
   sourceUrl?: string
