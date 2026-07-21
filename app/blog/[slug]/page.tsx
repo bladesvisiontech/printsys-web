@@ -79,16 +79,23 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       </div>
 
       <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-[var(--color-border)] mb-10">
-          <Image
-            src={post.image}
-            alt={post.imageAlt}
-            fill
-            sizes="(max-width: 768px) 100vw, 768px"
-            className="object-cover"
-            priority
-          />
-        </div>
+        {post.video ? (
+          <div className="rounded-2xl overflow-hidden border border-[var(--color-border)] mb-10 bg-black">
+            {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+            <video src={post.video} poster={post.image} controls playsInline className="w-full h-auto" />
+          </div>
+        ) : (
+          <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-[var(--color-border)] mb-10">
+            <Image
+              src={post.image}
+              alt={post.imageAlt}
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+              priority
+            />
+          </div>
+        )}
 
         <div className="flex flex-wrap gap-2 mb-8">
           {post.tags.map(tag => (
@@ -97,13 +104,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             </span>
           ))}
         </div>
-
-        {post.video && (
-          <div className="rounded-2xl overflow-hidden border border-[var(--color-border)] mb-8 bg-black">
-            {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-            <video src={post.video} controls playsInline className="w-full h-auto" />
-          </div>
-        )}
 
         <div className="space-y-5">
           {post.content.map((paragraph, i) => (
@@ -138,6 +138,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           >
             <ExternalLink className="w-3.5 h-3.5" />
             Ver publicación original
+            {post.sourceUrl.includes('linkedin.com') && (
+              <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-[#0A66C2]" aria-label="LinkedIn">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.446-2.136 2.94v5.666H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452z" />
+              </svg>
+            )}
           </a>
         )}
 
