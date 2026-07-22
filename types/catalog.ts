@@ -106,4 +106,15 @@ export interface SiteConfig {
   aboutMission?: string
   aboutVision?: string
   aboutCtaTitle?: string
+  partnersHeading?: string
+  curadoTitle?: string
+  curadoParagraphs?: string[]
+  gewBenefitsTitle?: string
+  gewBenefitsParagraphs?: string[]
+  gewBenefitsList?: string[]
+  homeWhyTitle?: string
+  homeWhySubtitle?: string
+  homeWhyReasons?: { icon: string; title: string; desc: string }[]
+  homeCtaTitle?: string
+  homeCtaSubtitle?: string
 }

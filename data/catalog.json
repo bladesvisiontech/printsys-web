@@ -114,7 +114,49 @@
     ],
     "aboutMission": "Impulsar el crecimiento de la industria de etiquetas y empaques mediante soluciones tecnológicas de clase mundial, asesoría especializada y un servicio cercano que genere valor sostenible para nuestros clientes.",
     "aboutVision": "Ser el aliado tecnológico de mayor confianza para la industria gráfica en Latinoamérica, reconocido por la excelencia de nuestras soluciones, la innovación constante y el compromiso con el éxito de nuestros clientes.",
-    "aboutCtaTitle": "Hablemos sobre cómo podemos impulsar los ahorros energéticos en su empresa"
+    "aboutCtaTitle": "Hablemos sobre cómo podemos impulsar los ahorros energéticos en su empresa",
+    "partnersHeading": "Nuestros aliados estratégicos",
+    "curadoTitle": "¿Qué es el Curado?",
+    "curadoParagraphs": [
+      "Proceso mediante el cual se utiliza la luz ultravioleta para iniciar una reacción fotoquímica con el objetivo de producir adhesión.",
+      "En general, el curado UV permite a los fabricantes producir productos con propiedades físicas y mecánicas estéticamente agradables que mejoran la apariencia general, la calidad y el rendimiento de artículos de uso cotidiano."
+    ],
+    "gewBenefitsTitle": "¿Qué obtiene al utilizar productos GEW?",
+    "gewBenefitsParagraphs": [
+      "Los sistemas GEW se conectan a Internet y los datos del rendimiento del sistema se envían encriptados en vivo a GEW. La supervisión 24 horas al día, 7 días a la semana de todos los parámetros del sistema garantiza la respuesta de servicio más rápida y precisa de la industria.",
+      "Otras ventajas muy importantes que se obtienen son:"
+    ],
+    "gewBenefitsList": [
+      "Ahorro de energía.",
+      "Reducción inmediata de la huella de CO2.",
+      "Soporte técnico local-global rápido y efectivo."
+    ],
+    "homeWhyTitle": "¿Por qué Printsys?",
+    "homeWhySubtitle": "Soporte técnico especializado y acceso directo a las mejores marcas del mundo.",
+    "homeWhyReasons": [
+      {
+        "icon": "⚡",
+        "title": "Representación oficial",
+        "desc": "Distribuidores y agentes autorizados de marcas líderes mundiales."
+      },
+      {
+        "icon": "🔧",
+        "title": "Servicio técnico",
+        "desc": "Instalación, puesta en marcha y mantenimiento preventivo y correctivo."
+      },
+      {
+        "icon": "📦",
+        "title": "Stock local",
+        "desc": "Repuestos y consumibles disponibles en Colombia para respuesta inmediata."
+      },
+      {
+        "icon": "🎓",
+        "title": "Capacitación",
+        "desc": "Formación técnica a operadores y equipos de mantenimiento in-situ."
+      }
+    ],
+    "homeCtaTitle": "¿Listo para optimizar tu proceso?",
+    "homeCtaSubtitle": "Uno de nuestros especialistas te ayudará a encontrar la solución ideal para tu operación."
   },
   "brands": [
     {

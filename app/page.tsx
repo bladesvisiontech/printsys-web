@@ -1,12 +1,39 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight, Zap, Wrench, Package, GraduationCap } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { siteConfig, brands } from '@/data/catalog'
 import HomeCatalog from '@/components/sections/HomeCatalog'
 import CompatMarquee from '@/components/sections/CompatMarquee'
 
+const DEFAULT_CURADO_PARAGRAPHS = [
+  'Proceso mediante el cual se utiliza la luz ultravioleta para iniciar una reacción fotoquímica con el objetivo de producir adhesión.',
+  'En general, el curado UV permite a los fabricantes producir productos con propiedades físicas y mecánicas estéticamente agradables que mejoran la apariencia general, la calidad y el rendimiento de artículos de uso cotidiano.',
+]
+
+const DEFAULT_GEW_BENEFITS_PARAGRAPHS = [
+  'Los sistemas GEW se conectan a Internet y los datos del rendimiento del sistema se envían encriptados en vivo a GEW. La supervisión 24 horas al día, 7 días a la semana de todos los parámetros del sistema garantiza la respuesta de servicio más rápida y precisa de la industria.',
+  'Otras ventajas muy importantes que se obtienen son:',
+]
+
+const DEFAULT_GEW_BENEFITS_LIST = [
+  'Ahorro de energía.',
+  'Reducción inmediata de la huella de CO2.',
+  'Soporte técnico local-global rápido y efectivo.',
+]
+
+const DEFAULT_HOME_WHY_REASONS = [
+  { icon: '⚡', title: 'Representación oficial', desc: 'Distribuidores y agentes autorizados de marcas líderes mundiales.' },
+  { icon: '🔧', title: 'Servicio técnico', desc: 'Instalación, puesta en marcha y mantenimiento preventivo y correctivo.' },
+  { icon: '📦', title: 'Stock local', desc: 'Repuestos y consumibles disponibles en Colombia para respuesta inmediata.' },
+  { icon: '🎓', title: 'Capacitación', desc: 'Formación técnica a operadores y equipos de mantenimiento in-situ.' },
+]
+
 export default function HomePage() {
   const partnerLogos = brands.filter(b => b.featured && b.logo)
+  const curadoParagraphs = siteConfig.curadoParagraphs?.length ? siteConfig.curadoParagraphs : DEFAULT_CURADO_PARAGRAPHS
+  const gewBenefitsParagraphs = siteConfig.gewBenefitsParagraphs?.length ? siteConfig.gewBenefitsParagraphs : DEFAULT_GEW_BENEFITS_PARAGRAPHS
+  const gewBenefitsList = siteConfig.gewBenefitsList?.length ? siteConfig.gewBenefitsList : DEFAULT_GEW_BENEFITS_LIST
+  const homeWhyReasons = siteConfig.homeWhyReasons?.length ? siteConfig.homeWhyReasons : DEFAULT_HOME_WHY_REASONS
 
   return (
     <main>
@@ -65,7 +92,7 @@ export default function HomePage() {
       {/* ── Brand logos strip ────────────────────────────────────────── */}
       <section className="border-b border-[var(--color-border)] bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-zinc-400 text-center mb-7">Nuestros aliados estratégicos</p>
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-zinc-400 text-center mb-7">{siteConfig.partnersHeading ?? 'Nuestros aliados estratégicos'}</p>
           <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-16">
             {partnerLogos.map(brand => (
               <Link
@@ -92,27 +119,25 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-brand-dark)] tracking-tight">¿Qué es el Curado?</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-brand-dark)] tracking-tight">{siteConfig.curadoTitle ?? '¿Qué es el Curado?'}</h2>
               <div className="w-10 h-1 rounded-full bg-[var(--color-cta)] mt-4 mb-6" />
-              <p className="text-[var(--color-muted)] leading-relaxed">
-                Proceso mediante el cual se utiliza la luz ultravioleta para iniciar una reacción fotoquímica con el objetivo de producir adhesión.
-              </p>
-              <p className="text-[var(--color-muted)] leading-relaxed mt-4">
-                En general, el curado UV permite a los fabricantes producir productos con propiedades físicas y mecánicas estéticamente agradables que mejoran la apariencia general, la calidad y el rendimiento de artículos de uso cotidiano.
-              </p>
+              {curadoParagraphs.map((paragraph, i) => (
+                <p key={i} className={`text-[var(--color-muted)] leading-relaxed ${i > 0 ? 'mt-4' : ''}`}>
+                  {paragraph}
+                </p>
+              ))}
             </div>
 
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-brand-dark)] tracking-tight">¿Qué obtiene al utilizar productos GEW?</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-brand-dark)] tracking-tight">{siteConfig.gewBenefitsTitle ?? '¿Qué obtiene al utilizar productos GEW?'}</h2>
               <div className="w-10 h-1 rounded-full bg-[var(--color-cta)] mt-4 mb-6" />
-              <p className="text-[var(--color-muted)] leading-relaxed">
-                Los sistemas GEW se conectan a Internet y los datos del rendimiento del sistema se envían encriptados en vivo a GEW. La supervisión 24 horas al día, 7 días a la semana de todos los parámetros del sistema garantiza la respuesta de servicio más rápida y precisa de la industria.
-              </p>
-              <p className="text-[var(--color-muted)] leading-relaxed mt-4">
-                Otras ventajas muy importantes que se obtienen son:
-              </p>
+              {gewBenefitsParagraphs.map((paragraph, i) => (
+                <p key={i} className={`text-[var(--color-muted)] leading-relaxed ${i > 0 ? 'mt-4' : ''}`}>
+                  {paragraph}
+                </p>
+              ))}
               <ul className="mt-4 space-y-2">
-                {['Ahorro de energía.', 'Reducción inmediata de la huella de CO2.', 'Soporte técnico local-global rápido y efectivo.'].map(item => (
+                {gewBenefitsList.map(item => (
                   <li key={item} className="flex items-center gap-2.5 text-[var(--color-brand-dark)] text-[15px]">
                     <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-cta)] shrink-0" />
                     {item}
@@ -135,19 +160,14 @@ export default function HomePage() {
         <div className="absolute inset-0 hero-grid pointer-events-none opacity-50" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">¿Por qué Printsys?</h2>
-            <p className="text-white/40 mt-3 text-sm max-w-md mx-auto">Soporte técnico especializado y acceso directo a las mejores marcas del mundo.</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">{siteConfig.homeWhyTitle ?? '¿Por qué Printsys?'}</h2>
+            <p className="text-white/40 mt-3 text-sm max-w-md mx-auto">{siteConfig.homeWhySubtitle ?? 'Soporte técnico especializado y acceso directo a las mejores marcas del mundo.'}</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {[
-              { Icon: Zap,            title: 'Representación oficial', desc: 'Distribuidores y agentes autorizados de marcas líderes mundiales.' },
-              { Icon: Wrench,         title: 'Servicio técnico',       desc: 'Instalación, puesta en marcha y mantenimiento preventivo y correctivo.' },
-              { Icon: Package,        title: 'Stock local',            desc: 'Repuestos y consumibles disponibles en Colombia para respuesta inmediata.' },
-              { Icon: GraduationCap,  title: 'Capacitación',           desc: 'Formación técnica a operadores y equipos de mantenimiento in-situ.' },
-            ].map(({ Icon, title, desc }) => (
+            {homeWhyReasons.map(({ icon, title, desc }) => (
               <div key={title} className="bg-white/5 border border-white/8 rounded-2xl p-6 hover:bg-white/8 transition-colors duration-200">
-                <div className="w-10 h-10 rounded-xl bg-[var(--color-green-mid)]/15 flex items-center justify-center mb-4">
-                  <Icon className="w-5 h-5 text-[var(--color-green-mid)]" />
+                <div className="w-10 h-10 rounded-xl bg-[var(--color-green-mid)]/15 flex items-center justify-center mb-4 text-xl">
+                  {icon}
                 </div>
                 <h3 className="font-semibold text-white text-[15px] mb-2">{title}</h3>
                 <p className="text-sm text-white/40 leading-relaxed">{desc}</p>
@@ -160,8 +180,8 @@ export default function HomePage() {
       {/* ── Final CTA ────────────────────────────────────────────────── */}
       <section className="bg-white py-20 border-t border-[var(--color-border)]">
         <div className="max-w-2xl mx-auto px-4 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-brand-dark)] tracking-tight">¿Listo para optimizar tu proceso?</h2>
-          <p className="text-[var(--color-muted)] mt-4 leading-relaxed text-[15px]">Uno de nuestros especialistas te ayudará a encontrar la solución ideal para tu operación.</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-brand-dark)] tracking-tight">{siteConfig.homeCtaTitle ?? '¿Listo para optimizar tu proceso?'}</h2>
+          <p className="text-[var(--color-muted)] mt-4 leading-relaxed text-[15px]">{siteConfig.homeCtaSubtitle ?? 'Uno de nuestros especialistas te ayudará a encontrar la solución ideal para tu operación.'}</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
             <Link
               href="/contacto"
