@@ -249,9 +249,9 @@
       "logo": "/logos/spi.jpg"
     },
     {
-      "id": "gmi",
-      "name": "GMI",
-      "slug": "gmi",
+      "id": "gmi-color",
+      "name": "GMI Color",
+      "slug": "gmi-color",
       "tagline": "Automatización de prensas",
       "relationship": "Representante autorizado",
       "description": "Soluciones de automatización para prensas offset, flexo y digital. Instalado en más de 750 diseños de prensa diferentes.",
