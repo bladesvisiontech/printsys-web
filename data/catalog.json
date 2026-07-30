@@ -2140,7 +2140,7 @@
           "categoryId": "",
           "type": "equipment",
           "shortDescription": "Lámparas UV - Germicidas",
-          "description": "La desinfección ultravioleta es un medio para matar o inocular microorganismos inofensivos en un entorno dedicado que utiliza tecnología de luz ultravioleta. La radiación ultravioleta de longitud de onda corta es dañina para los microorganismos.\nEs eficaz para destruir los ácidos nucleicos en estos organismos, de modo que su ADN se ve interrumpido por la radiación UV, dejándolos incapaces de realizar funciones celulares vitales.\nSuministramos lámparas germicidas de baja presión, amalgamas y arco de mercurio a media presión, fundas de cuarzo, balastos para lámparas, fuentes de alimentación electrónicas, equipos de medición de UV, accesorios y repuestos para muchos sistemas y diferentes fabricantes. Podemos suministrar diseños de lámparas Germicidas a medida y soluciones UV rentables para cumplir con sus requisitos exactos.",
+          "description": "La desinfección ultravioleta es un medio para matar o inocular microorganismos inofensivos en un entorno dedicado que utiliza tecnología de luz ultravioleta. La radiación ultravioleta de longitud de onda corta es dañina para los microorganismos.",
           "specs": [],
           "images": [
             "/cms-1785425513587.jpg"
@@ -2156,7 +2156,7 @@
           "categoryId": "",
           "type": "equipment",
           "shortDescription": "Lámparas Infrarrojas, fabricación PET-calefacción-curado y pegado-soldadura de plástico-recocido.",
-          "description": "Suministramos lámparas infrarrojas para diferentes aplicaciones y procesos industriales incluido el secado de pinturas y barnices, templado de vidrio, precalentado de metales, así como para la calefacción de espacios interiores y exteriores en locales domésticos y comerciales. Podemos suministrar lámparas IR de onda corta, media o larga; con diferentes acabados; lámparas IR con reflector, sin reflector; mono-tubo, bi-tubo; acabado dorado o rubí; para proceso PET y otras más.",
+          "description": "Suministramos lámparas infrarrojas para diferentes aplicaciones y procesos industriales incluido el secado de pinturas y barnices, templado de vidrio, precalentado de metales, así como para la calefacción de espacios interiores y exteriores en locales domésticos y comerciales.",
           "specs": [],
           "images": [
             "/cms-1785425938037.jpg"
@@ -2172,13 +2172,20 @@
           "categoryId": "",
           "type": "equipment",
           "shortDescription": "Lámparas Fluorescentes para preimpresión",
-          "description": "También conocidas como lámparas de mercurio de baja presión (lámpara BP Hg) o tubos UV, estas lámparas proporcionan una fuente altamente eficiente de energía ultravioleta, particularmente luz UV de longitud de onda corta (254 nm y 185 nm).\nSuministramos una amplia gama de lámparas fluorescentes para la desinfección UV, procesos de preimpresión, inspección, luz negra y otras aplicaciones.\nAdicional a este tipo de lámparas, también podemos proveer los balastros.",
+          "description": "Suministramos una amplia gama de lámparas fluorescentes para la desinfección UV, procesos de preimpresión, inspección, luz negra y otras aplicaciones.\nAdicional a este tipo de lámparas, también podemos proveer los balastros.",
           "specs": [],
           "images": [
             "/cms-1785426120302.jpg",
             "/cms-1785429495153.jpg"
           ],
-          "featured": false
+          "featured": false,
+          "applicationImages": [
+            {
+              "image": "/cms-1785430133224.jpg",
+              "caption": "Maquina para clichés",
+              "note": ""
+            }
+          ]
         }
       ],
       "image": "/cms-1785424449825.jpg"
