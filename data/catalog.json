@@ -2122,6 +2122,16 @@
         }
       ],
       "image": "/categories/consumibles.jpg"
+    },
+    {
+      "id": "",
+      "slug": "lamparas",
+      "name": "Lámparas",
+      "description": "Suministro de Lámparas UV, Germicidas, Infrarrojas y Fluorescentes",
+      "icon": "🔆",
+      "brands": [],
+      "products": [],
+      "image": "/cms-1785424449825.jpg"
     }
   ],
   "blogPosts": [
