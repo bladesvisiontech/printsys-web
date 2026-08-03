@@ -1182,7 +1182,7 @@
           "type": "equipment",
           "featured": true,
           "shortDescription": "420mm — 150 m/min, tecnología CHILLDRUM",
-          "description": "Versión de mayor velocidad de la línea SPS. CHILLDRUM para control térmico superior. 10 colores, 150 m/min.",
+          "description": "Versión de mayor velocidad de la línea SPS. CHILLDRUM para control térmico superior. Tecnología de Servomotores. SUSTRATOS: ETIQUETA ADHESIVA, PAPEL, TERMOENCOGIBLE, IN-MOLD LABEL, ALUMINIO, LIGHT CARTON.",
           "specs": [
             {
               "label": "Ancho máx. impresión",
@@ -1203,7 +1203,8 @@
           ],
           "images": [
             "/products/prensas-flexo/sps-420-1.png"
-          ]
+          ],
+          "video_url": "https://www.youtube.com/watch?v=N9wrAr9s-YY"
         },
         {
           "id": "r4",
