@@ -1238,11 +1238,11 @@
           "brandName": "Etirama",
           "categoryId": "prensas-flexo",
           "type": "equipment",
-          "shortDescription": "Alta velocidad — 200 m/min, multi-sustrato",
-          "description": "Máquina industrial con servomotor. 200 m/min. Multi-sustrato: autoadhesivos, papeles y films.",
+          "shortDescription": "REVISADORA de Alta velocidad — 200 m/min, multi-sustrato",
+          "description": "Máquina Revisadora industrial con servomotor. 200 m/min. Multi-sustrato: autoadhesivos, papeles y films.",
           "specs": [
             {
-              "label": "Ancho sustrato",
+              "label": "Ancho max. sustrato",
               "value": "430 mm"
             },
             {
@@ -1252,6 +1252,10 @@
             {
               "label": "Motor",
               "value": "Servomotor"
+            },
+            {
+              "label": "Slitter",
+              "value": "Standard"
             }
           ],
           "images": [
