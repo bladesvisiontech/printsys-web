@@ -1120,7 +1120,7 @@
           "categoryId": "prensas-flexo",
           "type": "equipment",
           "shortDescription": "Prensa banda estrecha 350mm — hasta 8 colores",
-          "description": "Versión 350mm de la línea E-Series. Mismas capacidades del ES 250 con mayor ancho de impresión.",
+          "description": "Versión 350mm de la línea E-Series. Mismas capacidades del ES 250 con mayor ancho de impresión. Etiquetas adhesivas, papeles, light cartón.",
           "specs": [
             {
               "label": "Ancho máx. impresión",
@@ -1133,10 +1133,18 @@
             {
               "label": "Colores máx.",
               "value": "8 colores"
+            },
+            {
+              "label": "Drive",
+              "value": "Cajas de transmisión"
+            },
+            {
+              "label": "UV Dryer",
+              "value": "Convencional /LED"
             }
           ],
           "images": [
-            "/products/prensas-flexo/es-350-1.png"
+            "/cms-1785782809062.png"
           ]
         },
         {
