@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft, ArrowRight, FileText } from 'lucide-react'
 import { categories, getCategoryBySlug, getProductBySlug, getBrandById } from '@/data/catalog'
-import { toYouTubeEmbed } from '@/lib/youtube'
+import { toYouTubeEmbed, isYouTubeUrl } from '@/lib/youtube'
 import type { Metadata } from 'next'
 
 export async function generateStaticParams() {
@@ -75,15 +75,20 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
             {/* Video */}
             {product.video_url && (
               <div className="bg-white rounded-2xl border border-[var(--color-border)] overflow-hidden">
-                <div className="aspect-video">
-                  <iframe
-                    src={toYouTubeEmbed(product.video_url)}
-                    title={`Video — ${product.name}`}
-                    className="w-full h-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
+                {isYouTubeUrl(product.video_url) ? (
+                  <div className="aspect-video">
+                    <iframe
+                      src={toYouTubeEmbed(product.video_url)}
+                      title={`Video — ${product.name}`}
+                      className="w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                ) : (
+                  // eslint-disable-next-line jsx-a11y/media-has-caption
+                  <video src={product.video_url} controls playsInline className="w-full h-auto" />
+                )}
               </div>
             )}
 
