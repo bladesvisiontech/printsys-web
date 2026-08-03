@@ -1765,6 +1765,22 @@
           ],
           "videoImage": "/cms-1785270598227.webp",
           "video_url": "https://youtu.be/nIZUETjjUBo"
+        },
+        {
+          "id": "rotoset-control",
+          "name": "rotoSet control",
+          "slug": "rotoset-control",
+          "brandId": "rotometal",
+          "brandName": "Rotometal",
+          "categoryId": "cilindros",
+          "type": "equipment",
+          "shortDescription": "Herramienta de control de alta precisión que permiten controlar la presión sobre los cilindros.",
+          "description": "Rotoset Control – manómetro para ajustar y monitorizar la presión de cortar, para las herramientas rotativas de corte, asegura el proceso controlado y eficaz de muescar o perforar. Rotoset Control, permite ajustar con una alta precisión la presión de cada lado del cilindro. El Manómetro de Rotometal permite alargar el uso de herramientas  para cortar y perforar permitiendo trabajar de forma estable.",
+          "specs": [],
+          "images": [
+            "/cms-1785768459557.jpg"
+          ],
+          "featured": false
         }
       ],
       "image": "/categories/cilindros.jpg"
