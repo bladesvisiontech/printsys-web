@@ -1149,7 +1149,7 @@
           "type": "equipment",
           "featured": true,
           "shortDescription": "Sistema de Productividad Superior — Dual Servo, Laser Point",
-          "description": "Tecnología Dual Servo con ajuste de registro Laser Point. Compatible con PSS, papel, sleeve, in-mold label, embalaje flexible y aluminio.",
+          "description": "Tecnología Dual Servo con ajuste de registro: Laser Point. Compatible con PSS, papel, sleeve, in-mold label, embalaje flexible y aluminio.",
           "specs": [
             {
               "label": "Ancho máx. impresión",
@@ -1165,7 +1165,15 @@
             },
             {
               "label": "Transmisión",
-              "value": "Dual Servo"
+              "value": "Servomotor - Dual Servo - Caja de Transmisión"
+            },
+            {
+              "label": "Accesorios",
+              "value": "Cold Foil - Volteador de Banda - Salida en Hojas - Video Scan - Secadores de aire caliente"
+            },
+            {
+              "label": "Curado UV",
+              "value": "Convencional - LED"
             }
           ],
           "images": [
