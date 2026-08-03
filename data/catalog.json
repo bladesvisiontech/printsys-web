@@ -2131,7 +2131,7 @@
           "categoryId": "consumibles",
           "type": "spare_part",
           "shortDescription": "Filtro de aire para sistemas de curado UV",
-          "description": "Filtro de aire de repuesto para sistemas de curado UV GEW, diseñado para mantener el flujo de aire y la refrigeración adecuada de la lámpara.",
+          "description": "Filtro de aire de repuesto para sistemas de curado UV GEW, diseñado para mantener el flujo de aire y la refrigeración adecuada del gabinete de fuentes.",
           "specs": [],
           "images": [
             "/products/consumibles/filtro-aire-1.jpg"
