@@ -1939,11 +1939,13 @@
           "brandName": "GEW",
           "categoryId": "consumibles",
           "type": "spare_part",
-          "shortDescription": "Reflectores, ventanas de cuarzo, partes mecánicas",
-          "description": "Repuestos originales GEW: reflectores dicroicos, ventanas de cuarzo, partes mecánicas y neumáticas, fuentes de alimentación.",
+          "shortDescription": "Reflectores, ventanas de cuarzo, partes mecánicas, refrigerante",
+          "description": "Repuestos originales GEW: reflectores dicroicos, ventanas de cuarzo, partes mecánicas y neumáticas, fuentes de alimentación, refrigerante Alphi 11.",
           "specs": [],
           "images": [
-            "/products/consumibles/fernox-1.jpg"
+            "/products/consumibles/fernox-1.jpg",
+            "/cms-1785767670339.jpg",
+            "/cms-1785767776061.jpg"
           ]
         },
         {
