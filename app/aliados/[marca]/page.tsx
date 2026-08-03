@@ -111,13 +111,13 @@ export default async function BrandPage({ params }: { params: Promise<{ marca: s
           </div>
         )}
 
-        {brand.gallery && brand.gallery.length > 0 && (
+        {brand.gallery && brand.gallery.filter(Boolean).length > 0 && (
           <>
             <h2 className="text-[13px] font-bold text-[var(--color-brand-dark)] uppercase tracking-widest mb-5">
               Galería {brand.name}
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-14">
-              {brand.gallery.map((img, i) => (
+              {brand.gallery.filter(Boolean).map((img, i) => (
                 <div key={img} className="relative aspect-square rounded-2xl border border-[var(--color-border)] overflow-hidden bg-white">
                   <Image
                     src={img}

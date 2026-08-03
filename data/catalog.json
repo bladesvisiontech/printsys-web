@@ -2193,14 +2193,7 @@
           "images": [
             "/cms-1785425513587.jpg"
           ],
-          "featured": false,
-          "applicationImages": [
-            {
-              "image": "",
-              "caption": "La desinfección ultravioleta es un medio para matar o inocular microorganismos inofensivos en un entorno dedicado que utiliza tecnología de luz ultravioleta. La radiación ultravioleta de longitud de onda corta es dañina para los microorganismos.",
-              "note": ""
-            }
-          ]
+          "featured": false
         },
         {
           "id": "lamparas-infrarrojas",

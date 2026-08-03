@@ -113,9 +113,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           ))}
         </div>
 
-        {post.gallery && post.gallery.length > 0 && (
+        {post.gallery && post.gallery.filter(Boolean).length > 0 && (
           <div className="grid grid-cols-2 gap-3 mt-8">
-            {post.gallery.map((img, i) => (
+            {post.gallery.filter(Boolean).map((img, i) => (
               <div key={img} className="relative aspect-[4/3] rounded-xl overflow-hidden border border-[var(--color-border)]">
                 <Image
                   src={img}

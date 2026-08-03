@@ -49,8 +49,8 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Image gallery */}
           <div className="flex flex-col gap-4">
-            {product.images.length > 0 ? (
-              product.images.map((img, i) => (
+            {product.images.filter(Boolean).length > 0 ? (
+              product.images.filter(Boolean).map((img, i) => (
                 <div key={img} className="bg-white rounded-2xl border border-[var(--color-border)] aspect-square flex items-center justify-center p-10 overflow-hidden">
                   <Image
                     src={img}
@@ -104,13 +104,13 @@ export default async function ProductPage({ params }: { params: Promise<{ catego
               </div>
             )}
 
-            {product.applicationImages && product.applicationImages.length > 0 && (
+            {product.applicationImages && product.applicationImages.filter(item => item.image).length > 0 && (
               <div>
                 <h2 className="text-[13px] font-bold text-[var(--color-brand-dark)] uppercase tracking-widest mb-4">
                   Ejemplo de aplicación
                 </h2>
                 <div className="flex flex-col gap-6">
-                  {product.applicationImages.map((item, i) => (
+                  {product.applicationImages.filter(item => item.image).map((item, i) => (
                     <div key={item.image}>
                       <div className="relative aspect-video rounded-2xl border border-[var(--color-border)] overflow-hidden bg-white">
                         <Image
