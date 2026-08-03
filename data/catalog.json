@@ -1199,6 +1199,14 @@
             {
               "label": "Tecnología",
               "value": "CHILLDRUM + Dual Servo"
+            },
+            {
+              "label": "Secador UV",
+              "value": "Convencional / LED"
+            },
+            {
+              "label": "Accesorios",
+              "value": "Cold Foil & Laminación - Delam Relam - Salida en Hojas - Video Scan"
             }
           ],
           "images": [
