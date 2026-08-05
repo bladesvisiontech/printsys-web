@@ -280,7 +280,8 @@
       "description": "Kingsun Machinery es uno de los fabricantes y exportadores más experimentados de equipos de impresión y embalaje en China. Su gama de productos abarca máquinas de corte, laminadoras de papel, máquinas de troquelado, laminadoras térmicas, estampadoras de papel caliente, recubridoras UV, pegadoras plegadoras, máquinas de parchear ventanas, líneas de conversión de etiquetas, máquinas de bolsas de plástico y más. Conocida por su calidad estable, precios competitivos y un servicio posventa fiable, Kingsun ayuda a los clientes a reducir el riesgo de inversión y aumentar el valor de producción.",
       "accentColor": "#B91C1C",
       "featured": true,
-      "logo": "/logos/kingsun.webp"
+      "logo": "/logos/kingsun.webp",
+      "website": "https://www.kingsunmachinery.com/"
     },
     {
       "id": "resino",
