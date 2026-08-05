@@ -1380,6 +1380,20 @@
           "images": [
             "/products/prensas-flexo/gear-flex-1.jpg"
           ]
+        },
+        {
+          "id": "maquinas-de-impresion-flexo-modelos-fp-320",
+          "name": "Máquinas de impresión flexo modelos FP-320",
+          "slug": "maquinas-de-impresion-flexo-modelos-fp-320",
+          "brandId": "kingsun",
+          "brandName": "Kingsun",
+          "categoryId": "prensas-flexo",
+          "type": "equipment",
+          "shortDescription": "Máquinas de impresión flexo modelos FP-320",
+          "description": "Esta serie son imprentas flexo de pila vertical, aptas para impresión flexográfica de papel adhesivo para etiquetas, formas comerciales, Papel de mecanografía por ordenador, película, etc. La calidad de impresión es buena y rentable para la plancha. Este equipo de flexo impresión, utiliza tinta a base de agua, con un precio económico y ahorro de espacio. Es ampliamente aceptado por los fabricantes de etiquetas para imprimir papel en rollo u otros materiales.",
+          "specs": [],
+          "images": [],
+          "featured": false
         }
       ],
       "image": "/categories/prensas-flexo.jpg",
