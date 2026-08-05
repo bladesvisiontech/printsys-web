@@ -1082,7 +1082,8 @@
       "icon": "🖨",
       "brands": [
         "etirama",
-        "alfaflexo"
+        "alfaflexo",
+        "kingsun"
       ],
       "products": [
         {
@@ -1384,7 +1385,8 @@
       "image": "/categories/prensas-flexo.jpg",
       "brandLabels": {
         "etirama": "banda angosta",
-        "alfaflexo": "banda ancha"
+        "alfaflexo": "banda ancha",
+        "kingsun": "proyectos"
       }
     },
     {
