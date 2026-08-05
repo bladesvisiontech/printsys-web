@@ -1992,6 +1992,13 @@
           "specs": [],
           "images": [
             "/cms-1785947764605.jpg"
+          ],
+          "applicationImages": [
+            {
+              "image": "/cms-1785947852065.jpg",
+              "caption": "",
+              "note": ""
+            }
           ]
         },
         {
