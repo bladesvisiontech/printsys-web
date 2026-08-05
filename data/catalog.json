@@ -1931,6 +1931,13 @@
           "specs": [],
           "images": [
             "/products/instrumentos/spi-instrumentos-1.jpg"
+          ],
+          "applicationImages": [
+            {
+              "image": "/cms-1785945991234.jpg",
+              "caption": "Calibración en Offset",
+              "note": "Es un valioso instrumento para los impresores, debido a que puedes calibrar de forma precisa, el espacio exacto entre rodillos y la presión requerida."
+            }
           ]
         },
         {
