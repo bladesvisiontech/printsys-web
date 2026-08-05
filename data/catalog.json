@@ -1928,7 +1928,24 @@
           "type": "instrument",
           "shortDescription": "Medición de alineación y presión de rodillos",
           "description": "Instrumentos digitales para alineación y presión de rodillos en prensas offset y flexo. Optimiza el setup y reduce desperdicio de papel.",
-          "specs": [],
+          "specs": [
+            {
+              "label": "Ahorro de tiempo significativo",
+              "value": "medición inmediata de la separación entre los rodillos."
+            },
+            {
+              "label": "Aumento de la productividad",
+              "value": "reducción significativa del desperdicio de papel."
+            },
+            {
+              "label": "Precisión",
+              "value": "dominio del ajuste correcto y medición precisa del ancho de la separación entre los rodillos en mm."
+            },
+            {
+              "label": "Compatibilidad",
+              "value": "Diseñado para todas las máquinas y rodillos: Heidelberg, KBA, Komori, Manroland, Mark Andy, etc."
+            }
+          ],
           "images": [
             "/products/instrumentos/spi-instrumentos-1.jpg"
           ],
