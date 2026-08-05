@@ -1391,7 +1391,28 @@
           "type": "equipment",
           "shortDescription": "Máquinas de impresión flexo modelos FP-320",
           "description": "Esta máquina de impresión flexo tipo pila está diseñada para imprimir en una amplia variedad de materiales, incluyendo papel adhesivo para etiquetas, etiquetas plásticas, moldes comerciales, papel para impresión informática, papel para envases alimentarios y películas plásticas. Ofrece resultados de impresión de alta calidad a la vez que ofrece una inversión económica, una huella compacta y fácil operación y mantenimiento. La prensa soporta tanto tintas a base de agua como UV, lo que la convierte en una solución ecológica ampliamente adoptada en la industria de impresión y envasado de etiquetas.",
-          "specs": [],
+          "specs": [
+            {
+              "label": "Velocidad de impresión",
+              "value": "60 m/min"
+            },
+            {
+              "label": "Número de color de impresión",
+              "value": "4, 5 o 6 colores"
+            },
+            {
+              "label": "Ancho máximo de la red",
+              "value": "320mm -  450mm"
+            },
+            {
+              "label": "Diámetro máximo de desenrollado",
+              "value": "600mm"
+            },
+            {
+              "label": "Precisión del registro de color",
+              "value": "±0,1mm"
+            }
+          ],
           "images": [
             "/cms-1785944444721.webp",
             "/cms-1785944506402.webp"
