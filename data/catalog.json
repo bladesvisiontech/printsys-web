@@ -1931,18 +1931,18 @@
           "specs": [
             {
               "label": "Ahorro de tiempo significativo",
-              "value": "medición inmediata de la separación entre los rodillos."
+              "value": "Medición inmediata de la separación entre los rodillos."
             },
             {
               "label": "Aumento de la productividad",
-              "value": "reducción significativa del desperdicio de papel."
+              "value": "Reducción significativa del desperdicio de papel."
             },
             {
-              "label": "Precisión",
-              "value": "dominio del ajuste correcto y medición precisa del ancho de la separación entre los rodillos en mm."
+              "label": "Precisión:",
+              "value": "Dominio del ajuste correcto y medición precisa del ancho de la separación entre los rodillos en mm."
             },
             {
-              "label": "Compatibilidad",
+              "label": "Compatibilidad:",
               "value": "Diseñado para todas las máquinas y rodillos: Heidelberg, KBA, Komori, Manroland, Mark Andy, etc."
             }
           ],
