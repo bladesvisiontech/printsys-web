@@ -281,7 +281,10 @@
       "accentColor": "#B91C1C",
       "featured": true,
       "logo": "/logos/kingsun.webp",
-      "website": "https://www.kingsunmachinery.com/"
+      "website": "https://www.kingsunmachinery.com/",
+      "gallery": [
+        "/cms-1785940346625.png"
+      ]
     },
     {
       "id": "resino",
