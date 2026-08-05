@@ -2243,6 +2243,16 @@
         }
       ],
       "image": "/cms-1785424449825.jpg"
+    },
+    {
+      "id": "maquinaria-y-equipos",
+      "slug": "maquinaria-y-equipos",
+      "name": "Maquinaria y Equipos",
+      "description": "",
+      "icon": "⚙️",
+      "brands": [],
+      "products": [],
+      "image": "/cms-1785941872086.webp"
     }
   ],
   "blogPosts": [
