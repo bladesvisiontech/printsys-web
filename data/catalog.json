@@ -1920,14 +1920,14 @@
         },
         {
           "id": "spi-instrumentos",
-          "name": "Diginip — Presión y Alineación",
+          "name": "DIGINIP — Presión y Alineación",
           "slug": "spi-instrumentos",
           "brandId": "spi",
           "brandName": "SPI",
           "categoryId": "instrumentos",
           "type": "instrument",
           "shortDescription": "Medición de alineación y presión de rodillos",
-          "description": "Instrumentos SPI para alineación y presión de rodillos en prensas offset y flexo. Optimiza el setup y reduce desperdicio de papel.",
+          "description": "Instrumentos digitales para alineación y presión de rodillos en prensas offset y flexo. Optimiza el setup y reduce desperdicio de papel.",
           "specs": [],
           "images": [
             "/products/instrumentos/spi-instrumentos-1.jpg"
