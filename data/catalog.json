@@ -2253,7 +2253,11 @@
           "featured": false
         }
       ],
-      "image": "/categories/consumibles.jpg"
+      "image": "/categories/consumibles.jpg",
+      "brandLabels": {
+        "resino": "Tintas, solventes, aditivos",
+        "gew": "Partes y consumibles"
+      }
     },
     {
       "id": "lamparas-uv-germ-ir-fluor-ga",
