@@ -1865,7 +1865,7 @@
       "id": "instrumentos",
       "slug": "instrumentos",
       "name": "Instrumentos y Automatización",
-      "description": "Control de calidad, automatización de prensas, inspección 100% y tratamiento de superficie",
+      "description": "Control de calidad, automatización de prensas, inspección 100% y tratamiento de superficies",
       "icon": "🔬",
       "brands": [
         "spi",
@@ -1990,7 +1990,13 @@
           ]
         }
       ],
-      "image": "/categories/instrumentos.jpg"
+      "image": "/categories/instrumentos.jpg",
+      "brandLabels": {
+        "spi": "calibración digital de rodillos",
+        "gmi": "sistemas de inspección",
+        "imavision": "equipos de automatización",
+        "martignoni": "tratamiento de superficies"
+      }
     },
     {
       "id": "consumibles",
