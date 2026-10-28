@@ -2310,7 +2310,12 @@
       "image": "/cms-1793212570188.jpg",
       "imageAlt": "Presentación técnico-comercial, para asesorar proyectos.",
       "date": "2026-09-21",
-      "tags": [],
+      "tags": [
+        "Soporte técnico",
+        "posventa",
+        "proyectos",
+        "portafolio"
+      ],
       "gallery": [
         "/cms-1793213470550.jpg",
         "/cms-1793213535511.jpg"
