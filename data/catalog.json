@@ -2300,6 +2300,22 @@
   ],
   "blogPosts": [
     {
+      "id": "",
+      "slug": "etirama-en-colombia",
+      "title": "ETIRAMA en Colombia",
+      "excerpt": "Hoy Colombia esta mas naranja, con nuestros equipos instalados por todo el país.\nEl servicio técnico realiza visitas constantes para estar mas cerca de nuestros clientes.",
+      "content": [
+        "En el mes de septiembre, realizamos visitas técnico-comerciales en plantas de producción de Barranquilla, Medellin y Bogotá. En compañía del experto flexográfico Robson Lázaro, proveniente de Brasil."
+      ],
+      "image": "/cms-1793212570188.jpg",
+      "imageAlt": "Presentación técnico-comercial, para asesorar proyectos.",
+      "date": "2026-10-28",
+      "tags": [],
+      "gallery": [
+        "/cms-1793212815600.jpg"
+      ]
+    },
+    {
       "id": "aeroled2-impreac-nilpeter",
       "slug": "aeroled2-impreac-nilpeter-fb14-pro",
       "title": "Innovación que impulsa un futuro más sostenible: AeroLED2 en IMPREAC",
