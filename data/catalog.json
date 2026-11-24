@@ -2301,6 +2301,24 @@
   "blogPosts": [
     {
       "id": "",
+      "slug": "posventa-servicio-tecnico",
+      "title": "POSVENTA-SERVICIO TECNICO",
+      "excerpt": "Etirama comprometido con Colombia, invierte fuertemente en el soporte técnico, servicio posventa, acompañamiento y capacitación de operadores.",
+      "content": [
+        ""
+      ],
+      "image": "/cms-1795554297019.jpg",
+      "imageAlt": "",
+      "date": "2026-11-24",
+      "tags": [
+        "POSVENTA",
+        "SERVICIO TECNICO",
+        "CAPACITACION",
+        "COMPROMISO"
+      ]
+    },
+    {
+      "id": "",
       "slug": "etirama-en-colombia",
       "title": "ETIRAMA en Colombia",
       "excerpt": "Etirama pisa fuerte en Colombia, con presencia efectiva y recurrente, seguimiento a proyectos, nuevas propuestas.",
