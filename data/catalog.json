@@ -2301,6 +2301,33 @@
   "blogPosts": [
     {
       "id": "",
+      "slug": "etirama-experience-2027",
+      "title": "ETIRAMA Experience 2027",
+      "excerpt": "Un evento exclusivo para fabricantes de etiquetas en América Latina",
+      "content": [
+        "3 días intensos de networking, compartiendo experiencias con empresarios y profesionales de diferentes países de América latina, incluyendo almuerzos, cenas y cocteles.",
+        "Conferencias técnicas con importantes proveedores y especialistas de nuestra industria.",
+        "Visitas técnicas a diferentes empresas fabricantes de etiquetas, con distintos perfiles de producción, para conocer de cerca sus instalaciones, tecnologías y procesos productivos.",
+        "Visita a la fabrica de ETIRAMA, incluyendo la participación en nuestro exclusivo Open House, donde presentaremos oficialmente nuestras nuevas maquinas y tecnologías. "
+      ],
+      "image": "/cms-1795616545534.png",
+      "imageAlt": "",
+      "date": "2026-11-25",
+      "tags": [
+        "Lanzamientos",
+        "Planta",
+        "Evento",
+        "Networking"
+      ],
+      "gallery": [
+        "/cms-1795617417895.png",
+        "/cms-1795617429545.png",
+        "/cms-1795617439723.png",
+        "/cms-1795617447628.png"
+      ]
+    },
+    {
+      "id": "",
       "slug": "etirama-posventa-y-servicio-tecnico",
       "title": "ETIRAMA posventa y servicio técnico",
       "excerpt": "Etirama comprometido con Colombia, invierte fuertemente en el soporte técnico, servicio posventa. ",
